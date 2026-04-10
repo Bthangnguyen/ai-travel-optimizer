@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "AI Itinerary Optimizer",
+    "slug": "ai-itinerary-optimizer",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light"
+  }
+}
+
