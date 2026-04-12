@@ -16,3 +16,7 @@ dist/
 osrm-data/*.osm.pbf
 osrm-data/*.osrm*
 mobile/web-dist*/
+Mission1\docs
+GEMINI.md
+implementation_plan.md
+walkthrough.md

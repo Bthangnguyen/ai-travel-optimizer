@@ -6,7 +6,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from .config import settings
 from .models import PlanRequest, PlanResponse, RerouteRequest
 from .planner import TripPlanner
-from .state_store import TripStateStore
+from .state_store import (
+    TripStateStore,
+    DatabaseUnavailableException,
+    RerouteCooldownException
+)
 from .utils import minutes_to_hhmm, parse_hhmm
 
 
@@ -40,20 +44,31 @@ def plan_trip(payload: PlanRequest) -> PlanResponse:
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-    state_store.save_trip(trip)
+    try:
+        state_store.save_trip_state(trip)
+    except DatabaseUnavailableException as exc:
+        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể lưu trạng chuyến đi.") from exc
+
     return trip
 
 
 @app.post("/reroute", response_model=PlanResponse)
 def reroute_trip(payload: RerouteRequest) -> PlanResponse:
-    allowed, remaining = state_store.allow_reroute(payload.trip_id)
-    if not allowed:
+    try:
+        state_store.check_reroute_cooldown(payload.trip_id)
+    except RerouteCooldownException as e:
         raise HTTPException(
             status_code=429,
-            detail=f"Reroute cooldown active. Try again in {remaining} seconds.",
-        )
+            detail="Quá nhiều yêu cầu (Rate Limit). Vui lòng đợi 3 phút trước khi gọi lại Reroute."
+        ) from e
+    except DatabaseUnavailableException as e:
+        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể kiểm tra Cooldown.") from e
 
-    previous_trip = state_store.get_trip(payload.trip_id)
+    try:
+        previous_trip = state_store.get_trip(payload.trip_id)
+    except DatabaseUnavailableException as e:
+        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể đọc lịch trình cũ từ bộ nhớ.") from e
+        
     if previous_trip is None and payload.prompt is None:
         raise HTTPException(
             status_code=404,
@@ -96,6 +111,10 @@ def reroute_trip(payload: RerouteRequest) -> PlanResponse:
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-    state_store.save_trip(trip)
+    try:
+        state_store.save_trip_state(trip)
+    except DatabaseUnavailableException as e:
+        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể lưu lịch trình điều hướng mới.") from e
+
     return trip
 
