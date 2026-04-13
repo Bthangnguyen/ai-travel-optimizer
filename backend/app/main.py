@@ -34,6 +34,8 @@ app.add_middleware(
 
 @app.get("/health")
 def health() -> dict[str, str]:
+    if not state_store.ping():
+        raise HTTPException(status_code=503, detail="Database is down")
     return {"status": "ok"}
 
 
@@ -45,9 +47,10 @@ def plan_trip(payload: PlanRequest) -> PlanResponse:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
     try:
+        # TODO: Refactor to use trip_id
         state_store.save_trip_state(trip)
     except DatabaseUnavailableException as exc:
-        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể lưu trạng chuyến đi.") from exc
+        raise HTTPException(status_code=503, detail="Hệ thống trí nhớ đang bảo trì, vui lòng thử lại sau") from exc
 
     return trip
 
@@ -55,19 +58,9 @@ def plan_trip(payload: PlanRequest) -> PlanResponse:
 @app.post("/reroute", response_model=PlanResponse)
 def reroute_trip(payload: RerouteRequest) -> PlanResponse:
     try:
-        state_store.check_reroute_cooldown(payload.trip_id)
-    except RerouteCooldownException as e:
-        raise HTTPException(
-            status_code=429,
-            detail="Quá nhiều yêu cầu (Rate Limit). Vui lòng đợi 3 phút trước khi gọi lại Reroute."
-        ) from e
-    except DatabaseUnavailableException as e:
-        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể kiểm tra Cooldown.") from e
-
-    try:
         previous_trip = state_store.get_trip(payload.trip_id)
     except DatabaseUnavailableException as e:
-        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể đọc lịch trình cũ từ bộ nhớ.") from e
+        raise HTTPException(status_code=503, detail="Hệ thống trí nhớ đang bảo trì, vui lòng thử lại sau") from e
         
     if previous_trip is None and payload.prompt is None:
         raise HTTPException(
@@ -107,14 +100,25 @@ def reroute_trip(payload: RerouteRequest) -> PlanResponse:
         extra_notes.append(f"Delay injected: {payload.trigger.minutes_late} minutes.")
 
     try:
+        state_store.check_reroute_cooldown(payload.trip_id)
+    except RerouteCooldownException as e:
+        raise HTTPException(
+            status_code=429,
+            detail="Quá nhiều yêu cầu (Rate Limit). Vui lòng đợi 3 phút trước khi gọi lại Reroute."
+        ) from e
+    except DatabaseUnavailableException as e:
+        raise HTTPException(status_code=503, detail="Hệ thống trí nhớ đang bảo trì, vui lòng thử lại sau") from e
+
+    try:
         trip = planner.plan(request_payload, trip_id=payload.trip_id, extra_notes=extra_notes)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
     try:
+        # TODO: Refactor to use trip_id
         state_store.save_trip_state(trip)
     except DatabaseUnavailableException as e:
-        raise HTTPException(status_code=503, detail="Service Unavailable. Không thể lưu lịch trình điều hướng mới.") from e
+        raise HTTPException(status_code=503, detail="Hệ thống trí nhớ đang bảo trì, vui lòng thử lại sau") from e
 
     return trip
 

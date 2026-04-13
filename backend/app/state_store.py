@@ -36,12 +36,20 @@ class TripStateStore:
         pool = redis.ConnectionPool.from_url(redis_url, decode_responses=True)
         return redis.Redis(connection_pool=pool)
 
+    def ping(self) -> bool:
+        if self._redis is None:
+            return False
+        try:
+            return self._redis.ping()
+        except redis.exceptions.ConnectionError:
+            return False
+
     def save_trip_state(self, trip: PlanResponse) -> None:
         if self._redis is None:
             raise DatabaseUnavailableException("Redis service không được cấp phép tại máy chủ.")
             
         try:
-            self._redis.set(f"trip:{trip.trip_id}", trip.model_dump_json(), ex=60 * 60 * 12)
+            self._redis.set(f"trip:{trip.trip_id}", trip.model_dump_json(), ex=86400)
         except redis.exceptions.ConnectionError as e:
             raise DatabaseUnavailableException("Sập kết nối tới Redis State Store.") from e
 
@@ -62,9 +70,9 @@ class TripStateStore:
             raise DatabaseUnavailableException("Redis service không được cấp phép tại máy chủ.")
             
         try:
-            # SET NX EX sẽ giới hạn nếu đã có yêu cầu Re-route trong vòng 180s (3 Phút)
+            # SET NX EX sẽ giới hạn nếu đã có yêu cầu Re-route trong vòng N giây
             success = self._redis.set(
-                f"reroute:{trip_id}", "locked", nx=True, ex=180
+                f"reroute:{trip_id}", "locked", nx=True, ex=self._settings.reroute_cooldown_seconds
             )
             if success is not True:
                 raise RerouteCooldownException("User đang spam Reroute.")
