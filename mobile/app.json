@@ -4,7 +4,40 @@
     "slug": "ai-itinerary-optimizer",
     "version": "0.1.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "light"
+    "userInterfaceStyle": "light",
+
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Ứng dụng cần theo dõi vị trí của bạn để tự động cập nhật lộ trình khi bạn rời khỏi điểm tham quan.",
+          "locationAlwaysPermission": "Ứng dụng cần quyền 'Luôn cho phép' để theo dõi vị trí khi màn hình tắt và tự động re-route.",
+          "locationWhenInUsePermission": "Ứng dụng cần vị trí của bạn để hiển thị lộ trình.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ]
+    ],
+
+    "ios": {
+      "bundleIdentifier": "com.aio.itinerary",
+      "infoPlist": {
+        "UIBackgroundModes": ["location", "fetch", "remote-notification"],
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Ứng dụng cần theo dõi vị trí của bạn để tự động cập nhật lộ trình khi bạn rời khỏi điểm tham quan.",
+        "NSLocationAlwaysUsageDescription": "Ứng dụng cần quyền 'Luôn cho phép' để theo dõi vị trí khi màn hình tắt và tự động re-route.",
+        "NSLocationWhenInUseUsageDescription": "Ứng dụng cần vị trí của bạn để hiển thị lộ trình."
+      }
+    },
+
+    "android": {
+      "package": "com.aio.itinerary",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ]
+    }
   }
 }
-
