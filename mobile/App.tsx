@@ -11,6 +11,8 @@ import {
   TextInput,
   View
 } from "react-native";
+import messaging from "@react-native-firebase/messaging";
+import MapView, { Marker, Polyline } from "react-native-maps";
 
 import { API_URL, checkHealth, createPlan, reroutePlan } from "./src/api";
 import { PlanResponse } from "./src/types";
@@ -18,6 +20,14 @@ import { PlanResponse } from "./src/types";
 const STORAGE_KEY = "current_trip";
 const DEFAULT_PROMPT =
   "Plan a Hue day trip from 08:00 with culture and food, budget 1200000, 5 stops";
+
+function parseRouteCoordinates(trip: PlanResponse | null) {
+  if (!trip?.itinerary) return [];
+  return trip.itinerary.map((stop) => ({
+    latitude: stop.lat,
+    longitude: stop.lon
+  }));
+}
 
 export default function App() {
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
@@ -37,6 +47,37 @@ export default function App() {
 
   useEffect(() => {
     void runHealthCheck();
+  }, []);
+
+  useEffect(() => {
+    async function requestPermission() {
+      const authStatus = await messaging().requestPermission();
+      const enabled =
+        authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+        authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+      if (enabled) {
+        console.log("FCM Authorization status:", authStatus);
+      }
+    }
+    void requestPermission();
+
+    // FCM Foreground Listener
+    const unsubscribe = messaging().onMessage(async (remoteMessage) => {
+      console.log("FCM message received in foreground:", remoteMessage);
+
+      // Nhận payload và cập nhật lại state
+      if (remoteMessage.data && remoteMessage.data.reroute) {
+        try {
+          const newTripData = JSON.parse(remoteMessage.data.reroute as string) as PlanResponse;
+          setTrip(newTripData);
+          // O tuỳ chọn: Lưu lại lịch trình qua persistTrip thay vì chỉ bằng setTrip
+        } catch (err) {
+          console.error("Lỗi khi parse dữ liệu reroute từ FCM:", err);
+        }
+      }
+    });
+
+    return unsubscribe;
   }, []);
 
   async function runHealthCheck() {
@@ -105,7 +146,7 @@ export default function App() {
         <Text style={styles.eyebrow}>AI itinerary control room</Text>
         <Text style={styles.title}>Hue dynamic planner</Text>
         <Text style={styles.subtitle}>
-          Prompt -> structured constraints -> optimized timeline -> reroute triggers.
+          Prompt {"->"} structured constraints {"->"} optimized timeline {"->"} reroute triggers.
         </Text>
 
         <View style={styles.card}>
@@ -167,43 +208,86 @@ export default function App() {
 
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Map snapshot</Text>
-          {trip?.itinerary[0] ? (
-            <View style={styles.mapCard}>
-              <Text style={styles.mapHeadline}>{trip.itinerary[0].name}</Text>
-              <Text style={styles.mapCopy}>
-                First stop at {trip.itinerary[0].arrival_time} ({trip.itinerary[0].lat.toFixed(4)},
-                {" "}
-                {trip.itinerary[0].lon.toFixed(4)})
-              </Text>
-              <Text style={styles.mapCopy}>
-                Replace this card with a geofenced map component when the team adds the chosen map SDK.
-              </Text>
-            </View>
-          ) : (
-            <Text style={styles.emptyText}>No route yet.</Text>
-          )}
+          <View style={styles.mapContainer}>
+            <MapView
+              style={styles.map}
+              initialRegion={{
+                latitude: 16.4637,
+                longitude: 107.5905,
+                latitudeDelta: 0.05,
+                longitudeDelta: 0.05,
+              }}
+            >
+              {trip?.itinerary ? trip.itinerary.map((stop) => (
+                <Marker
+                  key={stop.poi_id}
+                  coordinate={{ latitude: stop.lat, longitude: stop.lon }}
+                  title={stop.name}
+                  description={`Arrival: ${stop.arrival_time}`}
+                />
+              )) : null}
+              {trip?.itinerary && trip.itinerary.length > 1 ? (
+                <Polyline
+                  coordinates={parseRouteCoordinates(trip)}
+                  strokeColor="#8c2f39"
+                  strokeWidth={3}
+                  lineDashPattern={[5, 5]}
+                />
+              ) : null}
+            </MapView>
+          </View>
         </View>
 
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Timeline</Text>
           {trip?.itinerary.length ? (
-            trip.itinerary.map((stop) => (
-              <View key={stop.poi_id} style={styles.timelineItem}>
-                <View style={styles.timelineBadge}>
-                  <Text style={styles.timelineBadgeText}>{stop.arrival_time}</Text>
+            trip.itinerary.map((stop, index) => {
+              const now = new Date();
+              const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+              const parseTime = (timeStr: string) => {
+                if (!timeStr) return 0;
+                const parts = timeStr.split(':');
+                if (parts.length !== 2) return 0;
+                return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+              };
+
+              const arrivalMins = parseTime(stop.arrival_time);
+              const departureMins = parseTime(stop.departure_time);
+              const isActive = currentMinutes >= arrivalMins && currentMinutes < departureMins;
+              const isLast = index === trip.itinerary.length - 1;
+
+              return (
+                <View key={stop.poi_id} style={styles.timelineItemContainer}>
+                  <View style={styles.timelineLeft}>
+                    <View style={[styles.timelineBadge, isActive && styles.timelineBadgeActive]}>
+                      <Text style={[styles.timelineBadgeText, isActive && styles.timelineBadgeTextActive]}>
+                        {stop.arrival_time}
+                      </Text>
+                    </View>
+                    {!isLast && <View style={styles.verticalLine} />}
+                  </View>
+                  <View style={[styles.timelineContent, isActive && styles.timelineContentActive]}>
+                    <Text style={[styles.timelineTitle, isActive && styles.timelineTitleActive]}>
+                      {stop.name}
+                    </Text>
+                    
+                    <View style={styles.chipRow}>
+                      <View style={[styles.chip, styles.chipTravel]}>
+                        <Text style={styles.chipTravelText}>Travel {stop.travel_minutes}m</Text>
+                      </View>
+                      <View style={[styles.chip, styles.chipVisit]}>
+                        <Text style={styles.chipVisitText}>Visit {stop.visit_minutes}m</Text>
+                      </View>
+                    </View>
+
+                    <Text style={styles.timelineMeta}>
+                      Depart {stop.departure_time} · {stop.tags.join(", ")} · {stop.outdoor ? "Outdoor" : "Indoor"} · {stop.ticket_price} VND
+                    </Text>
+                  </View>
                 </View>
-                <View style={styles.timelineContent}>
-                  <Text style={styles.timelineTitle}>{stop.name}</Text>
-                  <Text style={styles.timelineMeta}>
-                    Depart {stop.departure_time} · Travel {stop.travel_minutes} min · Visit{" "}
-                    {stop.visit_minutes} min
-                  </Text>
-                  <Text style={styles.timelineMeta}>
-                    {stop.tags.join(", ")} · {stop.outdoor ? "Outdoor" : "Indoor"} · {stop.ticket_price} VND
-                  </Text>
-                </View>
-              </View>
-            ))
+              );
+            })
           ) : (
             <Text style={styles.emptyText}>Generate a plan to see the itinerary timeline.</Text>
           )}
@@ -328,53 +412,98 @@ const styles = StyleSheet.create({
     color: "#b00020",
     fontWeight: "600"
   },
-  mapCard: {
+  mapContainer: {
+    height: 300,
     borderRadius: 16,
-    padding: 16,
-    backgroundColor: "#efe3cb",
-    gap: 8
+    overflow: "hidden",
+    backgroundColor: "#efe3cb"
   },
-  mapHeadline: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#47311b"
-  },
-  mapCopy: {
-    color: "#47311b",
-    lineHeight: 20
+  map: {
+    width: "100%",
+    height: "100%"
   },
   emptyText: {
     color: "#6b6b6b"
   },
-  timelineItem: {
+  timelineItemContainer: {
     flexDirection: "row",
     gap: 12,
-    paddingVertical: 8
+  },
+  timelineLeft: {
+    alignItems: "center",
+    width: 68,
   },
   timelineBadge: {
-    minWidth: 68,
+    width: 68,
     height: 32,
     borderRadius: 16,
     backgroundColor: "#ead5b5",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+  },
+  timelineBadgeActive: {
+    backgroundColor: "#8c2f39",
   },
   timelineBadgeText: {
     color: "#5a3c1b",
     fontWeight: "700"
   },
+  timelineBadgeTextActive: {
+    color: "#fff",
+  },
+  verticalLine: {
+    flex: 1,
+    width: 2,
+    backgroundColor: "#d8c9aa",
+    opacity: 0.8,
+  },
   timelineContent: {
     flex: 1,
-    gap: 4
+    gap: 4,
+    paddingBottom: 24,
+  },
+  timelineContentActive: {
+    // any extra styles for active container
   },
   timelineTitle: {
     fontSize: 16,
     color: "#1d1d1d",
     fontWeight: "700"
   },
+  timelineTitleActive: {
+    color: "#8c2f39",
+  },
+  chipRow: {
+    flexDirection: "row",
+    gap: 8,
+    marginTop: 4,
+    marginBottom: 6,
+  },
+  chip: {
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    borderRadius: 8,
+  },
+  chipTravel: {
+    backgroundColor: "#e3f0ff", // pastel blue
+  },
+  chipVisit: {
+    backgroundColor: "#e8f5e9", // pastel green
+  },
+  chipTravelText: {
+    fontSize: 12,
+    fontWeight: "600",
+    color: "#2a5b8f",
+  },
+  chipVisitText: {
+    fontSize: 12,
+    fontWeight: "600",
+    color: "#2e6a32",
+  },
   timelineMeta: {
     color: "#555",
-    lineHeight: 20
+    lineHeight: 20,
+    fontSize: 13,
   },
   noteText: {
     color: "#494949",
