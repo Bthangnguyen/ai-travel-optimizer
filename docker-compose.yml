@@ -15,8 +15,11 @@ services:
     depends_on:
       - redis
       - postgis
+      - osrm
     volumes:
       - ./data:/srv/app/data:ro
+    networks:
+      - travel-network
 
   postgis:
     image: postgis/postgis:16-3.4
@@ -29,21 +32,37 @@ services:
       - "5432:5432"
     volumes:
       - postgis-data:/var/lib/postgresql/data
+    networks:
+      - travel-network
 
   redis:
     image: redis:7-alpine
     container_name: itinerary-redis
     ports:
       - "6379:6379"
+    networks:
+      - travel-network
 
   osrm:
     image: osrm/osrm-backend:latest
     container_name: itinerary-osrm
-    command: osrm-routed --algorithm mld /data/vietnam-latest.osrm
+    # [FACT] Đổi thuật toán sang CH để bảo vệ KPI Matrix < 50ms
+    command: osrm-routed --algorithm ch /data/vietnam-latest.osrm
     ports:
       - "5000:5000"
     volumes:
       - ./osrm-data:/data
+    networks:
+      - travel-network
+    deploy:
+      resources:
+        limits:
+          # [FACT] Chặn giới hạn RAM để chống crash máy Windows 8GB của Dev 2
+          memory: 1.5G 
+
+networks:
+  travel-network:
+    driver: bridge
 
 volumes:
   postgis-data:
