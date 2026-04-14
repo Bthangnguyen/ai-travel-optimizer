@@ -1,16 +1,20 @@
 from __future__ import annotations
 
+import asyncio
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import settings
 from .models import PlanRequest, PlanResponse, RerouteRequest
 from .planner import TripPlanner
+from .parser import PromptConstraintParser
 from .state_store import TripStateStore
 from .utils import minutes_to_hhmm, parse_hhmm
 
 
 planner = TripPlanner(settings)
+intent_parser = PromptConstraintParser(max_retries=settings.llm_max_retries)
 state_store = TripStateStore(settings)
 
 app = FastAPI(
@@ -34,13 +38,23 @@ def health() -> dict[str, str]:
 
 
 @app.post("/plan", response_model=PlanResponse)
-def plan_trip(payload: PlanRequest) -> PlanResponse:
+async def plan_route(payload: PlanRequest) -> PlanResponse:
     try:
-        trip = planner.plan(payload)
+        parsed_intent = await intent_parser.parse_structured_async(payload.prompt)
+        trip = await asyncio.to_thread(
+            planner.plan_with_structured_input,
+            payload,
+            parsed_intent,
+        )
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001 - endpoint guardrail.
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to compute plan: {exc.__class__.__name__}",
+        ) from exc
 
-    state_store.save_trip(trip)
+    await asyncio.to_thread(state_store.save_trip, trip)
     return trip
 
 
