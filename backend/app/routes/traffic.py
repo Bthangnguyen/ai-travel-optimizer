@@ -13,33 +13,32 @@ async def check_leg_traffic(
     osrm_expected_minutes: int
 ):
     """
-    Sniper API: Gọi Google Maps JIT để lấy duration_in_traffic.
-    Nếu kẹt xe làm trễ hơn 30 phút so với OSRM, báo tín hiệu REROUTE.
+    Sniper API: Gọi Mapbox để lấy live duration_in_traffic.
+    Đã đảo ngược hệ tọa độ thành Longitude,Latitude theo chuẩn Mapbox.
     """
-    gmaps_api_key = os.getenv("GMAPS_API_KEY")
-    if not gmaps_api_key:
-        # Nếu không có key, tin tưởng hoàn toàn vào OSRM (Dev/Fallback)
+    mapbox_token = os.getenv("MAPBOX_ACCESS_TOKEN")
+    if not mapbox_token:
         return {"status": "OK", "delay_minutes": 0, "reroute": False}
 
-    url = "https://maps.googleapis.com/maps/api/directions/json"
+    # [CRITICAL GAP FIXED] Mapbox dùng (Lon,Lat) phân cách bởi dấu chấm phẩy ;
+    coordinates = f"{origin_lon},{origin_lat};{dest_lon},{dest_lat}"
+    
+    # Sử dụng profile driving-traffic để tính cả kẹt xe
+    url = f"https://api.mapbox.com/directions/v5/mapbox/driving-traffic/{coordinates}"
     params = {
-        "origin": f"{origin_lat},{origin_lon}",
-        "destination": f"{dest_lat},{dest_lon}",
-        "departure_time": "now",
-        "key": gmaps_api_key
+        "access_token": mapbox_token,
+        "geometries": "geojson" # Lấy text cho nhẹ
     }
 
     async with httpx.AsyncClient() as client:
         response = await client.get(url, params=params)
         data = response.json()
 
-    if not data.get("routes"):
-        raise HTTPException(status_code=400, detail="Cannot find route on Live Map")
+    if data.get("code") != "Ok" or not data.get("routes"):
+        raise HTTPException(status_code=400, detail="Cannot find route on Mapbox")
 
-    leg = data["routes"][0]["legs"][0]
-    
-    # Lấy thời gian thực tế (nếu có traffic data), không thì lấy thời gian tĩnh của Gmaps
-    live_duration_seconds = leg.get("duration_in_traffic", leg["duration"])["value"]
+    # Mapbox trả về duration tính bằng giây, đã bao gồm kẹt xe (nếu dùng profile driving-traffic)
+    live_duration_seconds = data["routes"][0]["duration"]
     live_duration_minutes = live_duration_seconds // 60
     
     delay_minutes = live_duration_minutes - osrm_expected_minutes
@@ -49,7 +48,7 @@ async def check_leg_traffic(
             "status": "HEAVY_TRAFFIC",
             "delay_minutes": delay_minutes,
             "reroute": True,
-            "message": "Kẹt xe nghiêm trọng phát hiện ở chặng tiếp theo. Yêu cầu tính toán lại lộ trình."
+            "message": "Mapbox phát hiện kẹt xe. Yêu cầu tính toán lại lộ trình."
         }
 
     return {

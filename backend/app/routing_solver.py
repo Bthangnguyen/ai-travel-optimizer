@@ -19,6 +19,7 @@ class SolverStop:
     arrival_minutes: int
     departure_minutes: int
     travel_minutes: int
+    wait_minutes: int = 0 # Thêm biến thời gian chờ
 
 
 @dataclass(slots=True)
@@ -113,8 +114,8 @@ class RoutingSolver:
             to_node = manager.IndexToNode(to_index)
             service_time = 0
             if from_node > 0:
-                service_time = pois[from_node - 1].visit_minutes
-            return matrix[from_node][to_node] + service_time
+                service_time = valid_pois[from_node - 1].visit_minutes
+            return sub_matrix[from_node][to_node] + service_time
 
         transit_callback_index = routing.RegisterTransitCallback(transit_callback)
         routing.SetArcCostEvaluatorOfAllVehicles(transit_callback_index)
@@ -151,15 +152,19 @@ class RoutingSolver:
             "Budget"
         )
 
-        for node in range(1, len(matrix)):
-            poi = pois[node - 1]
+        # --- 4. RÀNG BUỘC THỜI GIAN VÀ CHỌN LỌC (PENALTY) ---
+        for node in range(1, len(sub_matrix)):
+            poi = valid_pois[node - 1]
             index = manager.NodeToIndex(node)
             open_at = parse_hhmm(poi.opens_at)
             close_at = parse_hhmm(poi.closes_at)
-            time_dimension.CumulVar(index).SetRange(open_at, close_at)
+            
+            # [VÁ LỖI] Trừ hao thời gian tham quan để không bị nhốt
+            latest_arrival = close_at - poi.visit_minutes
+            if latest_arrival >= open_at:
+                time_dimension.CumulVar(index).SetRange(open_at, latest_arrival)
+            
             penalty = 5000 + poi.priority * 200
-            if weather == "rain" and poi.outdoor:
-                penalty = 1
             routing.AddDisjunction([index], penalty)
 
         start_index = routing.Start(0)
@@ -183,28 +188,42 @@ class RoutingSolver:
             # return result
             raise RuntimeError("OR-Tools heuristic failed to find a valid route")
         
+        # --- 6. XUẤT KẾT QUẢ (VÁ LỖI THỜI GIAN MA) ---
         scheduled: list[SolverStop] = []
         kept_nodes: set[int] = set()
         index = routing.Start(0)
         previous_node = 0
         stop_count = 0
+        
         while not routing.IsEnd(index):
             node = manager.IndexToNode(index)
             if node != 0 and stop_count < max_stops:
-                poi = pois[node - 1]
-                arrival = solution.Value(time_dimension.CumulVar(index))
-                travel = matrix[previous_node][node]
+                poi = valid_pois[node - 1]
+                arrival = solution.Value(time_dimension.CumulVar(index)) # Giờ bắt đầu dịch vụ
+                travel = sub_matrix[previous_node][node]
+                
+                # [VÁ LỖI] Tính toán thời gian vật lý thực tế
+                if not scheduled:
+                    physical_arrival = start_time + travel
+                else:
+                    physical_arrival = scheduled[-1].departure_minutes + travel
+                
+                wait_time = arrival - physical_arrival
+                if wait_time < 0: 
+                    wait_time = 0
+                
                 departure = max(arrival, parse_hhmm(poi.opens_at)) + poi.visit_minutes
-                scheduled.append(
-                    SolverStop(
-                        poi=poi,
-                        arrival_minutes=arrival,
-                        departure_minutes=departure,
-                        travel_minutes=travel,
-                    )
-                )
+                
+                scheduled.append(SolverStop(
+                    poi=poi, 
+                    arrival_minutes=arrival, 
+                    departure_minutes=departure, 
+                    travel_minutes=travel,
+                    wait_minutes=wait_time # Truyền cho Dev 5 in ra UI
+                ))
                 kept_nodes.add(node - 1)
                 stop_count += 1
+                
             previous_node = node
             index = solution.Value(routing.NextVar(index))
 
