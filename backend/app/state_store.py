@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import time
+from typing import Optional
 
 from .config import Settings
 from .models import PlanResponse
@@ -14,10 +15,19 @@ except ImportError:
     REDIS_AVAILABLE = False
 
 
+class DatabaseUnavailableException(Exception):
+    pass
+
+
+class RerouteCooldownException(Exception):
+    pass
+
+
 class TripStateStore:
     def __init__(self, settings: Settings) -> None:
         self._settings = settings
         self._memory_trips: dict[str, PlanResponse] = {}
+        self._memory_device_tokens: dict[str, str] = {}
         self._memory_reroute_at: dict[str, float] = {}
         self._redis = self._build_redis_client(settings)
 
@@ -25,46 +35,106 @@ class TripStateStore:
         if not settings.redis_url or not REDIS_AVAILABLE:
             return None
         try:
-            client = redis.Redis.from_url(settings.redis_url, decode_responses=True)
-            client.ping()
-            return client
+            pool = redis.ConnectionPool.from_url(settings.redis_url, decode_responses=True)
+            return redis.Redis(connection_pool=pool)
         except Exception:
             return None
 
-    def save_trip(self, trip: PlanResponse) -> None:
+    def ping(self) -> bool:
+        if self._redis is None:
+            return True
+        try:
+            return self._redis.ping()
+        except redis.exceptions.ConnectionError:
+            return False
+
+    def save_trip_state(self, trip: PlanResponse, device_token: str | None = None) -> None:
         self._memory_trips[trip.trip_id] = trip
-        if self._redis is not None:
+        if device_token is not None:
+            self._memory_device_tokens[trip.trip_id] = device_token
+
+        if self._redis is None:
+            return
+
+        try:
             self._redis.set(f"trip:{trip.trip_id}", trip.model_dump_json(), ex=60 * 60 * 12)
+            if device_token is not None:
+                self._redis.set(f"trip_token:{trip.trip_id}", device_token, ex=60 * 60 * 12)
+        except redis.exceptions.ConnectionError as e:
+            raise DatabaseUnavailableException("Redis State Store unavailable.") from e
+
+    def save_trip(self, trip: PlanResponse, device_token: str | None = None) -> None:
+        self.save_trip_state(trip, device_token=device_token)
 
     def get_trip(self, trip_id: str) -> PlanResponse | None:
         if trip_id in self._memory_trips:
             return self._memory_trips[trip_id]
         if self._redis is None:
             return None
-        raw = self._redis.get(f"trip:{trip_id}")
-        if raw is None:
-            return None
-        trip = PlanResponse.model_validate(json.loads(raw))
-        self._memory_trips[trip_id] = trip
-        return trip
+        try:
+            raw = self._redis.get(f"trip:{trip_id}")
+            if raw is None:
+                return None
+            trip = PlanResponse.model_validate(json.loads(raw))
+            self._memory_trips[trip_id] = trip
+            return trip
+        except redis.exceptions.ConnectionError as e:
+            raise DatabaseUnavailableException("Redis State Store unavailable.") from e
 
-    def allow_reroute(self, trip_id: str) -> tuple[bool, int]:
+    def get_device_token(self, trip_id: str) -> Optional[str]:
+        if trip_id in self._memory_device_tokens:
+            return self._memory_device_tokens[trip_id]
+        if self._redis is None:
+            return None
+        try:
+            token = self._redis.get(f"trip_token:{trip_id}")
+            if token is None:
+                return None
+            self._memory_device_tokens[trip_id] = token
+            return token
+        except redis.exceptions.ConnectionError as e:
+            raise DatabaseUnavailableException("Redis State Store unavailable.") from e
+
+    def verify_trip_token(self, trip_id: str, device_token: str) -> bool:
+        stored = self.get_device_token(trip_id)
+        return stored == device_token
+
+    def check_reroute_cooldown(self, trip_id: str) -> None:
         now = time.time()
         if self._redis is not None:
-            key = f"reroute:{trip_id}"
-            previous = self._redis.get(key)
-            if previous is not None:
-                remaining = max(0, self._settings.reroute_cooldown_seconds - int(now - float(previous)))
-                return False, remaining
-            self._redis.set(key, str(now), ex=self._settings.reroute_cooldown_seconds)
-            return True, 0
+            try:
+                key = f"reroute:{trip_id}"
+                count = self._redis.incr(key)
+                
+                # Set expire time only on first increment
+                if count == 1:
+                    self._redis.expire(key, self._settings.reroute_cooldown_seconds)
+                
+                # Allow 5 reroutes, fail on 6th
+                if count > 5:
+                    raise RerouteCooldownException("Quá nhiều yêu cầu (Rate Limit). Vui lòng thử lại sau.")
+            except redis.exceptions.ConnectionError as e:
+                raise DatabaseUnavailableException("Redis State Store unavailable.") from e
+            return
 
-        previous = self._memory_reroute_at.get(trip_id)
-        if previous is not None:
-            remaining = max(0, self._settings.reroute_cooldown_seconds - int(now - previous))
-            if remaining > 0:
-                return False, remaining
-
-        self._memory_reroute_at[trip_id] = now
-        return True, 0
+        # Memory-based fallback
+        key = f"reroute_count:{trip_id}"
+        if key not in self._memory_reroute_at:
+            self._memory_reroute_at[key] = [now, 1]  # [timestamp, count]
+        
+        timestamp, count = self._memory_reroute_at[key]
+        elapsed = now - timestamp
+        
+        # Reset if older than cooldown period
+        if elapsed > self._settings.reroute_cooldown_seconds:
+            self._memory_reroute_at[key] = [now, 1]
+            return
+        
+        # Increment count
+        count += 1
+        self._memory_reroute_at[key] = [timestamp, count]
+        
+        # Allow 5 reroutes, fail on 6th
+        if count > 5:
+            raise RerouteCooldownException("Quá nhiều yêu cầu (Rate Limit). Vui lòng thử lại sau.")
 
