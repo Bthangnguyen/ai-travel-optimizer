@@ -47,7 +47,7 @@ services:
     image: osrm/osrm-backend:latest
     container_name: itinerary-osrm
     # [FACT] Đổi thuật toán sang CH để bảo vệ KPI Matrix < 50ms
-    command: osrm-routed --algorithm ch /data/vietnam-latest.osrm
+    command: osrm-routed --algorithm ch /data/hue.osrm
     ports:
       - "5000:5000"
     volumes:
@@ -57,8 +57,8 @@ services:
     deploy:
       resources:
         limits:
-          # [FACT] Chặn giới hạn RAM để chống crash máy Windows 8GB của Dev 2
-          memory: 1.5G 
+          # [FACT] Chặn giới hạn RAM để tránh việc OSRM bị OOMKilled khi xử lý các yêu cầu lớn
+          memory: 512M 
 
 networks:
   travel-network:
