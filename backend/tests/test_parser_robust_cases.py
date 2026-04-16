@@ -562,6 +562,8 @@ def test_parser_fallback_for_provider_failures(prompt: str, error: Exception) ->
     assert parsed.hard_start == SAFE_DEFAULT_JSON["hard_start"]
     assert parsed.Time_Windows[0].start == DEFAULT_WINDOW["start"]
     assert parsed.Time_Windows[0].end == DEFAULT_WINDOW["end"]
+    assert parsed.avoid_outdoor_in_rain is True
+    assert parsed.max_stops == SAFE_DEFAULT_JSON["max_stops"]
     assert any(error.__class__.__name__ in note for note in parsed.parser_notes)
 
 
@@ -573,6 +575,8 @@ def test_parser_fallback_for_empty_prompt_without_llm_call() -> None:
     assert parsed.model_dump()["soft_tags"] == SAFE_DEFAULT_JSON["soft_tags"]
     assert parsed.model_dump()["hard_start"] == SAFE_DEFAULT_JSON["hard_start"]
     assert parsed.model_dump()["Time_Windows"] == SAFE_DEFAULT_JSON["Time_Windows"]
+    assert parsed.avoid_outdoor_in_rain is True
+    assert parsed.max_stops == SAFE_DEFAULT_JSON["max_stops"]
 
 
 @pytest.mark.parametrize(
@@ -812,3 +816,172 @@ def test_parser_handles_advanced_failure_and_edge_cases(
     assert parsed.hard_start == expected_start
     assert parsed.hard_end == expected_end
     assert parsed.source == "llm-structured-parser"
+
+
+# ---------------------------------------------------------------------------
+# Weather (avoid_outdoor_in_rain) + max_stops test cases
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    ("prompt", "llm_payload", "expected_rain_flag", "expected_max_stops"),
+    [
+        # Rain detected, default avoid outdoor
+        (
+            "Trời mưa to, chỉ muốn ở trong nhà.",
+            {
+                "budget_max": "1tr",
+                "soft_tags": ["indoor"],
+                "hard_start": "09:00",
+                "Time_Windows": [{"start": "09:00", "end": "17:00"}],
+                "avoid_outdoor_in_rain": True,
+                "max_stops": 4,
+            },
+            True,
+            4,
+        ),
+        # Rain but user insists on outdoor
+        (
+            "Mưa nhưng tôi vẫn muốn đi dạo ngoài trời, chụp ảnh.",
+            {
+                "budget_max": "2tr",
+                "soft_tags": ["nature", "photo"],
+                "hard_start": "07:00",
+                "Time_Windows": [{"start": "07:00", "end": "18:00"}],
+                "avoid_outdoor_in_rain": False,
+                "max_stops": 5,
+            },
+            False,
+            5,
+        ),
+        # No weather mentioned — default safe (True)
+        (
+            "Lên kế hoạch cả ngày ở Huế.",
+            {
+                "budget_max": "2tr",
+                "soft_tags": ["culture"],
+                "hard_start": "08:00",
+                "Time_Windows": [{"start": "08:00", "end": "22:00"}],
+            },
+            True,
+            6,
+        ),
+        # avoid_outdoor_in_rain as string "false"
+        (
+            "It's raining but I love getting wet while sightseeing.",
+            {
+                "budget_max": "1.5m",
+                "soft_tags": ["nature"],
+                "hard_start": "08:00",
+                "Time_Windows": [{"start": "08:00", "end": "18:00"}],
+                "avoid_outdoor_in_rain": "false",
+                "max_stops": 4,
+            },
+            False,
+            4,
+        ),
+        # avoid_outdoor_in_rain as string "true"
+        (
+            "Trời mưa lớn, tránh ngoài trời đi.",
+            {
+                "budget_max": "900k",
+                "soft_tags": ["indoor", "food"],
+                "hard_start": "10:00",
+                "Time_Windows": [{"start": "10:00", "end": "16:00"}],
+                "avoid_outdoor_in_rain": "true",
+                "max_stops": 3,
+            },
+            True,
+            3,
+        ),
+        # max_stops = 0 should clamp to 1
+        (
+            "Ghé đúng 1 chỗ thôi.",
+            {
+                "budget_max": "500k",
+                "soft_tags": ["food"],
+                "hard_start": "12:00",
+                "Time_Windows": [{"start": "12:00", "end": "14:00"}],
+                "max_stops": 0,
+            },
+            True,
+            1,
+        ),
+        # max_stops = 99 should clamp to 10
+        (
+            "Đi hết mọi nơi luôn!",
+            {
+                "budget_max": "3tr",
+                "soft_tags": ["culture", "food", "nature"],
+                "hard_start": "06:00",
+                "Time_Windows": [{"start": "06:00", "end": "23:00"}],
+                "max_stops": 99,
+            },
+            True,
+            10,
+        ),
+        # max_stops as garbage string → default 6
+        (
+            "Không biết đi mấy chỗ.",
+            {
+                "budget_max": "1tr",
+                "soft_tags": [],
+                "hard_start": "08:00",
+                "Time_Windows": [{"start": "08:00", "end": "18:00"}],
+                "max_stops": "lots",
+            },
+            True,
+            6,
+        ),
+        # Short window → few stops
+        (
+            "Chỉ rảnh 2 tiếng.",
+            {
+                "budget_max": "400k",
+                "soft_tags": ["food"],
+                "hard_start": "11:00",
+                "Time_Windows": [{"start": "11:00", "end": "13:00"}],
+                "max_stops": 2,
+            },
+            True,
+            2,
+        ),
+        # Vietnamese: mưa phùn nhẹ, vẫn muốn ra ngoài
+        (
+            "Mưa phùn nhẹ nhưng không sao, mình vẫn muốn đi chùa ngoài trời.",
+            {
+                "budget_max": "1.2tr",
+                "soft_tags": ["spiritual"],
+                "hard_start": "07:30",
+                "Time_Windows": [{"start": "07:30", "end": "12:00"}],
+                "avoid_outdoor_in_rain": False,
+                "max_stops": 3,
+            },
+            False,
+            3,
+        ),
+    ],
+)
+def test_parser_weather_and_max_stops(
+    prompt: str,
+    llm_payload: dict[str, Any],
+    expected_rain_flag: bool,
+    expected_max_stops: int,
+) -> None:
+    async def llm_gateway(
+        _system_prompt: str,
+        _user_prompt: str,
+        _response_model: type[StructuredPlanInput],
+        _max_retries: int,
+    ) -> dict[str, Any]:
+        return llm_payload
+
+    parser = PromptConstraintParser(llm_gateway=llm_gateway, max_retries=3)
+    # Test at StructuredPlanInput level
+    structured = parser.parse_structured(prompt)
+    assert structured.avoid_outdoor_in_rain is expected_rain_flag
+    assert structured.max_stops == expected_max_stops
+
+    # Test mapping to ConstraintBundle
+    bundle = parser.parse(prompt)
+    assert bundle.avoid_outdoor_in_rain is expected_rain_flag
+    assert bundle.max_stops == expected_max_stops

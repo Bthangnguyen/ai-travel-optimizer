@@ -109,5 +109,74 @@ def test_llm_failure_returns_safe_default_json() -> None:
     assert structured.model_dump()["soft_tags"] == SAFE_DEFAULT_JSON["soft_tags"]
     assert structured.model_dump()["hard_start"] == SAFE_DEFAULT_JSON["hard_start"]
     assert structured.model_dump()["Time_Windows"] == SAFE_DEFAULT_JSON["Time_Windows"]
+    assert structured.avoid_outdoor_in_rain is True
+    assert structured.max_stops == SAFE_DEFAULT_JSON["max_stops"]
     assert "Safe fallback path used." in structured.parser_notes
     assert any("TimeoutError" in note for note in structured.parser_notes)
+
+
+def test_weather_rain_detected_sets_avoid_outdoor_true() -> None:
+    """LLM detects rain mention and sets avoid_outdoor_in_rain=True."""
+    async def llm_rain(
+        _system_prompt: str,
+        _user_prompt: str,
+        _response_model: type[StructuredPlanInput],
+        _max_retries: int,
+    ) -> dict:
+        return {
+            "budget_max": "1tr",
+            "soft_tags": ["food"],
+            "hard_start": "08:00",
+            "Time_Windows": [{"start": "08:00", "end": "18:00"}],
+            "avoid_outdoor_in_rain": True,
+            "max_stops": 4,
+        }
+
+    parser = PromptConstraintParser(llm_gateway=llm_rain, max_retries=3)
+    result = parser.parse("Trời mưa to, chỉ muốn đi trong nhà thôi")
+    assert result.avoid_outdoor_in_rain is True
+    assert result.max_stops == 4
+
+
+def test_weather_user_wants_outdoor_despite_rain() -> None:
+    """User explicitly wants outdoor even in rain → avoid_outdoor_in_rain=False."""
+    async def llm_outdoor_rain(
+        _system_prompt: str,
+        _user_prompt: str,
+        _response_model: type[StructuredPlanInput],
+        _max_retries: int,
+    ) -> dict:
+        return {
+            "budget_max": "2tr",
+            "soft_tags": ["nature", "photo"],
+            "hard_start": "07:00",
+            "Time_Windows": [{"start": "07:00", "end": "17:00"}],
+            "avoid_outdoor_in_rain": False,
+            "max_stops": 5,
+        }
+
+    parser = PromptConstraintParser(llm_gateway=llm_outdoor_rain, max_retries=3)
+    result = parser.parse("Trời mưa nhưng tôi vẫn muốn đi dạo ngoài trời, chụp ảnh mưa")
+    assert result.avoid_outdoor_in_rain is False
+    assert result.max_stops == 5
+
+
+def test_max_stops_inferred_from_short_window() -> None:
+    """Short time window → LLM infers fewer stops."""
+    async def llm_short(
+        _system_prompt: str,
+        _user_prompt: str,
+        _response_model: type[StructuredPlanInput],
+        _max_retries: int,
+    ) -> dict:
+        return {
+            "budget_max": "500k",
+            "soft_tags": ["food"],
+            "hard_start": "14:00",
+            "Time_Windows": [{"start": "14:00", "end": "17:00"}],
+            "max_stops": 2,
+        }
+
+    parser = PromptConstraintParser(llm_gateway=llm_short, max_retries=3)
+    result = parser.parse("Chỉ có 3 tiếng buổi chiều")
+    assert result.max_stops == 2
