@@ -1,6 +1,9 @@
 from fastapi import APIRouter, HTTPException
 import httpx
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 router = APIRouter(prefix="/traffic", tags=["Live Traffic"])
 
@@ -13,42 +16,49 @@ async def check_leg_traffic(
     osrm_expected_minutes: int
 ):
     """
-    Sniper API: Gọi Mapbox để lấy live duration_in_traffic.
-    Đã đảo ngược hệ tọa độ thành Longitude,Latitude theo chuẩn Mapbox.
+    Sniper API: Gọi Mapbox để kiểm tra độ trễ giao thông thực tế.
     """
     mapbox_token = os.getenv("MAPBOX_ACCESS_TOKEN")
     if not mapbox_token:
+        # Nếu chưa cấu hình Mapbox, ngầm định là đường thông thoáng
         return {"status": "OK", "delay_minutes": 0, "reroute": False}
 
-    # [CRITICAL GAP FIXED] Mapbox dùng (Lon,Lat) phân cách bởi dấu chấm phẩy ;
+    # Đảo trục tọa độ theo đúng chuẩn Mapbox (Lon,Lat)
     coordinates = f"{origin_lon},{origin_lat};{dest_lon},{dest_lat}"
     
-    # Sử dụng profile driving-traffic để tính cả kẹt xe
     url = f"https://api.mapbox.com/directions/v5/mapbox/driving-traffic/{coordinates}"
     params = {
         "access_token": mapbox_token,
-        "geometries": "geojson" # Lấy text cho nhẹ
+        "annotations": "duration", # Chỉ lấy duration để tăng tốc độ phản hồi
+        "overview": "full",
+        "geometries": "geojson"
     }
 
     async with httpx.AsyncClient() as client:
-        response = await client.get(url, params=params)
-        data = response.json()
+        try:
+            response = await client.get(url, params=params, timeout=2.5)
+            response.raise_for_status()
+            data = response.json()
+        except httpx.HTTPError as e:
+            raise HTTPException(status_code=503, detail=f"Lỗi kết nối Mapbox API: {str(e)}")
 
-    if data.get("code") != "Ok" or not data.get("routes"):
-        raise HTTPException(status_code=400, detail="Cannot find route on Mapbox")
+    if not data.get("routes"):
+        raise HTTPException(status_code=400, detail="Mapbox không tìm thấy tuyến đường khả thi.")
 
-    # Mapbox trả về duration tính bằng giây, đã bao gồm kẹt xe (nếu dùng profile driving-traffic)
-    live_duration_seconds = data["routes"][0]["duration"]
-    live_duration_minutes = live_duration_seconds // 60
+    # Lấy thời gian thực tế
+    live_duration_seconds = data["routes"][0]["legs"][0]["duration"]
+    live_duration_minutes = round(live_duration_seconds / 60)
     
+    # Tính độ trễ so với OSRM
     delay_minutes = live_duration_minutes - osrm_expected_minutes
 
+    # Quyết định có kích hoạt tính toán lại VRP hay không (Trễ >= 30p)
     if delay_minutes >= 30:
         return {
             "status": "HEAVY_TRAFFIC",
             "delay_minutes": delay_minutes,
             "reroute": True,
-            "message": "Mapbox phát hiện kẹt xe. Yêu cầu tính toán lại lộ trình."
+            "message": f"Mapbox phát hiện trễ {delay_minutes} phút. Yêu cầu tính toán lại lộ trình."
         }
 
     return {
