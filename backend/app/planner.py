@@ -14,7 +14,7 @@ from .models import (
     POI,
 )
 from .osrm_client import OSRMClient
-from .parser import PromptConstraintParser
+from .parser import PromptConstraintParser, StructuredPlanInput
 from .repository import POIRepository
 from .routing_solver import RoutingSolver
 from .utils import minutes_to_hhmm, parse_hhmm
@@ -37,6 +37,52 @@ class TripPlanner:
             self._parser.parse(payload.prompt),
             payload.constraint_override,
         )
+        return self._plan_with_constraints(
+            payload=payload,
+            constraints=constraints,
+            trip_id=trip_id,
+            extra_notes=extra_notes,
+        )
+
+    def plan_with_structured_input(
+        self,
+        payload: PlanRequest,
+        parsed_intent: StructuredPlanInput,
+        trip_id: str | None = None,
+        extra_notes: list[str] | None = None,
+    ) -> PlanResponse:
+        hard_end = (
+            max((window.end for window in parsed_intent.Time_Windows), key=parse_hhmm)
+            if parsed_intent.Time_Windows
+            else "22:00"
+        )
+        constraints = self._merge_constraints(
+            ConstraintBundle(
+                budget_max=int(parsed_intent.budget_max),
+                soft_tags=parsed_intent.soft_tags,
+                hard_start=parsed_intent.hard_start,
+                hard_end=hard_end,
+                max_stops=parsed_intent.max_stops,
+                avoid_outdoor_in_rain=parsed_intent.avoid_outdoor_in_rain,
+                source="llm-structured-parser",
+                notes=[*parsed_intent.ambiguity_notes, *parsed_intent.parser_notes],
+            ),
+            payload.constraint_override,
+        )
+        return self._plan_with_constraints(
+            payload=payload,
+            constraints=constraints,
+            trip_id=trip_id,
+            extra_notes=extra_notes,
+        )
+
+    def _plan_with_constraints(
+        self,
+        payload: PlanRequest,
+        constraints: ConstraintBundle,
+        trip_id: str | None = None,
+        extra_notes: list[str] | None = None,
+    ) -> PlanResponse:
         current_time = parse_hhmm(payload.current_time or constraints.hard_start)
         candidates, filtered = self._filter_candidates(payload, constraints)
         matrix_result = self._osrm.get_duration_matrix([payload.origin, *candidates])
