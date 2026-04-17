@@ -6,6 +6,7 @@ from typing import Iterable
 from urllib import error, parse, request
 
 from .models import Coordinates
+from .utils import travel_minutes_from_coords
 
 @dataclass(slots=True)
 class MatrixResult:
@@ -26,12 +27,11 @@ class OSRMClient:
                 durations=self._fetch_osrm_matrix(materialized),
                 source="osrm",
             )
-        except (error.URLError, TimeoutError) as e:
-            # Lỗi mạng hoặc Timeout: Báo cáo thẳng tay để UI biết Server đang có vấn đề
-            raise RuntimeError(f"LỖI HẠ TẦNG: Không thể kết nối đến máy chủ OSRM. Chi tiết: {e}")
-        except (ValueError, KeyError, json.JSONDecodeError) as e:
-            # Lỗi parse dữ liệu từ OSRM
-            raise ValueError(f"LỖI DỮ LIỆU: Máy chủ OSRM trả về dữ liệu không hợp lệ. Chi tiết: {e}")
+        except (error.URLError, TimeoutError, ValueError, KeyError, json.JSONDecodeError):
+            return MatrixResult(
+                durations=self._build_geometric_matrix(materialized),
+                source="geometric-fallback",
+            )
 
     def _fetch_osrm_matrix(self, points: list[Coordinates]) -> list[list[int]]:
         coordinates = ";".join(f"{point.lon},{point.lat}" for point in points)
@@ -46,3 +46,19 @@ class OSRMClient:
             [0 if seconds is None else max(0, round(seconds / 60)) for seconds in row]
             for row in durations
         ]
+
+    def _build_geometric_matrix(self, points: list[Coordinates]) -> list[list[int]]:
+        matrix: list[list[int]] = []
+        for origin in points:
+            row: list[int] = []
+            for destination in points:
+                row.append(
+                    travel_minutes_from_coords(
+                        origin.lat,
+                        origin.lon,
+                        destination.lat,
+                        destination.lon,
+                    )
+                )
+            matrix.append(row)
+        return matrix

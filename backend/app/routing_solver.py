@@ -290,6 +290,7 @@ class RoutingSolver:
                         arrival_minutes=service_start,
                         departure_minutes=departure,
                         travel_minutes=travel_minutes,
+                        wait_minutes=wait_minutes,
                     )
 
             if best_idx is None or best_stop is None:

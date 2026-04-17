@@ -104,37 +104,32 @@ class TripStateStore:
         if self._redis is not None:
             try:
                 key = f"reroute:{trip_id}"
-                count = self._redis.incr(key)
-                
-                # Set expire time only on first increment
-                if count == 1:
-                    self._redis.expire(key, self._settings.reroute_cooldown_seconds)
-                
-                # Allow 5 reroutes, fail on 6th
-                if count > 5:
+                # Lock once within cooldown window.
+                locked = self._redis.set(
+                    key,
+                    "locked",
+                    nx=True,
+                    ex=self._settings.reroute_cooldown_seconds,
+                )
+                if locked is not True:
                     raise RerouteCooldownException("Quá nhiều yêu cầu (Rate Limit). Vui lòng thử lại sau.")
             except redis.exceptions.ConnectionError as e:
                 raise DatabaseUnavailableException("Redis State Store unavailable.") from e
             return
 
         # Memory-based fallback
-        key = f"reroute_count:{trip_id}"
-        if key not in self._memory_reroute_at:
-            self._memory_reroute_at[key] = [now, 1]  # [timestamp, count]
-        
-        timestamp, count = self._memory_reroute_at[key]
-        elapsed = now - timestamp
-        
-        # Reset if older than cooldown period
-        if elapsed > self._settings.reroute_cooldown_seconds:
-            self._memory_reroute_at[key] = [now, 1]
+        key = f"reroute:{trip_id}"
+        last_seen = self._memory_reroute_at.get(key)
+        if last_seen is None:
+            self._memory_reroute_at[key] = now
             return
-        
-        # Increment count
-        count += 1
-        self._memory_reroute_at[key] = [timestamp, count]
-        
-        # Allow 5 reroutes, fail on 6th
-        if count > 5:
+
+        elapsed = now - last_seen
+        if elapsed > self._settings.reroute_cooldown_seconds:
+            self._memory_reroute_at[key] = now
+            return
+
+        # Any reroute call within cooldown window is rejected.
+        if elapsed <= self._settings.reroute_cooldown_seconds:
             raise RerouteCooldownException("Quá nhiều yêu cầu (Rate Limit). Vui lòng thử lại sau.")
 
