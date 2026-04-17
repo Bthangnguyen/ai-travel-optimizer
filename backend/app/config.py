@@ -20,7 +20,9 @@ class Settings:
         )
     )
     redis_url: str = os.getenv("REDIS_URL", "")
-    reroute_cooldown_seconds: int = int(os.getenv("REROUTE_COOLDOWN_SECONDS", "180"))
+    reroute_cooldown_seconds: int = int(os.getenv("REROUTE_COOLDOWN_SECONDS", "30"))
+    reroute_delay_threshold_minutes: int = int(os.getenv("REROUTE_DELAY_THRESHOLD_MINUTES", "15"))
+    firebase_service_account_path: str = os.getenv("FIREBASE_SERVICE_ACCOUNT_PATH", "")
 
 
 settings = Settings()

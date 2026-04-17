@@ -4,14 +4,21 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import settings
-from .models import PlanRequest, PlanResponse, RerouteRequest
+from .models import Origin, PlanRequest, PlanResponse, RerouteRequest
+from .firebase_client import FCMClient
 from .planner import TripPlanner
-from .state_store import TripStateStore
+from .routes.traffic import router as traffic_router
+from .state_store import (
+    DatabaseUnavailableException,
+    RerouteCooldownException,
+    TripStateStore,
+)
 from .utils import minutes_to_hhmm, parse_hhmm
 
 
 planner = TripPlanner(settings)
 state_store = TripStateStore(settings)
+fcm_client = FCMClient(settings)
 
 app = FastAPI(
     title=settings.app_name,
@@ -27,9 +34,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(traffic_router)
+
 
 @app.get("/health")
 def health() -> dict[str, str]:
+    if not state_store.ping():
+        raise HTTPException(status_code=503, detail="Database is down")
     return {"status": "ok"}
 
 
@@ -40,20 +51,34 @@ def plan_trip(payload: PlanRequest) -> PlanResponse:
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-    state_store.save_trip(trip)
+    try:
+        state_store.save_trip_state(trip, device_token=payload.device_token)
+    except DatabaseUnavailableException as exc:
+        raise HTTPException(status_code=503, detail="Hệ thống lưu trạng thái đang bảo trì, vui lòng thử lại sau") from exc
+
     return trip
 
 
 @app.post("/reroute", response_model=PlanResponse)
 def reroute_trip(payload: RerouteRequest) -> PlanResponse:
-    allowed, remaining = state_store.allow_reroute(payload.trip_id)
-    if not allowed:
+    if payload.device_token and not state_store.verify_trip_token(payload.trip_id, payload.device_token):
+        raise HTTPException(status_code=401, detail="Invalid device token for this trip_id.")
+
+    try:
+        state_store.check_reroute_cooldown(payload.trip_id)
+    except RerouteCooldownException as exc:
         raise HTTPException(
             status_code=429,
-            detail=f"Reroute cooldown active. Try again in {remaining} seconds.",
-        )
+            detail="Quá nhiều yêu cầu (Rate Limit). Vui lòng đợi 3 phút trước khi gọi lại Reroute.",
+        ) from exc
+    except DatabaseUnavailableException as exc:
+        raise HTTPException(status_code=503, detail="Hệ thống lưu trạng thái đang bảo trì, vui lòng thử lại sau") from exc
 
-    previous_trip = state_store.get_trip(payload.trip_id)
+    try:
+        previous_trip = state_store.get_trip(payload.trip_id)
+    except DatabaseUnavailableException as exc:
+        raise HTTPException(status_code=503, detail="Hệ thống lưu trạng thái đang bảo trì, vui lòng thử lại sau") from exc
+
     if previous_trip is None and payload.prompt is None:
         raise HTTPException(
             status_code=404,
@@ -86,6 +111,7 @@ def reroute_trip(payload: RerouteRequest) -> PlanResponse:
         current_time=minutes_to_hhmm(base_time),
         origin=source_origin,
         exclude_poi_ids=sorted(exclude_ids),
+        device_token=payload.device_token,
     )
     extra_notes = [f"Reroute trigger: {payload.trigger.kind}"]
     if payload.trigger.kind == "delayed" and payload.trigger.minutes_late:
@@ -96,6 +122,16 @@ def reroute_trip(payload: RerouteRequest) -> PlanResponse:
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-    state_store.save_trip(trip)
+    try:
+        state_store.save_trip_state(trip, device_token=payload.device_token)
+    except DatabaseUnavailableException as exc:
+        raise HTTPException(status_code=503, detail="Hệ thống lưu trạng thái đang bảo trì, vui lòng thử lại sau") from exc
+
+    if fcm_client.enabled and payload.device_token:
+        try:
+            fcm_client.send_reroute_update(payload.device_token, trip, int(payload.trigger.minutes_late or 0))
+        except Exception as exc:
+            trip.diagnostics.notes.append(f"FCM delivery failed: {exc}")
+
     return trip
 
