@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import asyncio
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -7,6 +9,7 @@ from .config import settings
 from .models import Origin, PlanRequest, PlanResponse, RerouteRequest
 from .firebase_client import FCMClient
 from .planner import TripPlanner
+from .parser import PromptConstraintParser
 from .routes.traffic import router as traffic_router
 from .state_store import (
     DatabaseUnavailableException,
@@ -17,6 +20,7 @@ from .utils import minutes_to_hhmm, parse_hhmm
 
 
 planner = TripPlanner(settings)
+intent_parser = PromptConstraintParser(max_retries=settings.llm_max_retries)
 state_store = TripStateStore(settings)
 fcm_client = FCMClient(settings)
 
@@ -45,17 +49,26 @@ def health() -> dict[str, str]:
 
 
 @app.post("/plan", response_model=PlanResponse)
-def plan_trip(payload: PlanRequest) -> PlanResponse:
+async def plan_route(payload: PlanRequest) -> PlanResponse:
     try:
-        trip = planner.plan(payload)
+        parsed_intent = await intent_parser.parse_structured_async(payload.prompt)
+        trip = await asyncio.to_thread(
+            planner.plan_with_structured_input,
+            payload,
+            parsed_intent,
+        )
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001 - endpoint guardrail.
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to compute plan: {exc.__class__.__name__}",
+        ) from exc
 
     try:
         state_store.save_trip_state(trip, device_token=payload.device_token)
     except DatabaseUnavailableException as exc:
         raise HTTPException(status_code=503, detail="Hệ thống lưu trạng thái đang bảo trì, vui lòng thử lại sau") from exc
-
     return trip
 
 
