@@ -15,10 +15,6 @@
       "type": ["string", "null"],
       "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
     },
-    "device_token": {
-      "type": ["string", "null"],
-      "minLength": 1
-    },
     "max_candidates": {
       "type": "integer",
       "minimum": 4,

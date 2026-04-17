@@ -57,11 +57,10 @@ class ConstraintOverride(BaseModel):
 
 
 class PlanRequest(BaseModel):
-    prompt: str = Field(min_length=1)
+    prompt: str
     city: str = "hue"
     weather: Literal["clear", "rain"] = "clear"
-    current_time: str | None = Field(default=None, pattern=r"^([01]\d|2[0-3]):[0-5]\d$")
-    device_token: str | None = None
+    current_time: str | None = None
     max_candidates: int = Field(default=18, ge=4, le=50)
     origin: Origin = Field(
         default_factory=lambda: Origin(name="Hue City Center", lat=16.4637, lon=107.5909)
@@ -147,10 +146,9 @@ class RerouteTrigger(BaseModel):
 class RerouteRequest(BaseModel):
     trip_id: str
     trigger: RerouteTrigger
-    device_token: str | None = None
     prompt: str | None = None
     weather: Literal["clear", "rain"] | None = None
-    current_time: str | None = Field(default=None, pattern=r"^([01]\d|2[0-3]):[0-5]\d$")
+    current_time: str | None = None
     origin: Origin | None = None
     visited_poi_ids: list[str] = Field(default_factory=list)
 

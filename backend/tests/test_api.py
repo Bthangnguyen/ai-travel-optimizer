@@ -13,26 +13,18 @@ class ApiTests(unittest.TestCase):
         client = TestClient(app)
         initial = client.post(
             "/plan",
-            json={"prompt": "Plan a Hue trip from 08:00 with culture, budget 1200000, 5 stops", "device_token": "test_device_1"},
+            json={"prompt": "Plan a Hue trip from 08:00 with culture, budget 1200000, 5 stops"},
         )
         self.assertEqual(200, initial.status_code)
         trip_id = initial.json()["trip_id"]
 
         first = client.post(
             "/reroute",
-            json={
-                "trip_id": trip_id,
-                "device_token": "test_device_1",
-                "trigger": {"kind": "delayed", "minutes_late": 30},
-            },
+            json={"trip_id": trip_id, "trigger": {"kind": "delayed", "minutes_late": 30}},
         )
         second = client.post(
             "/reroute",
-            json={
-                "trip_id": trip_id,
-                "device_token": "test_device_1",
-                "trigger": {"kind": "delayed", "minutes_late": 30},
-            },
+            json={"trip_id": trip_id, "trigger": {"kind": "delayed", "minutes_late": 30}},
         )
 
         self.assertEqual(200, first.status_code)
