@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-04-19T02:15:58.955Z",
+  "totalChecks": 6,
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "frame": 51,
+      "name": "qa_S1_mid.png",
+      "sceneId": "S1",
+      "status": "OK",
+      "filePath": "C:\\Users\\ADM\\OneDrive - VNU-HCMUS\\Documents\\New project\\video-demo\\qa_output\\qa_S1_mid.png"
+    },
+    {
+      "frame": 343,
+      "name": "qa_S2_mid.png",
+      "sceneId": "S2",
+      "status": "OK",
+      "filePath": "C:\\Users\\ADM\\OneDrive - VNU-HCMUS\\Documents\\New project\\video-demo\\qa_output\\qa_S2_mid.png"
+    },
+    {
+      "frame": 887,
+      "name": "qa_S3_mid.png",
+      "sceneId": "S3",
+      "status": "OK",
+      "filePath": "C:\\Users\\ADM\\OneDrive - VNU-HCMUS\\Documents\\New project\\video-demo\\qa_output\\qa_S3_mid.png"
+    },
+    {
+      "frame": 1217,
+      "name": "qa_S4_mid.png",
+      "sceneId": "S4",
+      "status": "OK",
+      "filePath": "C:\\Users\\ADM\\OneDrive - VNU-HCMUS\\Documents\\New project\\video-demo\\qa_output\\qa_S4_mid.png"
+    },
+    {
+      "frame": 1283,
+      "name": "qa_S5_mid.png",
+      "sceneId": "S5",
+      "status": "OK",
+      "filePath": "C:\\Users\\ADM\\OneDrive - VNU-HCMUS\\Documents\\New project\\video-demo\\qa_output\\qa_S5_mid.png"
+    },
+    {
+      "frame": 1374,
+      "name": "qa_S6_mid.png",
+      "sceneId": "S6",
+      "status": "OK",
+      "filePath": "C:\\Users\\ADM\\OneDrive - VNU-HCMUS\\Documents\\New project\\video-demo\\qa_output\\qa_S6_mid.png"
+    }
+  ]
+}

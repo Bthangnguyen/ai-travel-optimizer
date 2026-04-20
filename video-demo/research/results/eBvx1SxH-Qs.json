@@ -1,0 +1,1585 @@
+{
+  "videoId": "eBvx1SxH-Qs",
+  "videoTitle": "How to Get Any Girl You Want Every Single Time",
+  "videoDurationSeconds": 834,
+  "totalScenes": 25,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": true,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#000080"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "IMAGINE",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at char 2",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:03",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I FEEL LIKE YOU HIDE WHAT YOU REALLY ARE...",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:11",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "surprised",
+          "action": "reacting to char 2's statement",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WOW, THAT'S SO TRUE",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:23",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "hugging",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged by char 2",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "hugging",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging char 1",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU'RE RIGHT, HOW DID YOU FIGURE THAT OUT?",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:29",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "hugging",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being influenced",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "hugging",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "influencing",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "ADDICTED TO TALKING TO ME",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:42",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "crouching",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "emotion": "surprised",
+          "action": "reacting to statement",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "explaining",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "pointer",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "tablet",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HOW DID HE EVEN KNOW THAT?",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "1:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "bottom_left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "pointing up",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "STRATEGY",
+          "color": "yellow",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "1:07",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "bottom_right",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "pointing to screen",
+          "interactsWith": "youtube_playlist"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "youtube_playlist",
+          "position": "top_left",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WE'RE CURRENTLY IN THE HOW TO ATTRACT WOMEN SERIES",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "1:20",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "THE BARNUM EFFECT",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:41",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "being influenced",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "bottom_left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "pointing to char 1",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "red_dot",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "pointer",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WANT TO BE FOOLED",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "1:45",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "SOMEONE ANYONE WILL FINALLY GET THEM",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "1:51",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "SAY SOMETHING THAT FEELS LIKE YOU KNOW HER",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "1:55",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "thinking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "brain_scribbles",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "A SENTENCE THAT SOUNDS DEEPLY PERSONAL BUT IS SECRETLY TRUE FOR ALMOST EVERYONE",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_right",
+          "style": "mixed_case",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "2:06",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "shining light",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "surprised",
+          "action": "reacting",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "flashlight",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "red_dot",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "VAGUE REFLECTION",
+          "color": "yellow",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "2:15",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "YOU GIVE OFF THIS VIBE LIKE YOU'RE THE STRONG ONE IN YOUR GROUP... BUT SECRETLY YOU WISH SOMEONE WOULD JUST TAKE CARE OF YOU FOR ONCE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "2:56",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "lying",
+          "position": "top_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "texting",
+          "interactsWith": "phone"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "top_center",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "texting",
+          "interactsWith": "phone"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "top_center",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "walking",
+          "position": "top_right",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_5"
+        },
+        {
+          "id": 5,
+          "gender": "female",
+          "pose": "walking",
+          "position": "top_right",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 6,
+          "gender": "male",
+          "pose": "sitting_couch",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_7"
+        },
+        {
+          "id": 7,
+          "gender": "female",
+          "pose": "sitting_couch",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_6"
+        }
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "phone",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "table",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "couch",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 6
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TEXTING",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "3:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_couch",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_couch",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "couch",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I FEEL LIKE YOU ACT CHILL BUT YOUR MIND NEVER STOPS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "3:30",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_stool",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_stool",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "surprised",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "stool",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "stool",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SNEAKY LINES THAT SOUND PERSONAL BUT ARE ACTUALLY GENERAL",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "4:15",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_stool",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_stool",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "surprised",
+          "action": "reacting",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "stool",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "stool",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "red_radar",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "EMOTION",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "MEMORY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "5:27",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "A BARNUM STATEMENT IS ALWAYS BASED ON A SPECIFIC EMOTION",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "5:33",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding glass",
+          "interactsWith": "glass"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding glass",
+          "interactsWith": "glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "CERTAIN EMOTIONAL STATE",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "- CONFIDENT",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "- HAPPY",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "- MYSTERIOUS",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "6:25",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "stacked_list",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. RECOGNIZE THE TYPE OF FEELING THE GIRL IS EXPERIENCING",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "2. GIVE HER A STATEMENT THAT FITS THAT FEELING",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "7:35",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "looking_down",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "sad",
+          "action": "experiencing fluctuating emotions",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HAPPY/AFFIRMING",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CURIOUS/UNFINISHED",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SAD/EMOTIONAL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "POSITIVE FEELINGS",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NEUTRAL FEELINGS",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NEGATIVE FEELINGS",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_left_to_bottom_right",
+            "style": "diagonal"
+          },
+          {
+            "color": "white",
+            "direction": "bottom_left_to_top_right",
+            "style": "diagonal"
+          },
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "grid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "11:51",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "stacked_list",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "STEP 1: PICK A UNIVERSAL EMOTIONAL TRUTH",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "STEP 2: ADD THE ILLUSION OF INSIGHT",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "STEP 3: LEAVE SPACE. DON'T EXPLAIN",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "hugging",
+      "crouching",
+      "pointing",
+      "walking",
+      "talking",
+      "listening",
+      "reacting",
+      "explaining",
+      "influencing",
+      "being influenced",
+      "shining light",
+      "thinking",
+      "looking_down",
+      "lying",
+      "sitting_chair",
+      "holding hands",
+      "sitting_couch",
+      "holding glass",
+      "sitting_stool"
+    ],
+    "uniquePropsUsed": [
+      "syringe",
+      "pointer",
+      "tablet",
+      "youtube_playlist",
+      "red_dot",
+      "brain_scribbles",
+      "flashlight",
+      "bed",
+      "phone",
+      "chair",
+      "table",
+      "couch",
+      "stool",
+      "glass"
+    ],
+    "uniqueLayoutsUsed": [
+      "text_only",
+      "dual_character",
+      "multi_character",
+      "single_character_with_text",
+      "flowchart",
+      "stacked_list"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "mixed_case",
+      "underline",
+      "strikethrough"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut",
+      "fade_in",
+      "slide_left",
+      "slide_right",
+      "slide_up",
+      "blur_reveal"
+    ],
+    "narrativeArc": "The video introduces the 'Barnum Effect' as a social strategy to attract women. It explains how to make someone feel deeply understood by using vague, universally applicable statements, leading to emotional connection and investment. The narrative progresses from illustrating the effect's power to providing a structured, step-by-step guide on how to craft and deliver these statements, emphasizing emotional manipulation over genuine connection."
+  }
+}

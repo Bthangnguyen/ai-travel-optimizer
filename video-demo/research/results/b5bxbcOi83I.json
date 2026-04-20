@@ -1,0 +1,1851 @@
+{
+  "videoId": "b5bxbcOi83I",
+  "videoTitle": "Things women secretly love in men but won't tell you (free course)",
+  "videoDurationSeconds": 1079,
+  "totalScenes": 25,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": false,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "textured"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#00FFFF",
+      "#000000"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "facing away from male",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_crossed",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "facing away from female",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:05",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "facing away from male",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_crossed",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "facing away from female",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "NOT BEING APPRECIATED",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "A PRIORITY",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:14",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "facing away from male",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_crossed",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "facing away from female",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:17",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "bending over, carrying boxes",
+          "interactsWith": "cardboard_boxes"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "cocktail_glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "cardboard_boxes",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "cocktail_glass",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "A SECOND OPTION",
+          "color": "black",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "BACKUP FOR SOMEONE ELSE",
+          "color": "black",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TEMPORARY PLACEHOLDER",
+          "color": "black",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "slide_left"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:25",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "presenting information",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe_icon",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "paper",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "EVEN",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "MOMENT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOURSELF",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DIGNITY",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DESIRE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "OVER",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:33",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "bending over, carrying boxes",
+          "interactsWith": "cardboard_boxes"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "cocktail_glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "cardboard_boxes",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "cocktail_glass",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TEMPORARY PLACEHOLDER",
+          "color": "black",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "strikethrough",
+          "animation": "none"
+        },
+        {
+          "exactText": "BACKUP FOR SOMEONE ELSE",
+          "color": "black",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "strikethrough",
+          "animation": "none"
+        },
+        {
+          "exactText": "A SECOND OPTION",
+          "color": "black",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "strikethrough",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:39",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding a glass, glowing",
+          "interactsWith": "cocktail_glass"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding a glass, glowing",
+          "interactsWith": "cocktail_glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "cocktail_glass",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "cocktail_glass",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SOMEONE WHO MATTERS",
+          "color": "blue",
+          "size": "large",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:45",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "VIDEO",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "COURSE",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HOW TO HANDLE YOURSELF IN ANY RELATIONSHIP AS A MAN",
+          "color": "yellow",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "0:54",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "stacked_list",
+        "focalZone": "left"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HOW TO HANDLE YOURSELF IN ANY RELATIONSHIP AS A MAN",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHY THIS GIRL ACTS CARELESS AROUND YOU?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "0:57",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "presenting information",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe_icon",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "GUARANTEED",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "JUST",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "WHY SHE DOESN'T CONSIDER YOU A PRIORITY",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "1:07",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "WHY SHE DOESN'T CONSIDER YOU A PRIORITY",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "1:11",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking away",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "holding flowers, being ignored",
+          "interactsWith": "flowers"
+        }
+      ],
+      "props": [
+        {
+          "name": "flowers",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WHY SHE DOESN'T CONSIDER YOU A PRIORITY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "dashed"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "1:20",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking away",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "being ignored",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging female",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "wearing sunglasses",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "sunglasses",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOUR OWN APPROVAL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "1:34",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "EMOTIONAL CONTROL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PRIORITY",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "1:40",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "presenting information",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe_icon",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "paper",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TODAY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "COMPLETELY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THINK",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "RELATIONSHIPS",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "1:45",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking away",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "being ignored",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging female",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "wearing sunglasses",
+          "interactsWith": null
+        },
+        {
+          "id": 6,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "bottom_center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "presenting information",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "sunglasses",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 5
+        },
+        {
+          "name": "syringe_icon",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 6
+        },
+        {
+          "name": "pointer_stick",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 6
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOUR OWN APPROVAL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHY SHE DOESN'T CONSIDER YOU A PRIORITY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "1:57",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "glowing",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "sunglasses",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HOW TO TREAT YOURSELF BETTER",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "2:00",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "glowing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking away",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "reaching",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "reaching out",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "sunglasses",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HOW TO TREAT YOURSELF BETTER",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "ALWAYS AVAILABLE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LIVES LIFE ON HIS OWN TERMS",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "2:12",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "presenting information",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe_icon",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HOW TO HANDLE YOURSELF IN ANY RELATIONSHIP AS A MAN",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHY THIS GIRL ACTS CARELESS AROUND YOU?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "1",
+          "color": "white",
+          "size": "large",
+          "position": "floating",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "POWERFUL",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "USE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EMOTIONALLY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DETACH",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "2:23",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "stacked_list",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "presenting information",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe_icon",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HOW TO HANDLE YOURSELF IN ANY RELATIONSHIP AS A MAN",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHY THIS GIRL ACTS CARELESS AROUND YOU?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "HOW DO YOU CONTROL YOUR REACTIONS WITH A WOMAN?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "2:27",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "aggressive",
+          "action": "yelling, pointing",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "being yelled at",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "TRUTH",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "- ANXIOUS",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "- JEALOUS",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "- DESPERATE",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "2:36",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "relaxing, thought bubbles",
+          "interactsWith": "couch"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "on phone, heart icon",
+          "interactsWith": "phone"
+        }
+      ],
+      "props": [
+        {
+          "name": "couch",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "phone",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "heart",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "thought_bubbles",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE WILL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "2:43",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "sitting, smoking",
+          "interactsWith": "chair"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "kneeling",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "kneeling",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "cigarette",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "EMOTIONALLY HARD TO INFLUENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "2:50",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "on phone",
+          "interactsWith": "phone"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "presenting information",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "phone",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe_icon",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "pointer_stick",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "VERY COLD",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LONGER",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "KINDLY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "AND",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHORT",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "arms_crossed",
+      "carrying",
+      "standing",
+      "pointing",
+      "hugging",
+      "walking",
+      "reaching",
+      "sitting_chair",
+      "kneeling"
+    ],
+    "uniquePropsUsed": [
+      "heart",
+      "cardboard_boxes",
+      "cocktail_glass",
+      "syringe_icon",
+      "paper",
+      "pointer_stick",
+      "flowers",
+      "sunglasses",
+      "couch",
+      "phone",
+      "thought_bubbles",
+      "chair",
+      "cigarette"
+    ],
+    "uniqueLayoutsUsed": [
+      "dual_character",
+      "single_character_with_text",
+      "multi_character",
+      "text_only",
+      "stacked_list",
+      "flowchart"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "strikethrough",
+      "badge_box",
+      "none"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut",
+      "none",
+      "slide_left"
+    ],
+    "narrativeArc": "The video begins by illustrating the common problem of men feeling unappreciated and like a 'second option' in relationships, leading to a broken heart. It then introduces a 'doctor' figure (syringe head) who explains that the problem lies with the man's behavior, not the woman's. The core message is about self-improvement and emotional control. The video outlines several key areas: not chasing approval, treating oneself better, setting boundaries, mastering mystery, dealing with mood swings, and handling rejection. Each point is explained with contrasting scenarios (e.g., being 'always available' vs. 'living life on his own terms'). The overall arc is transformative, guiding men from a state of desperation and being a 'backup plan' to becoming a confident, respected individual who attracts women naturally by valuing himself first. The video concludes by emphasizing that rejection is a chance for growth and that true success is the best revenge."
+  }
+}

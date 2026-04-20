@@ -1,0 +1,1465 @@
+{
+  "videoId": "1QyO51tcZDI",
+  "videoTitle": "Give me 12 Minutes and I'll Make you Dangerously Attractive",
+  "videoDurationSeconds": 680,
+  "totalScenes": 78,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": true,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#0000FF",
+      "#00FF00",
+      "#800080"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing still",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "DANGEROUSLY ATTRACTIVE",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:04",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "youtube_playlist_ui",
+          "position": "center",
+          "relativeSize": "giant",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "ATTRACT",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "VIDEO",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:10",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "FIRST",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WHAT DOES IT MEAN TO BE AN ATTRACTIVE MAN?",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:13",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing still, glowing yellow",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "ATTRACTIVE BEHAVIORS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:17",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening, gesturing",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "ATTRACTIVE MAN IS A HANDSOME MAN",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:26",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "celebrity_photos",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "MOST ATTRACTIVE MEN TO WOMEN",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOUR LOOKS PLAY A VERY SMALL ROLE IN YOUR ATTRACTIVENESS AS A MAN",
+          "color": "yellow",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:41",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "celebrity_photos",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "A WOMAN'S BEAUTY LIES IN HER LOOKS",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:46",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "gesturing, head is a syringe",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "blurred_photos",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WOMEN",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ATTRACTIVE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BEAUTIFUL",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "1:01",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "A PERSON WHO HAS ATTRACTIVE BEHAVIORS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WHAT DOES IT MEAN TO BE AN ATTRACTIVE MAN?",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "bottom_left_to_top_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "1:07",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing, glowing yellow",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing, glowing yellow",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "ATTRACTIVENESS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BEHAVIORS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:16",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing still",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing still, glowing yellow",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing at male figure, head is a syringe",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "ATTRACTIVENESS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "BEHAVIORS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_left_to_center",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "1:42",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "talking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "gesturing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "gesturing",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "thinking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "thinking",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "ONCE I FEEL CONFIDENT THEN I'LL ACT CONFIDENT",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ONCE I FEEL STRONG THEN I'LL SHOW STRENGTH",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "circular",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "1:52",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "holding_hands",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "nervous",
+          "action": "holding hands, internal organs visible",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "holding_hands",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "brain",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "skeleton",
+          "position": "overlay_on_character",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "FEEL NERVOUS",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "STOMACH IN KNOTS",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "2:04",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "holding_hands",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "holding_hands",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "READS YOU AS CONFIDENT",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "2:15",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "IT'S NOT ABOUT HOW YOU FEEL. IT'S ABOUT HOW YOU BEHAVE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_left_to_bottom_left",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "top_right_to_bottom_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "2:23",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "holding_gun",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "holding a gun like James Bond, glowing yellow",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "gun",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HE STEPS INTO THE BEHAVIOR",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "2:46",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "standing, glowing yellow",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "CONTROL",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOUR BODY LANGUAGE",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOUR TONE",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOUR PACING",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "circular",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "3:31",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "walking through a doorway",
+          "interactsWith": "door"
+        }
+      ],
+      "props": [
+        {
+          "name": "door",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "3:42",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "sitting with good posture",
+          "interactsWith": "chair"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "submissive",
+          "action": "sitting with bad posture",
+          "interactsWith": "chair"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "table",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "table",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "check_mark",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "x_mark",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "POSTURE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "4:07",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "confident",
+          "action": "looking directly, half-shadowed face",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "EYES",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "I'M FOCUSED BECAUSE I DECIDED TO BE",
+          "color": "yellow",
+          "size": "small",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "5:03",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "standing, glowing yellow",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "raising arms",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "raising arms",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "raising arms",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "raising arms",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "THE FIXED POINT",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "5:23",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "STOP BEING ONE-NOTE",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "5:46",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "holding_hands",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "playful",
+          "action": "holding hands, talking, glowing yellow",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "holding_hands",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands, glowing yellow",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "bottom_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing at couple, head is a syringe",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SLIGHT LEAN IN",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "EYES STEADY",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THAT'S CUTE DIDN'T THINK YOU'D ACTUALLY ADMIT THAT",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "DOES HE LIKE ME?",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "IS HE TEASING?",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "6:43",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "standing, glowing yellow",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "THE CHOOSER",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "7:37",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "carrying",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "carrying a heart with 'EFFORT'",
+          "interactsWith": "prop_heart"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "relaxing in a chair",
+          "interactsWith": "chair"
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "EFFORT",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MIND GAMES",
+          "color": "yellow",
+          "size": "tiny",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PSYCHOLOGY",
+          "color": "yellow",
+          "size": "tiny",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "circular",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "talking",
+      "listening",
+      "gesturing",
+      "thinking",
+      "holding_hands",
+      "holding_gun",
+      "walking",
+      "sitting_chair",
+      "arms_up",
+      "carrying"
+    ],
+    "uniquePropsUsed": [
+      "youtube_playlist_ui",
+      "syringe",
+      "blurred_photos",
+      "celebrity_photos",
+      "brain",
+      "skeleton",
+      "gun",
+      "door",
+      "chair",
+      "table",
+      "check_mark",
+      "x_mark",
+      "heart"
+    ],
+    "uniqueLayoutsUsed": [
+      "single_character_with_text",
+      "environment_scene",
+      "text_only",
+      "dual_character",
+      "multi_character",
+      "giant_character"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "mixed_case",
+      "badge_box",
+      "strikethrough"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut"
+    ],
+    "narrativeArc": "The video argues that attractiveness in men is primarily about behavior, not looks or internal feelings. It introduces a 'syringe-head' narrator who explains four rules: Controlled Presence, Unpredictability, Role Reversal, and Scarcity Signals. Each rule is broken down with specific behavioral examples and visual metaphors, emphasizing external projection over internal state. The video concludes by advocating for genuine self-improvement and honoring oneself and others, rather than manipulative 'mind games', to achieve lasting attraction."
+  }
+}

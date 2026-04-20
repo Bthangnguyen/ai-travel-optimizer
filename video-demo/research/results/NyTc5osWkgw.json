@@ -1,0 +1,2069 @@
+{
+  "videoId": "NyTc5osWkgw",
+  "videoTitle": "How to make someone obsessed with you",
+  "videoDurationSeconds": 821,
+  "totalScenes": 25,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": false,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "VIDEO",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHARE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:02",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "cross",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PSYCHOLOGICAL SECRETS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "fade_black"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:08",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "puppet_pose",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "being controlled by strings",
+          "interactsWith": "puppet_cross"
+        }
+      ],
+      "props": [
+        {
+          "name": "puppet_cross",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PSYCHOLOGICAL SECRETS",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "HOW TO BECOME THE CENTER OF ATTENTION FOR THE PEOPLE AROUND YOU",
+          "color": "white",
+          "size": "large",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:15",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "being admired",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "admiring",
+          "action": "hugging central figure",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "hugging",
+          "position": "right",
+          "relativeSize": "small",
+          "emotion": "admiring",
+          "action": "hugging central figure",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 4,
+          "gender": "neutral",
+          "pose": "arms_up",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "cheering",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 5,
+          "gender": "neutral",
+          "pose": "arms_up",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "cheering",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 6,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "top_left",
+          "relativeSize": "small",
+          "emotion": "admiring",
+          "action": "admiring central figure",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 7,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "top_right",
+          "relativeSize": "small",
+          "emotion": "admiring",
+          "action": "admiring central figure",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "EXPLAIN",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:21",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "split_screen",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "being admired",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "manipulating",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "manipulating another character",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "being manipulated",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "hat",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "knife",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 4
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "FULFILL",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "TURNING",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "JUST",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "HANDS",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "slide_left"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:26",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "speaking",
+          "position": "left",
+          "relativeSize": "giant",
+          "emotion": "confident",
+          "action": "explaining",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "background_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "blurred in background",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "clipboard",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I'M",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "FOR",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "THE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "PROVIDE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:31",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "TO",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DIFFERENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SOMEONE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:35",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arm_around_shoulder",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "friendly interaction",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "friendly interaction",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "LIKES YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "0:37",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "youtube_playlist_ui",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "social skills",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "BEEN",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SOCIAL",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "0:39",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "shocked_pointing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "shocked",
+          "action": "pointing at other character",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "waving",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "waving",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "OBSESSED WITH YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "0:41",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arm_around_shoulder",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "friendly interaction",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "friendly interaction",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "shocked_pointing",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "emotion": "shocked",
+          "action": "pointing at other character",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "waving",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "waving",
+          "interactsWith": "character_3"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "LIKES YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "OBSESSED WITH YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TRIGGERING WEAK POINTS",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "0:51",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "TRIGGERING WEAK POINTS",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "0:54",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "speaking",
+          "position": "left",
+          "relativeSize": "giant",
+          "emotion": "confident",
+          "action": "explaining",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "clipboard",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "99%",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "AT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "THESE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "SIGNIFICANTLY",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "THAN",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "THE THIRST FOR VALIDATION",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE FEAR OF FAILURE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "PSYCHOLOGICAL TRAUMA",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE THIRST FOR SEX",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TRIGGERING WEAK POINTS",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "1:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "right"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "pointing",
+          "position": "right",
+          "relativeSize": "giant",
+          "emotion": "confident",
+          "action": "pointing upwards",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "emotion": "blurred",
+          "action": "blurred in background",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TO",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "IDENTIFY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "POINT",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "YOUR",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "1:04",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "controlling_strings",
+          "position": "top_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "controlling weak points",
+          "interactsWith": "weak_points"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "speaking",
+          "position": "center_right",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "explaining",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "clipboard",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "LEARNING HOW TO DETECT IT DURING A CONVERSATION",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_down"
+        },
+        {
+          "exactText": "BEING AWARE OF WHAT THESE WEAK POINTS ACTUALLY ARE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_down"
+        },
+        {
+          "exactText": "KNOWING",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "HOW",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "SENSITIVE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "ANY",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "THEM",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "diagonal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "1:24",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "LEARNING HOW TO DETECT IT DURING A CONVERSATION",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SPIKE",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_line",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "curved"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "1:38",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "TONE OF VOICE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "SPEECH SPEED",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "ATTENTION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "PRESENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "1:48",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "observing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "observing",
+          "interactsWith": "characters_2_3"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SPIKE",
+          "color": "yellow",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HOWEVER",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "IF",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "OR",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "THAT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "ATTENTION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "TONE OF VOICE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "arrows_up"
+        },
+        {
+          "exactText": "SPEECH SPEED",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "arrows_up"
+        },
+        {
+          "exactText": "ATTENTION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "arrows_up"
+        },
+        {
+          "exactText": "PRESENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "arrows_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "up",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "2:02",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "observing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "observing",
+          "interactsWith": "characters_2_3"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "clipboard",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "repeat_icon",
+          "position": "center_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "MEANING",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "PHRASE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "SENTENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "REPETITION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "HAPPENS",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "DON'T",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "THEY",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "2:12",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "pointing at other character's chest",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PAY CLOSE ATTENTION",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "GAP IN THEIR DEFENSES",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "OPENING",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "CAST YOUR NET",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_left_to_center_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": [
+          {
+            "color": "red",
+            "position": "center_right",
+            "relativeSize": "small",
+            "interactingCharacterId": 2
+          }
+        ]
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "2:31",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "controlling_strings",
+          "position": "top_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "controlling weak points",
+          "interactsWith": "weak_points"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "bottom_center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "LEARNING HOW TO DETECT IT DURING A CONVERSATION",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "BEING AWARE OF WHAT THESE WEAK POINTS ACTUALLY ARE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TRIGGERING WEAK POINTS",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE THIRST FOR VALIDATION",
+          "color": "white",
+          "size": "tiny",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE FEAR OF FAILURE",
+          "color": "white",
+          "size": "tiny",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PSYCHOLOGICAL TRAUMA",
+          "color": "white",
+          "size": "tiny",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE THIRST FOR SEX",
+          "color": "white",
+          "size": "tiny",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "diagonal",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "2:53",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being admired",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "admiring",
+          "action": "hugging central figure",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "right",
+          "relativeSize": "small",
+          "emotion": "admiring",
+          "action": "hugging central figure",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "cheering",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "cheering",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "LIKES",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EXCESSIVE THIRST FOR VALIDATION",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "3:07",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "celebrating achievement",
+          "interactsWith": "trophy"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "celebrating",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "walking with girl",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "kneeling",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "being dragged",
+          "interactsWith": "character_3"
+        }
+      ],
+      "props": [
+        {
+          "name": "trophy",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "CONSTANTLY TRIES TO PROVE THEY ARE SPECIAL",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "underline"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "3:17",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "manipulating",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "being influenced",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pizza",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "drink",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "FEELING",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "TIME",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_left_to_center_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "3:33",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hand_on_chest",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "sucking up",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "receiving compliment",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "PRAISE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOUR STYLE IS NICE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "strikethrough",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOU LOOK GREAT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "strikethrough",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SUCKING UP",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "puppet_pose",
+      "standing",
+      "hugging",
+      "arms_up",
+      "manipulating",
+      "speaking",
+      "pointing",
+      "controlling_strings",
+      "shocked_pointing",
+      "waving",
+      "walking",
+      "kneeling",
+      "hand_on_chest"
+    ],
+    "uniquePropsUsed": [
+      "cross",
+      "puppet_cross",
+      "hat",
+      "knife",
+      "syringe",
+      "clipboard",
+      "youtube_playlist_ui",
+      "pointer_stick",
+      "repeat_icon",
+      "trophy",
+      "pizza",
+      "drink"
+    ],
+    "uniqueLayoutsUsed": [
+      "text_only",
+      "environment_scene",
+      "single_character_with_text",
+      "multi_character",
+      "split_screen",
+      "giant_character",
+      "dual_character",
+      "flowchart"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "mixed_case",
+      "strikethrough",
+      "badge_box",
+      "underline"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut",
+      "fade_black",
+      "slide_left"
+    ],
+    "narrativeArc": "The video introduces psychological secrets to make people obsessed with you, emphasizing ethical use. It then differentiates between being liked and being obsessed, introducing 'triggering weak points' as the key. It explains how to detect these weak points through conversation spikes (changes in tone, speed, attention, presence, or repetition). The video then details four specific weak points: thirst for validation, fear of failure, psychological trauma, and thirst for sex. For each, it provides strategies for manipulation, focusing on indirect praise for validation-seekers and emotional reassurance for those fearing failure. It also touches on how women can exploit men's 'thirst for sex'. The overall arc is problem (social interaction) -> analysis (weak points) -> solution (manipulation techniques)."
+  }
+}

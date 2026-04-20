@@ -1,0 +1,3165 @@
+{
+  "metadata": {
+    "totalVideosAnalyzed": 28,
+    "generatedAt": "2026-04-19T09:03:23.577Z"
+  },
+  "patterns": {
+    "poses": {
+      "core": [
+        {
+          "name": "standing",
+          "totalOccurrences": 494,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "sitting_chair",
+          "totalOccurrences": 164,
+          "appearsInVideos": 23,
+          "percentOfVideos": 82
+        },
+        {
+          "name": "walking",
+          "totalOccurrences": 107,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        },
+        {
+          "name": "arms_up",
+          "totalOccurrences": 90,
+          "appearsInVideos": 21,
+          "percentOfVideos": 75
+        }
+      ],
+      "common": [
+        {
+          "name": "arms_crossed",
+          "totalOccurrences": 61,
+          "appearsInVideos": 19,
+          "percentOfVideos": 68
+        },
+        {
+          "name": "pointing",
+          "totalOccurrences": 68,
+          "appearsInVideos": 19,
+          "percentOfVideos": 68
+        },
+        {
+          "name": "hugging",
+          "totalOccurrences": 45,
+          "appearsInVideos": 15,
+          "percentOfVideos": 54
+        },
+        {
+          "name": "lying",
+          "totalOccurrences": 25,
+          "appearsInVideos": 13,
+          "percentOfVideos": 46
+        },
+        {
+          "name": "crouching",
+          "totalOccurrences": 31,
+          "appearsInVideos": 13,
+          "percentOfVideos": 46
+        },
+        {
+          "name": "other",
+          "totalOccurrences": 60,
+          "appearsInVideos": 11,
+          "percentOfVideos": 39
+        },
+        {
+          "name": "carrying",
+          "totalOccurrences": 26,
+          "appearsInVideos": 10,
+          "percentOfVideos": 36
+        },
+        {
+          "name": "dancing",
+          "totalOccurrences": 37,
+          "appearsInVideos": 10,
+          "percentOfVideos": 36
+        },
+        {
+          "name": "kneeling",
+          "totalOccurrences": 15,
+          "appearsInVideos": 10,
+          "percentOfVideos": 36
+        }
+      ],
+      "rare": [
+        {
+          "name": "sitting_floor",
+          "totalOccurrences": 20,
+          "appearsInVideos": 8,
+          "percentOfVideos": 29
+        },
+        {
+          "name": "confused",
+          "totalOccurrences": 14,
+          "appearsInVideos": 7,
+          "percentOfVideos": 25
+        },
+        {
+          "name": "leaning",
+          "totalOccurrences": 18,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "thinking",
+          "totalOccurrences": 16,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "talking",
+          "totalOccurrences": 21,
+          "appearsInVideos": 5,
+          "percentOfVideos": 18
+        },
+        {
+          "name": "running",
+          "totalOccurrences": 6,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "climbing",
+          "totalOccurrences": 6,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "pulling",
+          "totalOccurrences": 5,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "holding_hands",
+          "totalOccurrences": 18,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "hands_on_hips",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "holding_phone",
+          "totalOccurrences": 8,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "fighting",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "sitting_couch",
+          "totalOccurrences": 21,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "falling",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "talking_phone",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "sitting_car",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "gesturing",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "confident",
+          "totalOccurrences": 9,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "presenting",
+          "totalOccurrences": 10,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "shrugging",
+          "totalOccurrences": 4,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "on_phone",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "sad",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "looking_at_phone",
+          "totalOccurrences": 8,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "throwing",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hand_to_chest",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "panic",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "stomping",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "reading",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "saluting",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "angry",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "friendly",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "begging",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "performing",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "interacting_with_panel",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "lifting_weights",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "proposing",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bride",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "crossed_arms",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "waking_up",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "thinking_pose",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "laughing",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sculpting",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bartending",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_bed",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_on_male",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_toilet_phone",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "texting_phone",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_couch_phone",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_table_eating",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_table_angry",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "talking_angry",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shocked",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_table",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "standing_back_turned",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "looking_down",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "looking_up",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "jumping",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hands_on_head",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "scared",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "taking_photo",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_bench",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "pushing",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_boat",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "speaking",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "looking_in_mirror",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "helping",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "touching",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shy",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shaking",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "giving_gift",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "receiving_gift",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hands_on_face",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "winking",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "pouring_drink",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "clapping",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "flexing_muscles",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "speaking_microphone",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bartender",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "arms_akimbo",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hand_on_head",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_bathtub",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "arms_around_shoulders",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "texting",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_stool",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shouting",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "working_laptop",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "holding_flashlight",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "scratching_head",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "taking_selfie",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "flirting",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "drinking",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "crawling",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sitting_desk",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "props": {
+      "core": [
+        {
+          "name": "syringe",
+          "totalOccurrences": 138,
+          "appearsInVideos": 27,
+          "percentOfVideos": 96
+        },
+        {
+          "name": "chair",
+          "totalOccurrences": 96,
+          "appearsInVideos": 21,
+          "percentOfVideos": 75
+        }
+      ],
+      "common": [
+        {
+          "name": "table",
+          "totalOccurrences": 39,
+          "appearsInVideos": 18,
+          "percentOfVideos": 64
+        },
+        {
+          "name": "phone",
+          "totalOccurrences": 81,
+          "appearsInVideos": 18,
+          "percentOfVideos": 64
+        },
+        {
+          "name": "heart",
+          "totalOccurrences": 46,
+          "appearsInVideos": 17,
+          "percentOfVideos": 61
+        },
+        {
+          "name": "book",
+          "totalOccurrences": 29,
+          "appearsInVideos": 12,
+          "percentOfVideos": 43
+        },
+        {
+          "name": "glass",
+          "totalOccurrences": 34,
+          "appearsInVideos": 11,
+          "percentOfVideos": 39
+        },
+        {
+          "name": "laptop",
+          "totalOccurrences": 15,
+          "appearsInVideos": 11,
+          "percentOfVideos": 39
+        },
+        {
+          "name": "mirror",
+          "totalOccurrences": 15,
+          "appearsInVideos": 10,
+          "percentOfVideos": 36
+        },
+        {
+          "name": "desk",
+          "totalOccurrences": 22,
+          "appearsInVideos": 10,
+          "percentOfVideos": 36
+        },
+        {
+          "name": "bed",
+          "totalOccurrences": 15,
+          "appearsInVideos": 9,
+          "percentOfVideos": 32
+        },
+        {
+          "name": "couch",
+          "totalOccurrences": 26,
+          "appearsInVideos": 9,
+          "percentOfVideos": 32
+        },
+        {
+          "name": "brain",
+          "totalOccurrences": 20,
+          "appearsInVideos": 9,
+          "percentOfVideos": 32
+        }
+      ],
+      "rare": [
+        {
+          "name": "door",
+          "totalOccurrences": 12,
+          "appearsInVideos": 8,
+          "percentOfVideos": 29
+        },
+        {
+          "name": "clock",
+          "totalOccurrences": 8,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "question_mark",
+          "totalOccurrences": 8,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "thought_bubble",
+          "totalOccurrences": 19,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "pointer_stick",
+          "totalOccurrences": 27,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "circle",
+          "totalOccurrences": 29,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "tablet",
+          "totalOccurrences": 15,
+          "appearsInVideos": 5,
+          "percentOfVideos": 18
+        },
+        {
+          "name": "lamp",
+          "totalOccurrences": 9,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "gift",
+          "totalOccurrences": 6,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "water",
+          "totalOccurrences": 9,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "key",
+          "totalOccurrences": 10,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "mask",
+          "totalOccurrences": 11,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "sun",
+          "totalOccurrences": 4,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "magnifying_glass",
+          "totalOccurrences": 4,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "box",
+          "totalOccurrences": 5,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "briefcase",
+          "totalOccurrences": 4,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "bottle",
+          "totalOccurrences": 6,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "clipboard",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "lock",
+          "totalOccurrences": 8,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "car",
+          "totalOccurrences": 3,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "paper",
+          "totalOccurrences": 3,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "lightbulb",
+          "totalOccurrences": 7,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "coffee_cup",
+          "totalOccurrences": 3,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "bucket",
+          "totalOccurrences": 3,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "text_box",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "mountain",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "microphone",
+          "totalOccurrences": 3,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "wine_glass",
+          "totalOccurrences": 9,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "pointer",
+          "totalOccurrences": 4,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "armchair",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "calendar",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "wrench",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "pedestal",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "heavy_bag",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "arrow_sign",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "money",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "bar",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "graph",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "flowers",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "cafe_sign",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "speech_bubbles",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "weights",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "shield",
+          "totalOccurrences": 13,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "tv",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "youtube_playlist",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "wall",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "baby",
+          "totalOccurrences": 4,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "puzzle_piece",
+          "totalOccurrences": 8,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "barbell",
+          "totalOccurrences": 4,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "globe",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "money_bag",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "whiteboard",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "speech_bubble",
+          "totalOccurrences": 5,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "gears",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "fire",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "selfie_stick",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "other",
+          "totalOccurrences": 4,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "sunglasses",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "camera",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "bench",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "photo",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "trash_can",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shadow_grid",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "window",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "info_icon",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "knife",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bubbles",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "red_circle",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "room_corner",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "line",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "frame",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "rope",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "antenna",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "radar",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "glass_of_water",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "heartbeat_monitor",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "vintage_computer",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "satellite_dish",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "stove",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shopping_basket",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "youtube_player",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "cloth",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "pole",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "onlyfans_logo",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "grid_of_women",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "grid",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "heart_broken",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "gas_pump",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "checklist",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "skull",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "block",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "tie",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "alarm",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hand",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "card",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "blackboard",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "speedometer",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "computer",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "envelope",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "balloons",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "boxes",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "speaker",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hands",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "rock",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "telescope",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "pillars",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "loop",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "heartbeat_graph",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "life_sign",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "crown",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hook",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "control_panel",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "signpost",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "earth",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "scales",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "backpack",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "university_building",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "lamps",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "lightning_bolt",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bust",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "chisel",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hammer",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "cocktail_glass",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "safe",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "toilet",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "thorns",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "tray",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "strings",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "stick",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "Vitruvian_woman",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "Vitruvian_man",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "seesaw",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shopping_cart",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "circles",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "dog",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "grass",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "smiley_face",
+          "totalOccurrences": 18,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "light_beam",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "signal_waves",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "comb",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bar_chart",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "blood",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "wave",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "surfboard",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "ball",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "birds",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "button",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "particles",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "leash",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "megaphone",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "whip",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "swing",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "youtube_interface",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "heart_balloon",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "computer_monitors",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "glasses",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "thumbs_up_bubbles",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "watch",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hearts",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "building",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "crane",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "pillar",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "chess_pawn",
+          "totalOccurrences": 6,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "no_value_sign",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "TV",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "hourglass",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "graduation_cap",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sound_wave",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "price_tag",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "prison_bars",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "papers",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "slot_machine",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bridge",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "note",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "paperclip",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "spotlight",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "boat",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sky",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "city_skyline",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "cave",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "axe",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "mammoth",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "judge_bench",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "gavel",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "sick_child",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "ladder",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "air_conditioner",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "headphones",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "music_note",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "picture_frame",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "cloud",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "battery",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "chain",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bag",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "basketball",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "polaroid",
+          "totalOccurrences": 6,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "piano",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "checkmark",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "fireworks",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "maze",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "electrical_box",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "mouse_trap",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "mouse",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "scale",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "lightning",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "rain",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "plate",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bowl",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "candy",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "text_bubble",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "streetlight",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "ice_cream",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bathtub",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "guitar",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "long_nose",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "car_keys",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "movie_poster",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bricks",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "tennis_court",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "tennis_net",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "tennis_racket",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "square_box",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "trophy",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "comment_bubble",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "YouTube thumbnails",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "badge_box",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "burning_brain",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "remote",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "broken heart",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "timeline",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "flashlight",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "folder",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "private_jet",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "YouTube screen",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "arrow",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "number_box",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "board",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "gear",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "question_marks",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "goal",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "likes_count",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "wavy_line",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "dot",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "horizontal_line",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "no_touch_symbol",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "phone_bubbles",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shopping_bags",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "dining_table",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "suitcases",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "airplane",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "film_strip",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "keyhole",
+          "totalOccurrences": 6,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "stool",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "dresser",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "puppet_strings",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "burger",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "cup",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "Netflix_logo",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "layouts": {
+      "core": [
+        {
+          "name": "dual_character",
+          "totalOccurrences": 255,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "single_character_with_text",
+          "totalOccurrences": 126,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "multi_character",
+          "totalOccurrences": 130,
+          "appearsInVideos": 25,
+          "percentOfVideos": 89
+        },
+        {
+          "name": "flowchart",
+          "totalOccurrences": 80,
+          "appearsInVideos": 23,
+          "percentOfVideos": 82
+        },
+        {
+          "name": "environment_scene",
+          "totalOccurrences": 53,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        },
+        {
+          "name": "text_only",
+          "totalOccurrences": 59,
+          "appearsInVideos": 21,
+          "percentOfVideos": 75
+        }
+      ],
+      "common": [
+        {
+          "name": "split_screen",
+          "totalOccurrences": 34,
+          "appearsInVideos": 18,
+          "percentOfVideos": 64
+        },
+        {
+          "name": "timeline",
+          "totalOccurrences": 14,
+          "appearsInVideos": 9,
+          "percentOfVideos": 32
+        }
+      ],
+      "rare": [
+        {
+          "name": "giant_character",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "stacked_list",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "single_character_with_props",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "subframe",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "dual_character_with_text",
+          "totalOccurrences": 5,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "textColors": {
+      "core": [
+        {
+          "name": "white",
+          "totalOccurrences": 1431,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "yellow",
+          "totalOccurrences": 352,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "red",
+          "totalOccurrences": 160,
+          "appearsInVideos": 26,
+          "percentOfVideos": 93
+        }
+      ],
+      "common": [
+        {
+          "name": "green",
+          "totalOccurrences": 45,
+          "appearsInVideos": 11,
+          "percentOfVideos": 39
+        }
+      ],
+      "rare": [
+        {
+          "name": "blue",
+          "totalOccurrences": 9,
+          "appearsInVideos": 7,
+          "percentOfVideos": 25
+        },
+        {
+          "name": "black",
+          "totalOccurrences": 28,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "grey",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "lightblue",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "purple",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "cyan",
+          "totalOccurrences": 3,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "magenta",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "textSizes": {
+      "core": [
+        {
+          "name": "medium",
+          "totalOccurrences": 768,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "small",
+          "totalOccurrences": 823,
+          "appearsInVideos": 27,
+          "percentOfVideos": 96
+        },
+        {
+          "name": "large",
+          "totalOccurrences": 222,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        }
+      ],
+      "common": [
+        {
+          "name": "tiny",
+          "totalOccurrences": 191,
+          "appearsInVideos": 16,
+          "percentOfVideos": 57
+        },
+        {
+          "name": "hero",
+          "totalOccurrences": 29,
+          "appearsInVideos": 9,
+          "percentOfVideos": 32
+        }
+      ],
+      "rare": []
+    },
+    "textStyles": {
+      "core": [
+        {
+          "name": "all_caps",
+          "totalOccurrences": 1428,
+          "appearsInVideos": 26,
+          "percentOfVideos": 93
+        },
+        {
+          "name": "badge_box",
+          "totalOccurrences": 201,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        }
+      ],
+      "common": [
+        {
+          "name": "none",
+          "totalOccurrences": 173,
+          "appearsInVideos": 13,
+          "percentOfVideos": 46
+        }
+      ],
+      "rare": [
+        {
+          "name": "strikethrough",
+          "totalOccurrences": 10,
+          "appearsInVideos": 7,
+          "percentOfVideos": 25
+        },
+        {
+          "name": "underline",
+          "totalOccurrences": 12,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "mixed_case",
+          "totalOccurrences": 200,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "handwritten",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "all_caps_underline",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "speech_bubble",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "textAnimations": {
+      "core": [
+        {
+          "name": "fade_in",
+          "totalOccurrences": 1222,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "none",
+          "totalOccurrences": 566,
+          "appearsInVideos": 20,
+          "percentOfVideos": 71
+        }
+      ],
+      "common": [
+        {
+          "name": "slide_left",
+          "totalOccurrences": 52,
+          "appearsInVideos": 13,
+          "percentOfVideos": 46
+        },
+        {
+          "name": "slide_right",
+          "totalOccurrences": 30,
+          "appearsInVideos": 12,
+          "percentOfVideos": 43
+        },
+        {
+          "name": "word_by_word",
+          "totalOccurrences": 76,
+          "appearsInVideos": 10,
+          "percentOfVideos": 36
+        }
+      ],
+      "rare": [
+        {
+          "name": "blur_reveal",
+          "totalOccurrences": 21,
+          "appearsInVideos": 8,
+          "percentOfVideos": 29
+        },
+        {
+          "name": "scale_punch",
+          "totalOccurrences": 15,
+          "appearsInVideos": 8,
+          "percentOfVideos": 29
+        },
+        {
+          "name": "slide_up",
+          "totalOccurrences": 35,
+          "appearsInVideos": 6,
+          "percentOfVideos": 21
+        },
+        {
+          "name": "slide_down",
+          "totalOccurrences": 15,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "glow",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "transitions": {
+      "core": [
+        {
+          "name": "hard_cut",
+          "totalOccurrences": 734,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        }
+      ],
+      "common": [],
+      "rare": [
+        {
+          "name": "none",
+          "totalOccurrences": 12,
+          "appearsInVideos": 8,
+          "percentOfVideos": 29
+        },
+        {
+          "name": "fade_black",
+          "totalOccurrences": 4,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "zoom_out",
+          "totalOccurrences": 3,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "fade_in",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "slide_right",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "slow_zoom_out",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "zoom_through",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "glitch",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "fade_white",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "slide_left",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "pan_right",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "pan_left",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "slide_up",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "globalEffects": {
+      "core": [
+        {
+          "name": "glowBloom",
+          "totalOccurrences": 27,
+          "appearsInVideos": 27,
+          "percentOfVideos": 96
+        },
+        {
+          "name": "filmGrain",
+          "totalOccurrences": 22,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        },
+        {
+          "name": "camera_slow_zoom_in",
+          "totalOccurrences": 21,
+          "appearsInVideos": 21,
+          "percentOfVideos": 75
+        }
+      ],
+      "common": [
+        {
+          "name": "vignette",
+          "totalOccurrences": 13,
+          "appearsInVideos": 13,
+          "percentOfVideos": 46
+        }
+      ],
+      "rare": [
+        {
+          "name": "camera_none",
+          "totalOccurrences": 4,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "camera_slow_zoom_out",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "camera_slow_zoom_in_out",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "camera_pan_left_right_zoom",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "emotions": {
+      "core": [
+        {
+          "name": "neutral",
+          "totalOccurrences": 754,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "happy",
+          "totalOccurrences": 339,
+          "appearsInVideos": 27,
+          "percentOfVideos": 96
+        },
+        {
+          "name": "confident",
+          "totalOccurrences": 97,
+          "appearsInVideos": 24,
+          "percentOfVideos": 86
+        },
+        {
+          "name": "confused",
+          "totalOccurrences": 76,
+          "appearsInVideos": 24,
+          "percentOfVideos": 86
+        },
+        {
+          "name": "sad",
+          "totalOccurrences": 68,
+          "appearsInVideos": 21,
+          "percentOfVideos": 75
+        },
+        {
+          "name": "desperate",
+          "totalOccurrences": 75,
+          "appearsInVideos": 20,
+          "percentOfVideos": 71
+        }
+      ],
+      "common": [
+        {
+          "name": "aggressive",
+          "totalOccurrences": 49,
+          "appearsInVideos": 15,
+          "percentOfVideos": 54
+        },
+        {
+          "name": "submissive",
+          "totalOccurrences": 29,
+          "appearsInVideos": 12,
+          "percentOfVideos": 43
+        }
+      ],
+      "rare": [
+        {
+          "name": "scared",
+          "totalOccurrences": 10,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "angry",
+          "totalOccurrences": 13,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "thinking",
+          "totalOccurrences": 5,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "surprised",
+          "totalOccurrences": 3,
+          "appearsInVideos": 3,
+          "percentOfVideos": 11
+        },
+        {
+          "name": "relaxed",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "nervous",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "stressed",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "anxious",
+          "totalOccurrences": 3,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "excited",
+          "totalOccurrences": 6,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "tense",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "seductive",
+          "totalOccurrences": 4,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "enlightened",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "emotionally_involved",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "comfortable",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "uninterested",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "focused",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "annoyed",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "uncomfortable",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "shy",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "calm",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "playful",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "characterSizes": {
+      "core": [
+        {
+          "name": "medium",
+          "totalOccurrences": 1177,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "large",
+          "totalOccurrences": 244,
+          "appearsInVideos": 26,
+          "percentOfVideos": 93
+        }
+      ],
+      "common": [
+        {
+          "name": "small",
+          "totalOccurrences": 121,
+          "appearsInVideos": 18,
+          "percentOfVideos": 64
+        }
+      ],
+      "rare": [
+        {
+          "name": "giant",
+          "totalOccurrences": 7,
+          "appearsInVideos": 4,
+          "percentOfVideos": 14
+        },
+        {
+          "name": "tiny",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        }
+      ]
+    },
+    "characterCount": {
+      "core": [
+        {
+          "name": "2_characters",
+          "totalOccurrences": 295,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "0_characters",
+          "totalOccurrences": 137,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "1_characters",
+          "totalOccurrences": 140,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "3_characters",
+          "totalOccurrences": 83,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        },
+        {
+          "name": "4_characters",
+          "totalOccurrences": 51,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        }
+      ],
+      "common": [
+        {
+          "name": "5_characters",
+          "totalOccurrences": 28,
+          "appearsInVideos": 16,
+          "percentOfVideos": 57
+        },
+        {
+          "name": "6_characters",
+          "totalOccurrences": 17,
+          "appearsInVideos": 12,
+          "percentOfVideos": 43
+        }
+      ],
+      "rare": [
+        {
+          "name": "7_characters",
+          "totalOccurrences": 10,
+          "appearsInVideos": 7,
+          "percentOfVideos": 25
+        },
+        {
+          "name": "8_characters",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "9_characters",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "10_characters",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "12_characters",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    },
+    "connectors": {
+      "core": [
+        {
+          "name": "arrows",
+          "totalOccurrences": 254,
+          "appearsInVideos": 27,
+          "percentOfVideos": 96
+        },
+        {
+          "name": "lines",
+          "totalOccurrences": 105,
+          "appearsInVideos": 24,
+          "percentOfVideos": 86
+        }
+      ],
+      "common": [
+        {
+          "name": "circles",
+          "totalOccurrences": 18,
+          "appearsInVideos": 10,
+          "percentOfVideos": 36
+        }
+      ],
+      "rare": []
+    },
+    "genders": {
+      "core": [
+        {
+          "name": "male",
+          "totalOccurrences": 807,
+          "appearsInVideos": 27,
+          "percentOfVideos": 96
+        },
+        {
+          "name": "female",
+          "totalOccurrences": 589,
+          "appearsInVideos": 27,
+          "percentOfVideos": 96
+        },
+        {
+          "name": "neutral",
+          "totalOccurrences": 155,
+          "appearsInVideos": 22,
+          "percentOfVideos": 79
+        }
+      ],
+      "common": [],
+      "rare": []
+    },
+    "focalZones": {
+      "core": [
+        {
+          "name": "balanced",
+          "totalOccurrences": 393,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        },
+        {
+          "name": "center",
+          "totalOccurrences": 318,
+          "appearsInVideos": 28,
+          "percentOfVideos": 100
+        }
+      ],
+      "common": [
+        {
+          "name": "left",
+          "totalOccurrences": 27,
+          "appearsInVideos": 14,
+          "percentOfVideos": 50
+        },
+        {
+          "name": "right",
+          "totalOccurrences": 22,
+          "appearsInVideos": 13,
+          "percentOfVideos": 46
+        }
+      ],
+      "rare": [
+        {
+          "name": "top_center",
+          "totalOccurrences": 2,
+          "appearsInVideos": 2,
+          "percentOfVideos": 7
+        },
+        {
+          "name": "top_left",
+          "totalOccurrences": 1,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "bottom_center",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        },
+        {
+          "name": "center_left",
+          "totalOccurrences": 2,
+          "appearsInVideos": 1,
+          "percentOfVideos": 4
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2816 @@
+{
+  "videoId": "8raGE2iXJSM",
+  "videoTitle": "Brutally Honest Truths That Give You an Unfair Advantage with Women",
+  "videoDurationSeconds": 720,
+  "totalScenes": 42,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": false,
+    "dominantCameraMove": "none",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "video",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Brutally Honest",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Truths",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "That Give You An Unfair",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Advantage",
+          "color": "yellow",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:07",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "People buy with emotion and justify with logic",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:09",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "for_sale_sign",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "People buy with emotion and justify with logic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_top",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_top",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:15",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 4,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 5,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 6,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "for_sale_sign",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "People buy with emotion and justify with logic",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "mixed_case",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:25",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "leaning",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at car",
+          "interactsWith": "car"
+        }
+      ],
+      "props": [
+        {
+          "name": "briefcase",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "car",
+          "position": "center_right",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "they love it",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "they want to enjoy it",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:37",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "leaning",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at car",
+          "interactsWith": "car"
+        }
+      ],
+      "props": [
+        {
+          "name": "briefcase",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "car",
+          "position": "center_right",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "This car won't break down quickly",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "It's fast",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "It's reliable",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:53",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "leaning",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at car",
+          "interactsWith": "car"
+        }
+      ],
+      "props": [
+        {
+          "name": "for_sale_sign",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "car",
+          "position": "center_right",
+          "relativeSize": "large",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "People buy with emotion and justify with logic",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "strikethrough",
+          "animation": "none"
+        },
+        {
+          "exactText": "Who is the biggest consumer in the world?",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Who buys the most?",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Women > men",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "more emotional beings",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "1:08",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "gesturing",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "tablet"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "tablet",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "same thing in the world of attraction",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "1:12",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "surprised",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "surprised",
+          "action": "hand to mouth",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Makes all her decisions based on emotion",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "But she justifies them with logic",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:20",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "gesturing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "he's nice",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "strikethrough",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "handsome",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "strikethrough",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "attractive",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "strikethrough",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "tall",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "strikethrough",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "has money",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "strikethrough",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "moved her emotionally",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "glow"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "1:40",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "gesturing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "listening",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "My girlfriend left me and said she couldn't stay with me because I didn't care about her, didn't understand her, and didn't feel her... And when I thought about it more... I realized I did everything I could to care for her, understand her, and connect with her emotionally...",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "2:04",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "gesturing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "listening",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "The attraction died",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "I realized I did everything I could to care for her, understand her, and connect with her emotionally...",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "underline",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "2:13",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "walking away",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "walking away",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Bad Treatment",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "strikethrough",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Money",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "strikethrough",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "2:34",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "thinking",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confused",
+          "action": "thinking",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "I got divorced because of financial problems",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "The Attraction Died",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "2:55",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Good things",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Bad things",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "3:10",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "gesturing",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "confident",
+          "action": "explaining, holding book",
+          "interactsWith": "book"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "psychology",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "3:35",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "People buy with emotion and justify with logic",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "strikethrough",
+          "animation": "strikethrough"
+        },
+        {
+          "exactText": "I'm thinking logically",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "3:55",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "glass",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Attract her emotionally and let her chase the logic",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "underline",
+          "animation": "none"
+        },
+        {
+          "exactText": "1. Curiosity Phrases",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "2. Fake Psychological Analysis",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "You seem like the type who...",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Have you ever done something you still feel guilty about?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "You seem confident, but I bet you overthink at night.",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "You're charming, but I feel like you hide how deeply you feel things.",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "4:38",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "thinking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "listening",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Don't explain",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "What's your job?",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Why do you do that?",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "You're naughty...",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "You're different in some way..",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "5:02",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Women fall in love when you're not around",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "5:12",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "gesturing",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "tablet"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "still",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "the",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "dealing",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "errors",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "5:25",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "thinking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "worrying",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "confident",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "99%",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "1%",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "I need to meet her often to attract her",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "If I don't message her and talk to her a lot, she might forget me",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Maybe there's another guy talking to her right now",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "5:50",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting and thinking",
+          "interactsWith": "table"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "table",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "When Love Happens",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "6:03",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking away, looking at phone",
+          "interactsWith": "phone"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "thinking",
+          "action": "walking away",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "phone",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "The absence",
+          "color": "white",
+          "size": "small",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "The silence",
+          "color": "white",
+          "size": "small",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "The emptiness",
+          "color": "white",
+          "size": "small",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 26,
+      "approximateTimestamp": "6:20",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "right"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "thinking",
+          "action": "walking, mind spinning",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "swirling_lines",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "> Crave closure",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "She'll replay what you said",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "She'll wonder why she felt that way",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "She'll question why you didn't contact her",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 27,
+      "approximateTimestamp": "6:40",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "sitting, smiling",
+          "interactsWith": "chair"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Edits and filters",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Flaws disappear",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Embarrassing moments are forgotten",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 28,
+      "approximateTimestamp": "7:12",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at male",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "walking away",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "red_dot",
+          "position": "center_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Don't text her much unless she initiates",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Don't talk to her too much",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 29,
+      "approximateTimestamp": "7:55",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Truth 02: A woman gets attached when you're not with her",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 30,
+      "approximateTimestamp": "8:05",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Truth 03: The more a woman explains herself to you the more attached she becomes",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 31,
+      "approximateTimestamp": "8:10",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "gesturing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "thinking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Investing",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Moving emotionally",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Standing still",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 32,
+      "approximateTimestamp": "9:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Step 1: Hold the Frame, Stay Calm",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Never chase clarity",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 33,
+      "approximateTimestamp": "9:08",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I'm not like other girls",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 34,
+      "approximateTimestamp": "9:32",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Step 2: Misinterpret Her Playfully : Twist what she says",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "I don't date that often",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "So, you're secretly a heartbreaker who got bored of the game?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "No! I just haven't found someone worth it!",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 35,
+      "approximateTimestamp": "9:54",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Step 3: Label Her Behavior with a Teasing Judgment",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "You look like trouble",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "You definitely lie to guys when you're bored",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "You're the type that breaks hearts just for fun",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "That's not true! I'm not like that.",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 36,
+      "approximateTimestamp": "10:21",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Step 4: challenging her uniqueness",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Oh, you meditate? That's cool, most girls go through that phase eventually.",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "You read that book? I've met three girls obsessed with it.",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 37,
+      "approximateTimestamp": "10:39",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Step 5: Reward Only When She Explains Herself",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "mixed_case",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "Okay... I'll give you that one. You actually surprised me",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Feels misunderstood > understood",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "you're important",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 38,
+      "approximateTimestamp": "11:11",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "stacked_list",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Truth 01: People buy with emotion and justify with logic",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Truth 02: Women fall in love when you're not around",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Truth 03: The more a woman explains herself to you...",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 39,
+      "approximateTimestamp": "11:19",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "table",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "glass",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "glass",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "girl",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "relationship",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ended",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "secrets",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 40,
+      "approximateTimestamp": "11:32",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "gesturing",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "confident",
+          "action": "explaining",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "deeply",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "naturally",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "future",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 41,
+      "approximateTimestamp": "11:44",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "laptop",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE ATTRACTION ALGORITHM",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Join Today",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 42,
+      "approximateTimestamp": "11:49",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "still",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "this",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "the",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "you",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Dark Needle",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "you",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "video",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "leaning",
+      "surprised",
+      "gesturing",
+      "thinking",
+      "walking",
+      "hugging",
+      "sitting_chair",
+      "confident",
+      "sad",
+      "desperate"
+    ],
+    "uniquePropsUsed": [
+      "for_sale_sign",
+      "briefcase",
+      "car",
+      "syringe",
+      "tablet",
+      "book",
+      "red_dot",
+      "chair",
+      "table",
+      "glass",
+      "swirling_lines",
+      "phone",
+      "laptop"
+    ],
+    "uniqueLayoutsUsed": [
+      "text_only",
+      "environment_scene",
+      "multi_character",
+      "single_character_with_text",
+      "flowchart",
+      "giant_character",
+      "dual_character",
+      "stacked_list"
+    ],
+    "uniqueTextStylesUsed": [
+      "none",
+      "all_caps",
+      "mixed_case",
+      "strikethrough",
+      "underline",
+      "badge_box"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut"
+    ],
+    "narrativeArc": "The video presents three 'brutally honest truths' about human psychology, particularly in relationships with women. It starts by explaining how people buy with emotion and justify with logic, then applies this to attraction, emphasizing emotional connection over logical reasoning. It highlights the importance of absence in fostering attachment and the power of making a woman invest emotionally by explaining herself. The video uses simple stick figures, text overlays, and flowcharts to illustrate complex psychological concepts, culminating in actionable advice for men."
+  }
+}

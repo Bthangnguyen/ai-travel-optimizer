@@ -1,0 +1,1759 @@
+{
+  "videoId": "bjyRmfdy-wI",
+  "videoTitle": "This Brutal Truth That Makes 98.7% of Women Find You Irresistible",
+  "videoDurationSeconds": 604,
+  "totalScenes": 151,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": true,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#0A141A"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [
+        {
+          "name": "backpack",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:03",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking",
+          "interactsWith": "null"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking and looking at phone",
+          "interactsWith": "phone"
+        },
+        {
+          "id": 4,
+          "gender": "neutral",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking",
+          "interactsWith": "null"
+        },
+        {
+          "id": 5,
+          "gender": "neutral",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with bag",
+          "interactsWith": "bag"
+        }
+      ],
+      "props": [
+        {
+          "name": "backpack",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "phone",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "bag",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:13",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "split_screen",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "studying on laptop",
+          "interactsWith": "laptop"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking and looking at phone",
+          "interactsWith": "phone"
+        }
+      ],
+      "props": [
+        {
+          "name": "laptop",
+          "position": "center_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "table",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "plant",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "MASTER'S DEGREE IN REHABILITATION SCIENCES",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:21",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "split_screen",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining with open hands",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking and looking at phone",
+          "interactsWith": "phone"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TIME",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "TALK",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "HER",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "UNDERSTOOD",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "STUDYING",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "AND",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "0:39",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [
+        {
+          "name": "backpack",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "backpack",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I UNDERSTOOD THE FIELD SHE WAS STUDYING",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "0:43",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [
+        {
+          "name": "backpack",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "backpack",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WHAT DO YOU THINK HAPPENED?",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "1. I TALK TO HER AND WE STARTED DATING",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "2. I TALK TO HER AND END UP IN THE FRIENDZONE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "blur_reveal"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "0:50",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [
+        {
+          "name": "backpack",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "backpack",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "2. I TALK TO HER AND END UP IN THE FRIENDZONE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "strikethrough",
+          "animation": "flash"
+        },
+        {
+          "exactText": "3. BEING COMPLETELY IGNORED",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "0:56",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking with backpack",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [
+        {
+          "name": "backpack",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "backpack",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU MAKE THE GIRL THE MAIN CHARACTER",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "1:08",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "I'M THE MAIN CHARACTER - SHE'S JUST A SIDE QUEST",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "blur_reveal"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "1:10",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining with open hands, holding a book",
+          "interactsWith": "book"
+        }
+      ],
+      "props": [
+        {
+          "name": "book",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "ALWAYS",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "HOW",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "APPLY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "ACT",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "BE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "AND",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "CONCEPT",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "1:18",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "walking",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking in a crowd",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "wipe"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "1:20",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "THE GIRL AS THE ULTIMATE GOAL",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "1:30",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "split_screen",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging a female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged by a male",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "sitting with women",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "sitting with a man",
+          "interactsWith": "character_3"
+        }
+      ],
+      "props": [
+        {
+          "name": "private_jet",
+          "position": "right",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "champagne_glass",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "slide_left"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "1:40",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "THE WOMAN IS THE REWARD FOR YOUR HARD WORK",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 30,
+      "approximateTimestamp": "1:53",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "sitting_floor",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting on a tall pillar",
+          "interactsWith": "pillar"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking up at female",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "pillar",
+          "position": "center_right",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 32,
+      "approximateTimestamp": "1:58",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding hands with female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding hands with male",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "THE MAIN CHARACTER",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SIDE CHARACTER",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 34,
+      "approximateTimestamp": "2:07",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing right",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding hands with female",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding hands with male",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "MEMORIZE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "UNDERSTAND",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 36,
+      "approximateTimestamp": "2:14",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "right"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing at YouTube playlist",
+          "interactsWith": "YouTube_playlist"
+        }
+      ],
+      "props": [
+        {
+          "name": "YouTube_playlist",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "stick",
+          "position": "overlay_on_character",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "STARTED",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "ATTRACT",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 47,
+      "approximateTimestamp": "2:43",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking with open hands",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking with open hands",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "MORE VALUE",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CHOOSES THE TOPIC",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 50,
+      "approximateTimestamp": "2:55",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "thinking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "thinking about female's interests",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking, holding a book",
+          "interactsWith": "book"
+        }
+      ],
+      "props": [
+        {
+          "name": "book",
+          "position": "center_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HER INTERESTS",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "FRIENDZONE",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_top",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 54,
+      "approximateTimestamp": "3:04",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_couch",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_couch",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "couch",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PERSON",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TOPIC",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_top",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 66,
+      "approximateTimestamp": "3:40",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "talking about facts",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "talking about emotions",
+          "interactsWith": "character_3"
+        }
+      ],
+      "props": [
+        {
+          "name": "gym_frame",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "gym_sign",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "NUTRITION AND EXERCISE SCIENCE",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE EMOTIONS BEHIND WORKING OUT",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 72,
+      "approximateTimestamp": "4:16",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "YOU DON'T NEED TO PROVE ANYTHING TO HER",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOU MUST ALWAYS SEE YOURSELF AS THE MAIN CHARACTER",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NEVER TALK WITH A GIRL ABOUT SOMETHING YOU DON'T CARE ABOUT JUST TO IMPRESS HER OR TO GET HER ATTENTION",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 109,
+      "approximateTimestamp": "6:40",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking, being honest",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "enlightened",
+          "action": "thinking about male's honesty",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "lightbulb",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SPENT HER WHOLE LIFE TALKING TO GUYS WHO LIE",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BEING HONEST",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WAIT... WHY ISN'T THIS GUY LYING?",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "DOES HE REALLY NOT CARE WHAT I THINK?",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "WHERE DID HE GET ALL THIS CONFIDENCE FROM?",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 134,
+      "approximateTimestamp": "8:51",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "talking and laughing",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "listening and laughing",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "talking and laughing",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "gym_background",
+          "position": "background",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WHY DO YOU WORK OUT?",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TO GET GIRLS",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "walking",
+      "sitting_chair",
+      "standing",
+      "hugging",
+      "sitting_floor",
+      "thinking",
+      "sitting_couch"
+    ],
+    "uniquePropsUsed": [
+      "backpack",
+      "syringe",
+      "phone",
+      "bag",
+      "laptop",
+      "chair",
+      "table",
+      "plant",
+      "book",
+      "pillar",
+      "private_jet",
+      "champagne_glass",
+      "YouTube_playlist",
+      "stick",
+      "gym_frame",
+      "gym_sign",
+      "couch",
+      "lightbulb",
+      "gym_background"
+    ],
+    "uniqueLayoutsUsed": [
+      "single_character_with_text",
+      "multi_character",
+      "split_screen",
+      "dual_character",
+      "text_only",
+      "environment_scene",
+      "flowchart"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "none",
+      "strikethrough",
+      "mixed_case"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut",
+      "blur_reveal",
+      "wipe",
+      "slide_left"
+    ],
+    "narrativeArc": "The video begins with a personal anecdote about the narrator's failed attempt to attract a girl by trying to impress her. It then transitions into explaining a 'brutal truth' about societal conditioning that makes men view women as a reward. The core message is to adopt a 'main character' mindset, focusing on self-improvement and genuine interests rather than seeking external validation from women. It provides three techniques: 1) Talk about what *you* enjoy, not just her interests, 2) Don't try to prove anything to her, and 3) Practice complete honesty, especially in situations that make you look bad. The video uses minimalist stick figures, text overlays, and occasional real-life or cartoon imagery to illustrate these concepts, aiming to reframe the viewer's perspective on attraction and self-worth."
+  }
+}

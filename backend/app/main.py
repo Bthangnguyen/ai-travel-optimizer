@@ -3,8 +3,10 @@ from __future__ import annotations
 import asyncio
 
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 
+import os
 from .config import settings
 from .models import Origin, PlanRequest, PlanResponse, RerouteRequest
 from .firebase_client import FCMClient
@@ -39,6 +41,12 @@ app.add_middleware(
 )
 
 app.include_router(traffic_router)
+
+
+@app.get("/", response_class=HTMLResponse)
+def get_dashboard():
+    static_path = os.path.join(os.path.dirname(__file__), "static", "dashboard.html")
+    return FileResponse(static_path)
 
 
 @app.get("/health")

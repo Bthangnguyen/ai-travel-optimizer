@@ -1,0 +1,160 @@
+{
+  "compositionId": "AutoVideo",
+  "palette": {
+    "bg": "#000000",
+    "text": "#FFFFFF",
+    "accent": "#F5E500",
+    "label": "#CC0000"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "template": "DarkBeat",
+      "text": "It sounds crazy, but I was the exact kind of person trapped in the self-help loop without even knowing it.",
+      "params": {
+        "conceptWord": "MẮC KẸT",
+        "supportText": "TRONG VÒNG LẶP",
+        "conceptColor": "#CC0000",
+        "headType": "syringe",
+        "posture": "slouched"
+      },
+      "startFrame": 3,
+      "endFrame": 183,
+      "duration": 180
+    },
+    {
+      "id": "S2",
+      "template": "DarkBeat",
+      "text": "I thought I was growing. But in reality, I was just consuming advice.",
+      "params": {
+        "conceptWord": "ẢO TƯỞNG",
+        "supportText": "CHỈ TIÊU THỤ",
+        "conceptColor": "#CC0000",
+        "headType": "mask",
+        "posture": "slouched"
+      },
+      "startFrame": 182,
+      "endFrame": 347,
+      "duration": 165
+    },
+    {
+      "id": "S3",
+      "template": "DarkBeat",
+      "text": "Every day I picked up a new tip from some internet guru. A new book. A new routine. A new system. A new skill. A new \"learn this and your life will change\" promise.",
+      "params": {
+        "conceptWord": "QUÁ TẢI",
+        "supportText": "THÔNG TIN LIÊN TỤC",
+        "conceptColor": "#CC0000",
+        "headType": "gear",
+        "posture": "slouched"
+      },
+      "startFrame": 347,
+      "endFrame": 777,
+      "duration": 430
+    },
+    {
+      "id": "S4",
+      "template": "DarkBeat",
+      "text": "And the result?",
+      "params": {
+        "conceptWord": "KẾT QUẢ?",
+        "supportText": "SAU TẤT CẢ",
+        "conceptColor": "#F5E500",
+        "headType": "wrench",
+        "posture": "slouched"
+      },
+      "startFrame": 777,
+      "endFrame": 832,
+      "duration": 55
+    },
+    {
+      "id": "S5",
+      "template": "DarkBeat",
+      "text": "I wasted over a year strictly following useless advice... to the point where I didn't even know what actually worked for me anymore.",
+      "params": {
+        "conceptWord": "MẤT PHƯƠNG HƯỚNG",
+        "supportText": "LÃNG PHÍ THỜI GIAN",
+        "conceptColor": "#CC0000",
+        "headType": "cracked",
+        "posture": "slouched"
+      },
+      "startFrame": 832,
+      "endFrame": 1052,
+      "duration": 219
+    },
+    {
+      "id": "S6",
+      "template": "DarkBeat",
+      "text": "I wasn't moving forward. I was just more confused. More exhausted.",
+      "params": {
+        "conceptWord": "BẾ TẮC",
+        "supportText": "KIỆT SỨC & HỖN LOẠN",
+        "conceptColor": "#CC0000",
+        "headType": "cracked",
+        "posture": "slouched"
+      },
+      "startFrame": 1052,
+      "endFrame": 1251,
+      "duration": 199
+    },
+    {
+      "id": "S7",
+      "template": "DarkBeat",
+      "text": "And the worst part is, I started thinking: \"Is there something wrong with me?\" \"Do I lack discipline?\" \"Am I just not good enough to change?\"",
+      "params": {
+        "conceptWord": "HOÀI NGHI",
+        "supportText": "TỰ VẤN BẢN THÂN",
+        "conceptColor": "#CC0000",
+        "headType": "cracked",
+        "posture": "slouched"
+      },
+      "startFrame": 1251,
+      "endFrame": 1529,
+      "duration": 278
+    },
+    {
+      "id": "S8",
+      "template": "BigTextReveal",
+      "text": "No. The problem isn't you.",
+      "params": {
+        "subtitle": "KHÔNG HỀ",
+        "mainText": "VẤN ĐỀ KHÔNG PHẢI BẠN",
+        "accentColor": "#F5E500"
+      },
+      "startFrame": 1529,
+      "endFrame": 1800,
+      "duration": 271
+    },
+    {
+      "id": "S9",
+      "template": "DarkBeat",
+      "text": "The problem is you are learning from a pile of advice that was never designed for your actual life.",
+      "params": {
+        "conceptWord": "KHÔNG PHÙ HỢP",
+        "supportText": "LỜI KHUYÊN CHUNG CHUNG",
+        "conceptColor": "#F5E500",
+        "headType": "wrench",
+        "posture": "upright"
+      },
+      "startFrame": 1800,
+      "endFrame": 1963,
+      "duration": 163
+    },
+    {
+      "id": "S10",
+      "template": "DarkBeat",
+      "text": "You are using the fake busyness of \"learning how to live\" to escape the friction of actually living.",
+      "params": {
+        "conceptWord": "TRỐN TRÁNH",
+        "supportText": "ĐỂ KHÔNG PHẢI SỐNG",
+        "conceptColor": "#F5E500",
+        "headType": "mask",
+        "posture": "upright"
+      },
+      "startFrame": 1963,
+      "endFrame": 2113,
+      "duration": 150
+    }
+  ],
+  "totalFrames": 2143
+}

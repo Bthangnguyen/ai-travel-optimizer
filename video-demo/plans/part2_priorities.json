@@ -1,0 +1,167 @@
+{
+  "title": "part2_priorities",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "totalDurationFrames": 2260,
+  "totalDurationSeconds": 75,
+  "structure": "Overview Spine (5 items) + 5 Sections with Line Templates",
+
+  "overview_items": [
+    "FOCUS & INTEGRITY",
+    "LEVERAGE MINDSET",
+    "SOCIAL CONNECTION",
+    "PLANNING & MINDFULNESS",
+    "THE INITIAL PUSH"
+  ],
+
+  "scenes": [
+    {
+      "id": "OV1", "template": "overview_flowchart", "dur": 120,
+      "active": 0, "completed": [],
+      "transition": "zoom-push → top box",
+      "note": "First overview — shows all 5 priorities, highlights #1"
+    },
+
+    {
+      "id": "S1_title", "template": "text_only", "dur": 90,
+      "text": "FOCUS & PERSONAL INTEGRITY",
+      "color": "red", "tier": "core"
+    },
+    {
+      "id": "S1_line", "template": "LINE: center+children", "dur": 240,
+      "layout": {
+        "center": { "type": "icon", "content": "lecture", "label": "FOCUS" },
+        "children": [
+          { "type": "boxword", "content": "HABITS", "color": "yellow" },
+          { "type": "boxword", "content": "INTEGRITY", "color": "yellow" },
+          { "type": "boxword", "content": "DAILY PROMISES", "color": "green" }
+        ],
+        "camera": "zoom into INTEGRITY child, then back to full view"
+      },
+      "tier": "common",
+      "note": "Center icon radiates to 3 key concepts. Camera zooms into INTEGRITY to emphasize."
+    },
+
+    {
+      "id": "OV2", "template": "overview_flowchart", "dur": 90,
+      "active": 1, "completed": [0],
+      "transition": "zoom-push → second box"
+    },
+
+    {
+      "id": "S2_title", "template": "text_only", "dur": 90,
+      "text": "LEVERAGE MINDSET",
+      "color": "yellow", "tier": "core"
+    },
+    {
+      "id": "S2_chain", "template": "LINE: word→word chain", "dur": 210,
+      "layout": {
+        "chain": ["INFORMATION", "TOOLS", "PEOPLE", "METHODS"],
+        "connection": "horizontal arrows",
+        "camera": "pan left to right following the chain"
+      },
+      "tier": "common",
+      "note": "4 leverage types connected horizontally. Camera pans to follow."
+    },
+    {
+      "id": "S2_punch", "template": "text_only", "dur": 90,
+      "text": "DOING THE RIGHT THING WITH LEVERAGE",
+      "rareEffect": "scale_punch", "color": "yellow",
+      "tier": "rare"
+    },
+
+    {
+      "id": "OV3", "template": "overview_flowchart", "dur": 90,
+      "active": 2, "completed": [0, 1],
+      "transition": "zoom-push → third box"
+    },
+
+    {
+      "id": "S3_title", "template": "text_only", "dur": 90,
+      "text": "SOCIAL CONNECTION",
+      "color": "green", "tier": "core"
+    },
+    {
+      "id": "S3_radial", "template": "LINE: center+children (icon→icon)", "dur": 240,
+      "layout": {
+        "center": { "type": "icon", "content": "person" },
+        "children": [
+          { "type": "icon+word", "icon": "meeting", "word": "FAMILY", "color": "yellow" },
+          { "type": "icon+word", "icon": "happy", "word": "FRIENDS", "color": "yellow" },
+          { "type": "icon+word", "icon": "secretary", "word": "PARTNER", "color": "green" },
+          { "type": "icon+word", "icon": "lecture", "word": "MENTOR", "color": "green" }
+        ],
+        "camera": "zoom into MENTOR, then pull back"
+      },
+      "tier": "common",
+      "note": "Person icon at center with 4 relationship types radiating out. Each child = icon + label."
+    },
+
+    {
+      "id": "OV4", "template": "overview_flowchart", "dur": 90,
+      "active": 3, "completed": [0, 1, 2],
+      "transition": "zoom-push → fourth box"
+    },
+
+    {
+      "id": "S4_title", "template": "text_only", "dur": 90,
+      "text": "PLANNING & MINDFULNESS",
+      "color": "yellow", "tier": "core"
+    },
+    {
+      "id": "S4_chain", "template": "LINE: word→word chain (questions)", "dur": 210,
+      "layout": {
+        "chain": [
+          "WHAT DO I WANT?",
+          "AM I LIVING MY GOALS?",
+          "IS THIS TAKING ME ANYWHERE?"
+        ],
+        "style": "vertical stacked with downward arrows",
+        "camera": "slow zoom in as questions deepen"
+      },
+      "tier": "common",
+      "note": "3 self-reflective questions stacked vertically. Each connects to the next via downward arrow."
+    },
+
+    {
+      "id": "OV5", "template": "overview_flowchart", "dur": 90,
+      "active": 4, "completed": [0, 1, 2, 3],
+      "transition": "zoom-push → bottom box"
+    },
+
+    {
+      "id": "S5_title", "template": "text_only", "dur": 90,
+      "text": "THE INITIAL PUSH",
+      "color": "green", "tier": "core"
+    },
+    {
+      "id": "S5_flow", "template": "flowchart (badges)", "dur": 180,
+      "items": ["WAKE UP ON TIME", "HARDEST TASK FIRST", "ONE HARD CONVERSATION", "FACE YOURSELF", "GYM FOR 1 WEEK"],
+      "tier": "common",
+      "note": "5 small wins appearing one by one as badges. No strikethrough — these are POSITIVE actions."
+    },
+    {
+      "id": "S5_punch", "template": "text_only", "dur": 90,
+      "text": "SMALL WINS CREATE REAL MOMENTUM",
+      "rareEffect": "scale_punch", "color": "green",
+      "tier": "rare"
+    }
+  ],
+
+  "tier_coverage": {
+    "core": "7 scenes (text_only titles + overviews)",
+    "common": "6 scenes (line templates + flowchart)",
+    "rare": "2 scenes (scale_punch)",
+    "ratio": "41% / 35% / 12% + 12% overview"
+  },
+
+  "templates_used": {
+    "overview_flowchart": 5,
+    "text_only": 7,
+    "LINE_center_children": 2,
+    "LINE_word_chain": 2,
+    "flowchart_badges": 1,
+    "scale_punch_rare": 2
+  }
+}

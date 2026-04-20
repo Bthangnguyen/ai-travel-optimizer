@@ -22,3 +22,40 @@ walkthrough.md
 Mission 1/docs
 DEV5.pdf
 RISK MANAGEMENT.pdf
+
+# Media
+*.mp4
+*.png
+*.jpg
+*.webp
+*.gif
+
+# Agents & Specialized IDEs
+.agents/
+!.agents/skills/
+.gemini/
+.claude/
+.codebuddy/
+.continue/
+.factory/
+.goose/
+.junie/
+.kilocode/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.vscode/
+.windsurf/
+.zencoder/
+.commandcode/
+.codebuddy/
+.crush/

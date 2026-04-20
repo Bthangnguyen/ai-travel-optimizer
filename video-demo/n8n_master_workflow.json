@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "1",
+      "name": "Start",
+      "type": "n8n-nodes-base.onChat",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message }}",
+        "options": {
+          "systemMessage": "Bạn là Giám đốc Sáng tạo. Hãy điều phối 5 Agent để sản xuất video. Đầu tiên hãy dùng Director Agent để chia cảnh."
+        }
+      },
+      "id": "2",
+      "name": "Master Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "command": "python tools/edge_audio_tool.py \"{{ $node[\"Master Agent\"].json[\"output\"] }}\""
+      },
+      "id": "3",
+      "name": "Sound Agent (Tool)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [700, 200]
+    },
+    {
+      "parameters": {
+        "command": "node tools/plan_processor.js"
+      },
+      "id": "4",
+      "name": "Structure Agent (Tool)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [900, 200]
+    },
+    {
+      "parameters": {
+        "command": "node tools/qa_validator.js"
+      },
+      "id": "5",
+      "name": "QA Agent (Tool)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1100, 200]
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [[{ "node": "2", "type": "main", "index": 0 }]]
+    },
+    "2": {
+      "main": [[{ "node": "3", "type": "main", "index": 0 }]]
+    },
+    "3": {
+      "main": [[{ "node": "4", "type": "main", "index": 0 }]]
+    },
+    "4": {
+      "main": [[{ "node": "5", "type": "main", "index": 0 }]]
+    }
+  }
+}
