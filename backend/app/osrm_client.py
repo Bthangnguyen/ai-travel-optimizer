@@ -8,12 +8,10 @@ from urllib import error, parse, request
 from .models import Coordinates
 from .utils import travel_minutes_from_coords
 
-
 @dataclass(slots=True)
 class MatrixResult:
     durations: list[list[int]]
     source: str
-
 
 class OSRMClient:
     def __init__(self, base_url: str) -> None:
@@ -64,4 +62,3 @@ class OSRMClient:
                 )
             matrix.append(row)
         return matrix
-
