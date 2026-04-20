@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "RerouteRequest",
   "type": "object",
-  "required": ["trip_id", "trigger", "device_token", "current_time", "current_location"],
+  "required": ["trip_id", "trigger", "device_token"],
   "properties": {
     "trip_id": { "type": "string" },
     "prompt": { "type": ["string", "null"] },
@@ -41,8 +41,10 @@
           "minimum": 0,
           "default": 0
         }
-      }
+      },
+      "additionalProperties": false
     }
-  }
+  },
+  "additionalProperties": false
 }
 

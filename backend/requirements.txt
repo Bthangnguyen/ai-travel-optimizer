@@ -6,3 +6,4 @@ firebase-admin==6.4.0
 httpx>=0.24.0
 openai>=1.40.0
 instructor>=1.7.0
+psycopg[binary]>=3.2.0

@@ -57,6 +57,8 @@ class EvalSummary:
     avg_ms: float
     p50_ms: float
     p95_ms: float
+    p99_ms: float
+    fallback_rate: float
 
 
 def percentile(values: list[float], ratio: float) -> float:
@@ -110,6 +112,8 @@ async def run_eval(prompts: list[str]) -> EvalSummary:
         avg_ms=avg_ms,
         p50_ms=percentile(durations_ms, 0.50),
         p95_ms=percentile(durations_ms, 0.95),
+        p99_ms=percentile(durations_ms, 0.99),
+        fallback_rate=(hard_fallbacks / len(prompts)) if prompts else 0.0,
     )
 
 
@@ -136,6 +140,8 @@ def main() -> None:
     print(f"avg_ms={summary.avg_ms:.2f}")
     print(f"p50_ms={summary.p50_ms:.2f}")
     print(f"p95_ms={summary.p95_ms:.2f}")
+    print(f"p99_ms={summary.p99_ms:.2f}")
+    print(f"fallback_rate={summary.fallback_rate:.3f}")
 
 
 if __name__ == "__main__":

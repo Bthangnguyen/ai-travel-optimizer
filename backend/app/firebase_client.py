@@ -44,18 +44,11 @@ class FCMClient:
         if not self._enabled:
             raise RuntimeError("Firebase service is not configured.")
 
-        itinerary_payload = [
-            {
-                "poi_id": stop.poi_id,
-                "name": stop.name,
-                "arrival_time": stop.arrival_time,
-                "departure_time": stop.departure_time,
-                "lat": str(stop.lat),
-                "lon": str(stop.lon),
-                "travel_minutes": str(stop.travel_minutes),
-            }
-            for stop in trip.itinerary[:10]
-        ]
+        reroute_payload: dict[str, Any] = trip.model_dump(mode="json")
+        reroute_payload["meta"] = {
+            "delay_minutes": delay_minutes,
+            "event": "reroute_applied",
+        }
 
         message = messaging.Message(
             token=device_token,
@@ -68,7 +61,8 @@ class FCMClient:
                 "delay_minutes": str(delay_minutes),
                 "engine_used": trip.engine_used,
                 "fallback_level": str(trip.fallback_level),
-                "itinerary": json.dumps(itinerary_payload, ensure_ascii=False),
+                "event": "reroute_applied",
+                "reroute": json.dumps(reroute_payload, ensure_ascii=False),
             },
         )
 

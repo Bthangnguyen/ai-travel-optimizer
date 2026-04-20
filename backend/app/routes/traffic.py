@@ -1,21 +1,72 @@
-from fastapi import APIRouter, HTTPException
-import httpx
+"""Live traffic leg assessment (Mapbox or Google). Results are cached briefly to reduce quota."""
+from __future__ import annotations
+
 import os
+import time
+from dataclasses import dataclass
+
+import httpx
+from fastapi import APIRouter, HTTPException
+
+from ..config import settings
 
 router = APIRouter(prefix="/traffic", tags=["Live Traffic"])
 
-@router.get("/check-leg")
-async def check_leg_traffic(
+
+@dataclass(slots=True)
+class LegTrafficAssessment:
+    status: str
+    delay_minutes: int
+    reroute: bool
+
+
+_traffic_cache: dict[tuple, tuple[float, LegTrafficAssessment]] = {}
+
+
+def _traffic_cache_key(
     origin_lat: float,
     origin_lon: float,
     dest_lat: float,
     dest_lon: float,
     osrm_expected_minutes: int,
-):
+    reroute_threshold_minutes: int,
+) -> tuple:
+    return (
+        round(origin_lat, 4),
+        round(origin_lon, 4),
+        round(dest_lat, 4),
+        round(dest_lon, 4),
+        osrm_expected_minutes,
+        reroute_threshold_minutes,
+    )
+
+
+async def assess_leg_traffic(
+    origin_lat: float,
+    origin_lon: float,
+    dest_lat: float,
+    dest_lon: float,
+    osrm_expected_minutes: int,
+    reroute_threshold_minutes: int = 30,
+) -> LegTrafficAssessment:
     mapbox_token = os.getenv("MAPBOX_ACCESS_TOKEN")
     gmaps_api_key = os.getenv("GMAPS_API_KEY")
     if not mapbox_token and not gmaps_api_key:
-        return {"status": "OK", "delay_minutes": 0, "reroute": False}
+        return LegTrafficAssessment(status="OK", delay_minutes=0, reroute=False)
+
+    ttl = max(0.0, settings.traffic_cache_ttl_seconds)
+    key = _traffic_cache_key(
+        origin_lat,
+        origin_lon,
+        dest_lat,
+        dest_lon,
+        osrm_expected_minutes,
+        reroute_threshold_minutes,
+    )
+    now = time.time()
+    cached = _traffic_cache.get(key)
+    if cached is not None and now < cached[0]:
+        return cached[1]
 
     live_duration_minutes: int
     if mapbox_token:
@@ -62,16 +113,43 @@ async def check_leg_traffic(
         live_duration_minutes = live_duration_seconds // 60
 
     delay_minutes = max(0, live_duration_minutes - osrm_expected_minutes)
-    if delay_minutes >= 30:
+    reroute = delay_minutes >= reroute_threshold_minutes
+    result = LegTrafficAssessment(
+        status="HEAVY_TRAFFIC" if reroute else "OK",
+        delay_minutes=delay_minutes,
+        reroute=reroute,
+    )
+    if ttl > 0:
+        _traffic_cache[key] = (now + ttl, result)
+    return result
+
+
+@router.get("/check-leg")
+async def check_leg_traffic(
+    origin_lat: float,
+    origin_lon: float,
+    dest_lat: float,
+    dest_lon: float,
+    osrm_expected_minutes: int,
+):
+    assessment = await assess_leg_traffic(
+        origin_lat=origin_lat,
+        origin_lon=origin_lon,
+        dest_lat=dest_lat,
+        dest_lon=dest_lon,
+        osrm_expected_minutes=osrm_expected_minutes,
+        reroute_threshold_minutes=30,
+    )
+    if assessment.reroute:
         return {
-            "status": "HEAVY_TRAFFIC",
-            "delay_minutes": delay_minutes,
+            "status": assessment.status,
+            "delay_minutes": assessment.delay_minutes,
             "reroute": True,
             "message": "Heavy traffic detected. Consider rerouting for a faster itinerary.",
         }
 
     return {
-        "status": "OK",
-        "delay_minutes": delay_minutes,
+        "status": assessment.status,
+        "delay_minutes": assessment.delay_minutes,
         "reroute": False,
     }

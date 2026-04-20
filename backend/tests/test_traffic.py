@@ -10,6 +10,10 @@ app.include_router(router)
 client = TestClient(app)
 
 class TrafficAPITests(unittest.TestCase):
+    def setUp(self) -> None:
+        import backend.app.routes.traffic as traffic_mod
+
+        traffic_mod._traffic_cache.clear()
 
     @patch("backend.app.routes.traffic.os.getenv")
     def test_no_token_returns_ok_silently(self, mock_getenv) -> None:

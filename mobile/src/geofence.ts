@@ -34,14 +34,12 @@ const DWELL_TIME_MS = 2 * 60 * 1000; // 2 phút
 
 /** Key lưu trip hiện tại trong AsyncStorage (đồng bộ với App.tsx) */
 const STORAGE_KEY_TRIP = "current_trip";
+const STORAGE_KEY_DEVICE_TOKEN = "device_token";
 
 // ─── Dwell Time State (in-memory, reset khi app restart) ──────────────────────
 //
 // Lưu ý: state này sẽ reset nếu OS kill app rồi wake up lại.
 // Đây là acceptable trade-off cho MVP — xác suất OS kill trong đúng 2 phút dwell rất thấp.
-
-/** Map: geofence_identifier → timestamp lúc EXIT event đầu tiên bắn */
-const dwellTimers = new Map<string, ReturnType<typeof setTimeout>>();
 
 /** Map: geofence_identifier → timeout handle để có thể cancel nếu user quay lại */
 const dwellTimeoutHandles = new Map<string, ReturnType<typeof setTimeout>>();
@@ -102,8 +100,14 @@ async function handleConfirmedExit(
   try {
     // Task 3: Đóng gói JSON theo contracts/reroute-request.schema.json
     // trigger.kind = "geofence" (phân biệt với "delayed" thủ công của nút cũ)
+    const deviceToken = await AsyncStorage.getItem(STORAGE_KEY_DEVICE_TOKEN);
+    if (!deviceToken) {
+      console.warn("[Geofence] Missing device token, skip reroute.");
+      return;
+    }
     await rerouteGeofence({
       tripId: trip.trip_id,
+      deviceToken,
       minutesLate,
       visitedPoiIds,
       currentTime: actualTimeStr,
@@ -175,7 +179,7 @@ TaskManager.defineTask(GEOFENCE_TASK, async ({ data, error }) => {
   // expo-location trả về data dạng { eventType, region }
   const { eventType, region } = data as {
     eventType: Location.GeofencingEventType;
-    region: Location.GeofencingRegion;
+    region: Location.LocationRegion;
   };
 
   // Đọc trip state từ AsyncStorage (Dev 5 đã persist vào đây)
@@ -185,8 +189,19 @@ TaskManager.defineTask(GEOFENCE_TASK, async ({ data, error }) => {
     return;
   }
 
-  const trip = JSON.parse(raw) as PlanResponse;
+  let trip: PlanResponse;
+  try {
+    trip = JSON.parse(raw) as PlanResponse;
+  } catch (parseError) {
+    console.error("[Geofence Task] Invalid trip payload in storage:", parseError);
+    await AsyncStorage.removeItem(STORAGE_KEY_TRIP);
+    return;
+  }
   const identifier = region.identifier;
+  if (!identifier) {
+    console.warn("[Geofence Task] Missing geofence identifier.");
+    return;
+  }
 
   // Tìm stop tương ứng với geofence identifier (dùng poi_id làm identifier)
   const stop = trip.itinerary.find((s) => s.poi_id === identifier);
@@ -242,7 +257,7 @@ export async function startGeofenceMonitoring(
 
   // Tạo danh sách GeofencingRegion từ itinerary
   // Dùng poi_id làm identifier để match lại trong background task
-  const regions: Location.GeofencingRegion[] = itinerary.map((stop) => ({
+  const regions: Location.LocationRegion[] = itinerary.map((stop) => ({
     identifier: stop.poi_id,
     latitude: stop.lat,
     longitude: stop.lon,

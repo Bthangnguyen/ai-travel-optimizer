@@ -40,20 +40,24 @@ class TripStateStore:
         except Exception:
             return None
 
+    def _ensure_authoritative_store(self) -> None:
+        if self._settings.requires_redis and self._redis is None:
+            raise DatabaseUnavailableException("Redis is required in this environment.")
+
     def ping(self) -> bool:
         if self._redis is None:
-            return True
+            return not self._settings.requires_redis
         try:
             return self._redis.ping()
-        except redis.exceptions.ConnectionError:
+        except Exception:
             return False
 
     def save_trip_state(self, trip: PlanResponse, device_token: str | None = None) -> None:
-        self._memory_trips[trip.trip_id] = trip
-        if device_token is not None:
-            self._memory_device_tokens[trip.trip_id] = device_token
-
+        self._ensure_authoritative_store()
         if self._redis is None:
+            self._memory_trips[trip.trip_id] = trip
+            if device_token is not None:
+                self._memory_device_tokens[trip.trip_id] = device_token
             return
 
         try:
@@ -67,10 +71,9 @@ class TripStateStore:
         self.save_trip_state(trip, device_token=device_token)
 
     def get_trip(self, trip_id: str) -> PlanResponse | None:
-        if trip_id in self._memory_trips:
-            return self._memory_trips[trip_id]
+        self._ensure_authoritative_store()
         if self._redis is None:
-            return None
+            return self._memory_trips.get(trip_id)
         try:
             raw = self._redis.get(f"trip:{trip_id}")
             if raw is None:
@@ -82,10 +85,9 @@ class TripStateStore:
             raise DatabaseUnavailableException("Redis State Store unavailable.") from e
 
     def get_device_token(self, trip_id: str) -> Optional[str]:
-        if trip_id in self._memory_device_tokens:
-            return self._memory_device_tokens[trip_id]
+        self._ensure_authoritative_store()
         if self._redis is None:
-            return None
+            return self._memory_device_tokens.get(trip_id)
         try:
             token = self._redis.get(f"trip_token:{trip_id}")
             if token is None:
@@ -100,6 +102,7 @@ class TripStateStore:
         return stored == device_token
 
     def check_reroute_cooldown(self, trip_id: str) -> None:
+        self._ensure_authoritative_store()
         now = time.time()
         if self._redis is not None:
             try:
@@ -117,7 +120,7 @@ class TripStateStore:
                 raise DatabaseUnavailableException("Redis State Store unavailable.") from e
             return
 
-        # Memory-based fallback
+        # Memory-based fallback for local/dev mode.
         key = f"reroute:{trip_id}"
         last_seen = self._memory_reroute_at.get(key)
         if last_seen is None:

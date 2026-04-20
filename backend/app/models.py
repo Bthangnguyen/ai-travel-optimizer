@@ -57,7 +57,7 @@ class ConstraintOverride(BaseModel):
 
 
 class PlanRequest(BaseModel):
-    prompt: str = Field(min_length=1)
+    prompt: str = Field(min_length=1, max_length=4000)
     city: str = "hue"
     weather: Literal["clear", "rain"] = "clear"
     current_time: str | None = Field(default=None, pattern=r"^([01]\d|2[0-3]):[0-5]\d$")
@@ -147,11 +147,11 @@ class RerouteTrigger(BaseModel):
 class RerouteRequest(BaseModel):
     trip_id: str
     trigger: RerouteTrigger
-    device_token: str | None = None
+    device_token: str = Field(min_length=1)
     prompt: str | None = None
     weather: Literal["clear", "rain"] | None = None
     current_time: str | None = Field(default=None, pattern=r"^([01]\d|2[0-3]):[0-5]\d$")
-    origin: Origin | None = None
+    current_location: Coordinates | None = None
     visited_poi_ids: list[str] = Field(default_factory=list)
 
     @field_validator("current_time")

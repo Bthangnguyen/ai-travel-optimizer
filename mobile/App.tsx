@@ -1,8 +1,11 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { StatusBar } from "expo-status-bar";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
+  NativeModules,
+  Platform,
   Pressable,
   SafeAreaView,
   ScrollView,
@@ -11,15 +14,66 @@ import {
   TextInput,
   View
 } from "react-native";
-import messaging from "@react-native-firebase/messaging";
 import MapView, { Marker, Polyline } from "react-native-maps";
 
-import { API_URL, checkHealth, createPlan, reroutePlan } from "./src/api";
+import {
+  API_URL,
+  checkHealth,
+  clearCachedAuthToken,
+  createPlan,
+  reroutePlan,
+  setDeviceTokenProvider,
+} from "./src/api";
+import {
+  isGeofencingActive,
+  startGeofenceMonitoring,
+  stopGeofenceMonitoring,
+} from "./src/geofence";
 import { PlanResponse } from "./src/types";
 
 const STORAGE_KEY = "current_trip";
+const DEVICE_TOKEN_KEY = "device_token";
 const DEFAULT_PROMPT =
   "Plan a Hue day trip from 08:00 with culture and food, budget 1200000, 5 stops";
+const ENABLE_GEOFENCE = process.env.EXPO_PUBLIC_ENABLE_GEOFENCE === "true";
+const ENABLE_FCM = process.env.EXPO_PUBLIC_ENABLE_FCM === "true";
+
+type FcmMessage = {
+  data?: Record<string, string | undefined>;
+};
+
+type MessagingAuthorizationStatus = {
+  AUTHORIZED: number;
+  PROVISIONAL: number;
+};
+
+type MessagingInstance = {
+  requestPermission: () => Promise<number>;
+  getToken: () => Promise<string>;
+  onMessage: (listener: (message: FcmMessage) => void | Promise<void>) => () => void;
+  getInitialNotification?: () => Promise<FcmMessage | null>;
+  onNotificationOpenedApp?: (listener: (message: FcmMessage) => void | Promise<void>) => () => void;
+};
+
+type MessagingModule = {
+  (): MessagingInstance;
+  AuthorizationStatus: MessagingAuthorizationStatus;
+};
+
+function loadMessagingModule(): MessagingModule | null {
+  if (!NativeModules.RNFBAppModule) {
+    return null;
+  }
+  try {
+    const firebaseMessaging = require("@react-native-firebase/messaging") as {
+      default: MessagingModule;
+    };
+    return firebaseMessaging.default;
+  } catch (error) {
+    console.warn("Firebase messaging module unavailable:", error);
+    return null;
+  }
+}
 
 function parseRouteCoordinates(trip: PlanResponse | null) {
   if (!trip?.itinerary) return [];
@@ -29,6 +83,30 @@ function parseRouteCoordinates(trip: PlanResponse | null) {
   }));
 }
 
+function createUuidV4(): string {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (char) => {
+    const random = Math.floor(Math.random() * 16);
+    const value = char === "x" ? random : ((random & 0x3) | 0x8);
+    return value.toString(16);
+  });
+}
+
+function createFallbackDeviceToken(): string {
+  return `local-${Platform.OS}-${createUuidV4()}`;
+}
+
+function parseStoredTrip(raw: string | null): PlanResponse | null {
+  if (!raw) {
+    return null;
+  }
+  try {
+    return JSON.parse(raw) as PlanResponse;
+  } catch (error) {
+    console.warn("Unable to parse stored trip payload:", error);
+    return null;
+  }
+}
+
 export default function App() {
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
   const [trip, setTrip] = useState<PlanResponse | null>(null);
@@ -36,11 +114,26 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [backendStatus, setBackendStatus] = useState<"checking" | "ok" | "error">("checking");
   const [backendMessage, setBackendMessage] = useState("Checking backend connectivity...");
+  const [deviceToken, setDeviceToken] = useState<string | null>(null);
+  const [geofenceStatus, setGeofenceStatus] = useState<"active" | "inactive" | "error" | "disabled">(
+    ENABLE_GEOFENCE ? "inactive" : "disabled"
+  );
+  const [rerouteNotice, setRerouteNotice] = useState<string | null>(null);
+  const tripRef = useRef<PlanResponse | null>(null);
 
   useEffect(() => {
     AsyncStorage.getItem(STORAGE_KEY).then((raw) => {
-      if (raw) {
-        setTrip(JSON.parse(raw) as PlanResponse);
+      const parsedTrip = parseStoredTrip(raw);
+      if (parsedTrip) {
+        tripRef.current = parsedTrip;
+        setTrip(parsedTrip);
+      } else if (raw) {
+        void AsyncStorage.removeItem(STORAGE_KEY);
+      }
+    });
+    AsyncStorage.getItem(DEVICE_TOKEN_KEY).then((token) => {
+      if (token) {
+        setDeviceToken(token);
       }
     });
   }, []);
@@ -49,35 +142,122 @@ export default function App() {
     void runHealthCheck();
   }, []);
 
+  async function getOrCreateDeviceToken(): Promise<string> {
+    if (deviceToken) {
+      return deviceToken;
+    }
+    const stored = await AsyncStorage.getItem(DEVICE_TOKEN_KEY);
+    if (stored) {
+      setDeviceToken(stored);
+      return stored;
+    }
+    const fallbackToken = createFallbackDeviceToken();
+    await AsyncStorage.setItem(DEVICE_TOKEN_KEY, fallbackToken);
+    setDeviceToken(fallbackToken);
+    return fallbackToken;
+  }
+
   useEffect(() => {
-    async function requestPermission() {
-      const authStatus = await messaging().requestPermission();
-      const enabled =
-        authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
-        authStatus === messaging.AuthorizationStatus.PROVISIONAL;
-      if (enabled) {
-        console.log("FCM Authorization status:", authStatus);
+    // Register the device-token provider so src/api.ts can request a bearer
+    // JWT from the backend when AUTH_MODE=bearer_jwt. Cached tokens are
+    // invalidated whenever the device token itself changes.
+    setDeviceTokenProvider(() => getOrCreateDeviceToken());
+    clearCachedAuthToken();
+  }, [deviceToken]);
+
+  useEffect(() => {
+    const messagingModule = loadMessagingModule();
+    const disposers: Array<() => void> = [];
+
+    async function applyTripFromMessage(remoteMessage: FcmMessage): Promise<void> {
+      if (!remoteMessage.data?.reroute) {
+        return;
+      }
+      try {
+        const newTripData = JSON.parse(remoteMessage.data.reroute) as PlanResponse;
+        const activeTrip =
+          tripRef.current ??
+          parseStoredTrip(await AsyncStorage.getItem(STORAGE_KEY));
+        if (activeTrip && activeTrip.trip_id !== newTripData.trip_id) {
+          console.warn(
+            `Skip reroute payload for trip ${newTripData.trip_id} (active trip: ${activeTrip.trip_id})`,
+          );
+          return;
+        }
+        await persistTrip(newTripData);
+        const delayMins = remoteMessage.data.delay_minutes ?? "0";
+        const notice = `Reroute applied (+${delayMins}m delay)`;
+        setRerouteNotice(notice);
+        Alert.alert("Trip Updated", notice);
+      } catch (error) {
+        console.error("Failed to process reroute payload from FCM:", error);
       }
     }
-    void requestPermission();
 
-    // FCM Foreground Listener
-    const unsubscribe = messaging().onMessage(async (remoteMessage) => {
-      console.log("FCM message received in foreground:", remoteMessage);
+    async function bootstrapMessaging(): Promise<void> {
+      if (!ENABLE_FCM) {
+        await getOrCreateDeviceToken();
+        return;
+      }
 
-      // Nhận payload và cập nhật lại state
-      if (remoteMessage.data && remoteMessage.data.reroute) {
-        try {
-          const newTripData = JSON.parse(remoteMessage.data.reroute as string) as PlanResponse;
-          setTrip(newTripData);
-          // O tuỳ chọn: Lưu lại lịch trình qua persistTrip thay vì chỉ bằng setTrip
-        } catch (err) {
-          console.error("Lỗi khi parse dữ liệu reroute từ FCM:", err);
+      if (!messagingModule) {
+        // Expo Go/native fallback: keep manual reroute path functional.
+        await getOrCreateDeviceToken();
+        return;
+      }
+
+      const messaging = messagingModule();
+      const authStatus = await messaging.requestPermission();
+      const enabled =
+        authStatus === messagingModule.AuthorizationStatus.AUTHORIZED ||
+        authStatus === messagingModule.AuthorizationStatus.PROVISIONAL;
+      if (enabled) {
+        console.log("FCM Authorization status:", authStatus);
+        const token = await messaging.getToken();
+        setDeviceToken(token);
+        await AsyncStorage.setItem(DEVICE_TOKEN_KEY, token);
+      } else {
+        await getOrCreateDeviceToken();
+      }
+
+      disposers.push(messaging.onMessage(async (remoteMessage) => {
+        console.log("FCM message received in foreground:", remoteMessage);
+        await applyTripFromMessage(remoteMessage);
+      }));
+
+      if (typeof messaging.onNotificationOpenedApp === "function") {
+        disposers.push(
+          messaging.onNotificationOpenedApp((remoteMessage) => {
+            void applyTripFromMessage(remoteMessage);
+          }),
+        );
+      }
+
+      if (typeof messaging.getInitialNotification === "function") {
+        const initialMessage = await messaging.getInitialNotification();
+        if (initialMessage) {
+          await applyTripFromMessage(initialMessage);
         }
       }
-    });
+    }
 
-    return unsubscribe;
+    void bootstrapMessaging().catch((error) => {
+      console.error("FCM bootstrap failed:", error);
+    });
+    return () => {
+      disposers.forEach((dispose) => dispose());
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!ENABLE_GEOFENCE) {
+      setGeofenceStatus("disabled");
+      return;
+    }
+    void refreshGeofenceStatus();
+    return () => {
+      void stopGeofenceMonitoring();
+    };
   }, []);
 
   async function runHealthCheck() {
@@ -97,8 +277,43 @@ export default function App() {
   }
 
   async function persistTrip(nextTrip: PlanResponse) {
+    tripRef.current = nextTrip;
     setTrip(nextTrip);
     await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(nextTrip));
+    if (!ENABLE_GEOFENCE) {
+      setGeofenceStatus("disabled");
+      return;
+    }
+    if (nextTrip.itinerary.length > 0) {
+      try {
+        await startGeofenceMonitoring(nextTrip.itinerary);
+        setGeofenceStatus("active");
+      } catch (nextError) {
+        setGeofenceStatus("error");
+        console.error("Failed to start geofence monitoring:", nextError);
+      }
+    }
+  }
+
+  async function refreshGeofenceStatus() {
+    if (!ENABLE_GEOFENCE) {
+      setGeofenceStatus("disabled");
+      return;
+    }
+    try {
+      const active = await isGeofencingActive();
+      setGeofenceStatus(active ? "active" : "inactive");
+    } catch (nextError) {
+      setGeofenceStatus("error");
+      console.error("Geofence status check failed:", nextError);
+    }
+  }
+
+  function hhmmNow(): string {
+    const now = new Date();
+    const h = String(now.getHours()).padStart(2, "0");
+    const m = String(now.getMinutes()).padStart(2, "0");
+    return `${h}:${m}`;
   }
 
   async function handleCreatePlan() {
@@ -106,8 +321,11 @@ export default function App() {
     setError(null);
     try {
       await runHealthCheck();
-      const nextTrip = await createPlan({ prompt });
+      const token = await getOrCreateDeviceToken();
+      const nextTrip = await createPlan({ prompt, deviceToken: token });
       await persistTrip(nextTrip);
+      setRerouteNotice(null);
+      await refreshGeofenceStatus();
     } catch (nextError) {
       const detail = nextError instanceof Error ? nextError.message : "Unable to create plan.";
       setError(`API ${API_URL}: ${detail}`);
@@ -124,13 +342,18 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
+      const token = await getOrCreateDeviceToken();
       await runHealthCheck();
       const nextTrip = await reroutePlan({
         tripId: trip.trip_id,
+        deviceToken: token,
         kind,
-        minutesLate: kind === "delayed" ? 30 : 0
+        minutesLate: kind === "delayed" ? 30 : 0,
+        currentTime: hhmmNow(),
       });
       await persistTrip(nextTrip);
+      setRerouteNotice(`Manual reroute applied (${kind}).`);
+      await refreshGeofenceStatus();
     } catch (nextError) {
       const detail = nextError instanceof Error ? nextError.message : "Unable to reroute.";
       setError(`API ${API_URL}: ${detail}`);
@@ -152,6 +375,19 @@ export default function App() {
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Trip brief</Text>
           <Text style={styles.noteText}>API endpoint: {API_URL}</Text>
+          <Text style={styles.noteText}>
+            Geofence: {geofenceStatus === "active"
+              ? "Active"
+              : geofenceStatus === "inactive"
+                ? "Inactive"
+                : geofenceStatus === "disabled"
+                  ? "Disabled for stable release"
+                  : "Error"}
+          </Text>
+          {!ENABLE_FCM ? (
+            <Text style={styles.noteText}>Auto reroute via push is temporarily disabled for stable release.</Text>
+          ) : null}
+          {rerouteNotice ? <Text style={styles.noticeText}>{rerouteNotice}</Text> : null}
           <View style={styles.healthRow}>
             <Text
               style={[
@@ -508,6 +744,10 @@ const styles = StyleSheet.create({
   noteText: {
     color: "#494949",
     lineHeight: 20
+  },
+  noticeText: {
+    color: "#1f5c4d",
+    fontWeight: "700",
   },
   healthStatus: {
     fontWeight: "700"
