@@ -10,10 +10,19 @@ import { Part1Redefine } from "./Part1Redefine";
 import { ComponentLibrary } from "./ComponentLibrary";
 import { LineTemplate } from "./LineTemplate";
 import { Part2Priorities } from "./Part2Priorities";
+import { AtomShowcase } from "./AtomShowcase";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="AtomShowcase"
+        component={AtomShowcase}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
       <Composition
         id="IconDemo"
         component={IconDemo}
