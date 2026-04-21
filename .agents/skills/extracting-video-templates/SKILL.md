@@ -1,211 +1,155 @@
 ---
 name: extracting-video-templates
-description: Analyzes reference videos to extract composable visual ATOMS (primitives), then generates reusable Remotion TSX components that combine into complex layouts. Use this skill when the user provides a video link/file and wants to reverse-engineer its visual patterns into the Dark Needle template library.
+description: >
+  Phân tích video mẫu để trích xuất các Composable Atoms (nguyên tử thị giác) và sinh
+  component Remotion TSX tái sử dụng. Kích hoạt khi người dùng nói: 'extract template',
+  'nạp template mới', 'phân tích video này', 'thêm atom từ video', 'học phong cách này',
+  'reverse engineer video', 'tách atom từ link', 'bổ sung thư viện từ video'.
+  KHÔNG dùng cho: render video, debug animation, tạo kịch bản JSON, sửa lỗi code,
+  chỉnh sửa atom đã có, hoặc các tác vụ không liên quan đến trích xuất template mới.
 ---
 
 # Extracting Video Templates — Composable Atom System
 
+Trích xuất các khối xây dựng cơ bản (Atoms) từ video mẫu, sau đó sinh component
+Remotion TSX có thể kết hợp với nhau để tạo ra các hiệu ứng phức tạp.
+
+---
+
+## Khi nào dùng
+
+- User chia sẻ link YouTube hoặc file video và muốn "extract template"
+- User nói "nạp template mới", "phân tích video", "thêm atom"
+- User muốn mở rộng thư viện atom với các pattern mới
+- User nói "học phong cách này" hoặc "reverse engineer video này"
+
+## Khi nào KHÔNG dùng
+
+- User muốn render/xuất video → dùng Remotion CLI
+- User muốn sửa lỗi animation đang có → debug trực tiếp trong code
+- User muốn tạo kịch bản JSON mới → dùng tools/plan_processor.js
+- User muốn chỉnh sửa atom đã tồn tại → sửa trực tiếp file trong src/atoms/
+
+---
+
 ## Core Philosophy
 
-**DO NOT extract finished scenes.** Extract the ATOMS — the smallest reusable building blocks.  
-Complex scenes are just combinations of simple atoms:
+**KHÔNG extract scene hoàn chỉnh.** Extract các ATOMS — khối xây dựng nhỏ nhất.
+Complex scenes chỉ là tổ hợp của các atoms đơn giản:
 
 ```
 center + children + line + camera_sweep = "Center+Children Radial Layout"
-word + word + line + camera_pan        = "Word→Word Chain"  
+word + word + line + camera_pan        = "Word→Word Chain"
 center + center + line                 = "Multi-Center Flow"
 ```
 
-**The goal:** Find new atoms that DON'T exist yet, and verify they compose well with existing atoms.
+**KHÔNG extract icons.** Icons là content, không phải structure. Chỉ extract template pattern.
 
-**DO NOT extract icons.** Icons are content, not structure. Only extract the template pattern.
+---
 
-## When to use this skill
-- User shares a video URL and says "extract template", "nạp template mới", "phân tích video"
-- User wants to expand the composable atom library
+## Workflow Routing
+
+| Workflow | Khi nào dùng |
+|----------|-------------|
+| `workflows/quick-scan.md` | Cần kiểm tra nhanh video có atom mới không (5 frames, ~3 phút) |
+| `workflows/full-extraction.md` | Trích xuất đầy đủ, sinh code, test compose (20 frames, ~15 phút) |
+
+---
 
 ## Atom Architecture
 
-### Layer 1 — Structural Atoms (Position & Layout)
-These define WHERE things go on screen:
+Đọc chi tiết tại `references/atom-layers.md`. Tóm tắt 5 tầng:
 
-| Atom | What it does | Existing? |
-|---|---|---|
-| `Center` | Single element at (960, 540) | ✅ LineNode |
-| `Pair` | Two elements side by side | ✅ split_screen |
-| `Chain(H)` | N elements in horizontal sequence | ✅ word→word |
-| `Chain(V)` | N elements in vertical sequence | ✅ S4_Chain |
-| `Radial` | 1 center + N children around it | ✅ center+children |
-| `Grid(r,c)` | r×c matrix layout | ❌ NEW |
-| `Stack` | Vertical list with stagger | ❌ NEW |
-| `Orbit` | Elements on a circular path | ❌ NEW |
-| `Tree` | Hierarchical branching | ❌ NEW |
-| `Diagonal` | Elements along a 45° line | ❌ NEW |
+| Tầng | Vai trò | Ví dụ |
+|------|---------|-------|
+| **Layout** | Vị trí trên màn hình | Center, Chain, Radial, Grid, Stack |
+| **Connection** | Quan hệ giữa elements | Line, Arrow, Bracket, Path |
+| **Content** | Nội dung hiển thị | Word, BoxWord, Badge, Number |
+| **Motion** | Cách animate | BlurIn, ScaleSlam, SlideIn, PopIn |
+| **Camera** | Di chuyển viewport | StaticZoom, Sweep, Pullback, Dolly |
 
-### Layer 2 — Connection Atoms (Relationships)
-These define HOW elements relate:
-
-| Atom | What it does | Existing? |
-|---|---|---|
-| `Line(A→B)` | SVG line from A to B | ✅ AnimLine |
-| `Arrow(A→B)` | Line with arrowhead | ✅ AnimLine(arrow) |
-| `Bracket` | Curly brace grouping | ❌ NEW |
-| `Circle` | Enclosing ring | ❌ NEW |
-| `Path` | Curved bezier connection | ❌ NEW |
-| `Pulse` | Animated dot traveling along line | ❌ NEW |
-
-### Layer 3 — Content Atoms (What is displayed)
-These define WHAT is shown at a position:
-
-| Atom | What it does | Existing? |
-|---|---|---|
-| `Word` | Bold uppercase text | ✅ LineNode(word) |
-| `BoxWord` | Text inside bordered box | ✅ LineNode(boxword) |
-| `Icon` | SVG pictogram (generic placeholder) | ✅ LineNode(icon) |
-| `Number` | Animated counter | ❌ NEW |
-| `Bar` | Progress/percentage bar | ❌ NEW |
-| `Quote` | Styled quotation block | ❌ NEW |
-| `Badge` | Pill-shaped label | ✅ Badge |
-
-### Layer 4 — Motion Atoms (How things move)
-These define HOW things animate:
-
-| Atom | What it does | Existing? |
-|---|---|---|
-| `BlurIn` | Fade from blur to sharp | ✅ BlurReveal |
-| `ScaleSlam` | Scale from 3x to 1x | ✅ ScalePunch |
-| `SlideIn(dir)` | Slide from left/right/top/bottom | ❌ NEW |
-| `PopIn` | Scale from 0 to 1 with bounce | ❌ NEW |
-| `TypeWriter` | Character-by-character reveal | ❌ NEW |
-| `Wipe` | Horizontal/vertical wipe reveal | ❌ NEW |
-| `Shake` | 3-5 frame position jitter | ❌ NEW |
-| `Pulse` | Opacity throb (glow on/off) | ❌ NEW |
-
-### Layer 5 — Camera Atoms (How the viewport moves)
-These define HOW the camera behaves:
-
-| Atom | What it does | Existing? |
-|---|---|---|
-| `StaticZoom` | Slow 1.0→1.04 drift | ✅ Scene wrapper |
-| `ZoomPush` | 1.0→3.5 into target | ✅ OVScene |
-| `Sweep(targets)` | Pan between focal points at 2.0-2.5x | ✅ Camera |
-| `Pullback` | Zoom out to 0.85-0.95 reveal | ✅ Camera |
-| `Dolly` | Smooth lateral pan | ❌ NEW |
-| `Rack` | Blur foreground, focus background | ❌ NEW |
-| `Handheld` | Subtle random drift | ❌ NEW |
-
-## Composition Rules
-
-When atoms combine, follow these patterns:
-
+Composition Formula:
 ```
-SCENE = Layout + Content[] + Connection[] + Motion[] + Camera
-
-Example 1: "Focus & Integrity"
-  Layout:   Radial(center=1, children=3)
-  Content:  [Icon("focus"), BoxWord("habits"), BoxWord("integrity"), BoxWord("promises")]
-  Connect:  [Line(center→child1), Line(center→child2), Line(center→child3)]
-  Motion:   [BlurIn(center, delay=0), BlurIn(child1, delay=40), ...]
-  Camera:   [Sweep(center→child1→child2→child3), Pullback]
-
-Example 2: "Leverage Chain"  
-  Layout:   Chain(H, count=4)
-  Content:  [Word("info"), Word("tools"), Word("people"), Word("methods")]
-  Connect:  [Arrow(1→2), Arrow(2→3), Arrow(3→4)]
-  Motion:   [BlurIn(1, delay=0), BlurIn(2, delay=30), ...]
-  Camera:   [Sweep(1→2→3→4), Pullback]
+SCENE = Layout(positions) + Content(nodes) + Connection(links) + Motion(animations) + Camera(viewport)
 ```
 
-## Workflow
+---
 
-### Phase 1: Video Ingestion & Frame Capture
-- [ ] Open the video in a browser (YouTube) or local player
-- [ ] Capture screenshots at **5% intervals** (0%, 5%, 10%, 15%... 95%) — **20 frames total**
-- [ ] Save all screenshots to the artifacts directory
+## Output
 
-### Phase 2: Atom Decomposition
-For each unique visual pattern found, decompose it into atoms:
-- [ ] Identify the **Layout Atom** (where things are positioned)
-- [ ] Identify the **Content Atoms** (what is displayed — ignore specific icons/images)
-- [ ] Identify the **Connection Atoms** (how elements relate visually)
-- [ ] Identify the **Motion Atoms** (how things animate in/out)
-- [ ] Identify the **Camera Atoms** (how the viewport moves)
+**Loại:** Remotion TSX Components
+**Vị trí:** `src/atoms/`
+**Files tạo ra:**
+- `src/atoms/[AtomName].tsx` — Component atom mới
+- `src/atoms/index.ts` — Updated barrel export
+- `resources/design-tokens.json` — Updated atom registry
 
-### Phase 3: Gap Analysis
-- [ ] Cross-reference each atom against the existing library (tables above)
-- [ ] Classify:
-  ```
-  EXISTING  → Already in library → skip
-  VARIANT   → Slight modification → note param differences  
-  NEW ATOM  → Completely new primitive → MUST BUILD
-  ```
-- [ ] Prioritize NEW atoms that unlock the MOST compositions when combined with existing atoms
+---
 
-### Phase 4: Code Generation
-- [ ] Build each new atom as a standalone, composable React component
-- [ ] Each atom must accept at minimum: `delay`, `duration`, `color`, position coordinates
-- [ ] Atoms must NOT contain hardcoded content — everything is props-driven
-- [ ] Follow this template:
+## Tiêu chí Chất lượng
 
-```typescript
-// Every atom is a pure function of (position, timing, style)
-interface AtomNameProps {
-  x: number; y: number;       // Position
-  delay: number;               // When to start animating
-  duration?: number;           // How long the animation takes
-  color?: string;              // DNA token color
-  // ...atom-specific props
-}
+Output TỐT vs XẤU:
 
-export const AtomName: React.FC<AtomNameProps> = ({ x, y, delay, duration = 15, color = C.white }) => {
-  const f = useCurrentFrame();
-  // Pure interpolation logic — no side effects
-  const progress = interpolate(f, [delay, delay + duration], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic)
-  });
-  return (/* render */);
-};
+| TỐT ✅ | XẤU ❌ |
+|--------|--------|
+| Atom là pure function của (position, timing, style) | Atom chứa logic nghiệp vụ hoặc hardcode content |
+| Atom accepts `delay` prop cho sequencing | Timing cố định, không compose được |
+| Dùng DNA tokens (`C.bg`, `C.yellow`) | Hardcode hex colors |
+| Dùng `interpolate` + `Easing` từ Remotion | CSS keyframes hoặc thư viện animation ngoài |
+| Composable: atom A + atom B tạo scene mới | Monolithic: 1 component = 1 scene duy nhất |
+| Có ít nhất 2 ví dụ compose với atoms hiện có | Không test khả năng kết hợp |
+
+---
+
+## References
+
+- `references/atom-layers.md` — Chi tiết 5 tầng atom với bảng existing/missing
+- `references/composition-examples.md` — Ví dụ thực tế kết hợp atoms thành scenes
+- `resources/design-tokens.json` — Registry atom hiện tại (nguồn sự thật duy nhất)
+
+---
+
+## QA Checklist
+
+Trước khi đánh dấu atom hoàn thành, verify TẤT CẢ:
+
+```
+□ 1. Pure function — không internal state ngoài useCurrentFrame()
+□ 2. Tất cả colors dùng DNA tokens (C.bg, C.yellow, etc.)
+□ 3. Accepts delay prop cho sequencing
+□ 4. Hoạt động độc lập VÀ compose được với atoms khác
+□ 5. Render đúng bên trong Camera wrapper
+□ 6. Không hardcode text/icons — mọi thứ là props
+□ 7. Test render ở 3 delay khác nhau xác nhận timing đúng
+□ 8. Đã export trong src/atoms/index.ts
+□ 9. Đã cập nhật design-tokens.json
+□ 10. Có ít nhất 2 ví dụ compose với atoms hiện có
 ```
 
-### Phase 5: Composition Test
-- [ ] Combine new atoms with existing atoms to create at least 2 complex scenes
-- [ ] Verify the new atoms compose cleanly (no visual conflicts, timing works)
-- [ ] Render test frames and verify output
+**Score < 7:** Tự động sửa, không hiển thị cho user.
+**Score ≥ 7:** Hiển thị output kèm "QA: X/10 ✓".
 
-### Phase 6: Library Registration
-- [ ] Add new atoms to `src/atoms/` directory (create if needed)
-- [ ] Export from `src/atoms/index.ts`
-- [ ] Add demo scene in `ComponentLibrary` showing the atom solo + combined
-- [ ] Update `resources/design-tokens.json` atom registry
+---
 
 ## Extraction Priority Matrix
 
-When multiple new atoms are found, prioritize by **composability score**:
+Khi phát hiện nhiều atom mới, ưu tiên theo **composability score**:
 
-| Score | Meaning |
-|---|---|
-| ★★★★★ | Unlocks 5+ new scene types when combined with existing atoms |
-| ★★★★ | Unlocks 3-4 new scene types |
-| ★★★ | Unlocks 2 new scene types |
-| ★★ | Unlocks 1 scene type |
-| ★ | Single-use pattern, low reuse potential → deprioritize |
+| Score | Ý nghĩa |
+|-------|---------|
+| ★★★★★ | Mở khóa 5+ scene mới khi kết hợp với atoms hiện có |
+| ★★★★ | Mở khóa 3-4 scene mới |
+| ★★★ | Mở khóa 2 scene mới |
+| ★★ | Mở khóa 1 scene |
+| ★ | Dùng 1 lần, khả năng tái sử dụng thấp → deprioritize |
 
-## Quality Checklist
-
-Before marking an atom as complete:
-- [ ] Pure function — no internal state beyond `useCurrentFrame()`
-- [ ] All colors via DNA tokens (`C.bg`, `C.yellow`, etc.)
-- [ ] Accepts `delay` prop for sequencing
-- [ ] Works independently AND composes with other atoms
-- [ ] Renders correctly inside a `Camera` wrapper
-- [ ] No hardcoded text/icons — everything is props
-- [ ] Test render at 3 different delays confirms correct timing
+---
 
 ## Existing Library Reference
 
-Read current atoms from:
-- `src/ComponentLibrary/index.tsx` — Primitives & basic templates
+Đọc atoms hiện tại từ:
+- `src/atoms/` — Composable atoms
+- `src/ComponentLibrary/index.tsx` — Primitives & templates cơ bản
 - `src/LineTemplate/index.tsx` — Line connection system + Camera
 - `src/Part1Redefine/index.tsx` — Overview Flowchart spine
 - `src/Part2Priorities/index.tsx` — Camera sweep compositions

@@ -1,95 +1,186 @@
 ---
 name: remotion-best-practices
-description: Best practices for Remotion - Video creation in React
-metadata:
-  tags: remotion, video, react, animation, composition
+description: >
+  Cung cấp kiến thức chuyên sâu về Remotion framework để viết code video animation
+  đúng chuẩn, tối ưu hiệu năng. Kích hoạt khi người dùng nói: 'tạo video mới',
+  'code remotion', 'render video', 'thêm animation', 'sửa lỗi render', 'setup remotion',
+  'thêm audio vào video', 'làm transition', 'chèn subtitle', 'timing animation'.
+  KHÔNG dùng cho: extract template từ video mẫu (dùng extracting-video-templates),
+  tạo kịch bản/storyboard JSON, hoặc các tác vụ không liên quan đến Remotion code.
 ---
 
-## When to use
+# Remotion Best Practices — Dark Needle Engine
 
-Use this skills whenever you are dealing with Remotion code to obtain the domain-specific knowledge.
+Kiến thức chuẩn về Remotion framework, đảm bảo code sinh ra luôn chạy mượt,
+tối ưu hiệu năng và tuân thủ DNA tokens của Dark Needle.
 
-## New project setup
+---
 
-When in an empty folder or workspace with no existing Remotion project, scaffold one using:
+## Khi nào dùng
 
+- User tạo composition/scene mới trong Remotion
+- User cần thêm animation, audio, transition
+- User gặp lỗi render hoặc visual glitch
+- User hỏi về timing, easing, sequencing
+- User muốn setup project Remotion mới
+
+## Khi nào KHÔNG dùng
+
+- User muốn extract template từ video mẫu → dùng `extracting-video-templates`
+- User muốn tạo kịch bản JSON → dùng `tools/plan_processor.js`
+- User hỏi về design system/DNA tokens → đọc `architecture/dark_needle_system.md`
+
+---
+
+## Workflow Routing
+
+| Workflow | Khi nào dùng |
+|----------|-------------|
+| `workflows/new-composition.md` | Tạo composition mới từ đầu |
+| `workflows/debug-render.md` | Sửa lỗi render, visual glitch, timing sai |
+
+---
+
+## Quick Reference — Lệnh thường dùng
+
+### Setup project mới
 ```bash
 npx create-video@latest --yes --blank --no-tailwind my-video
 ```
 
-Replace `my-video` with a suitable project name.
-
-## Starting preview
-
-Stsrt the Remotion Studio to preview a video:
-
+### Preview trong Studio
 ```bash
 npx remotion studio
 ```
 
-## Optional: one-frame render check
-
-You can render a single frame with the CLI to sanity-check layout, colors, or timing.  
-Skip it for trivial edits, pure refactors, or when you already have enough confidence from Studio or prior renders.
-
+### Render test 1 frame (sanity check)
 ```bash
 npx remotion still [composition-id] --scale=0.25 --frame=30
 ```
 
-At 30 fps, `--frame=30` is the one-second mark (`--frame` is zero-based).
+### Render full video
+```bash
+npx remotion render src/index.ts [composition-id] output.mp4
+```
 
-## Captions
+---
 
-When dealing with captions or subtitles, load the [./rules/subtitles.md](./rules/subtitles.md) file for more information.
+## Dark Needle DNA Rules
 
-## Using FFmpeg
+Khi viết code Remotion cho dự án này, LUÔN tuân thủ:
 
-For some video operations, such as trimming videos or detecting silence, FFmpeg should be used. Load the [./rules/ffmpeg.md](./rules/ffmpeg.md) file for more information.
+### Colors — Chỉ dùng DNA tokens
+```typescript
+const C = { bg: '#0A0A0C', white: '#FFF', yellow: '#F5E500', red: '#CC0000', green: '#22C55E' };
+```
+**KHÔNG BAO GIỜ** hardcode hex color ngoài bảng trên.
 
-## Silence detection
+### Typography — ALL CAPS + Letter Spacing
+```typescript
+{
+  textTransform: 'uppercase',
+  letterSpacing: 2,  // Minimum 2px
+  fontWeight: 900,
+  fontFamily: "'Impact','Arial Black','Helvetica Neue',sans-serif"
+}
+```
 
-When needing to detect and trim silent segments from video or audio files, load the [./rules/silence-detection.md](./rules/silence-detection.md) file.
+### Animation — Chỉ dùng Remotion interpolate
+```typescript
+// ✅ ĐÚNG
+import { interpolate, Easing } from 'remotion';
+const opacity = interpolate(frame, [delay, delay + 12], [0, 1], {
+  extrapolateLeft: 'clamp', extrapolateRight: 'clamp'
+});
 
-## Audio visualization
+// ❌ SAI — không dùng CSS keyframes hoặc thư viện ngoài
+```
 
-When needing to visualize audio (spectrum bars, waveforms, bass-reactive effects), load the [./rules/audio-visualization.md](./rules/audio-visualization.md) file for more information.
+### Camera — Easing chuẩn
+```typescript
+// Camera keyframes luôn dùng Easing.inOut(Easing.cubic) cho chuyển động mượt
+easing: Easing.inOut(Easing.cubic)
+```
 
-## Sound effects
+### Overlays — Luôn có FilmGrain + Vignette
+Mọi composition phải wrap trong `<FilmGrain />` và `<Vignette />` overlays.
 
-When needing to use sound effects, load the [./rules/sfx.md](./rules/sfx.md) file for more information.
+---
 
-## How to use
+## Rules Reference
 
-Read individual rule files for detailed explanations and code examples:
+Đọc từng file rule cho kiến thức chi tiết:
 
-- [rules/3d.md](rules/3d.md) - 3D content in Remotion using Three.js and React Three Fiber
-- [rules/animations.md](rules/animations.md) - Fundamental animation skills for Remotion
-- [rules/assets.md](rules/assets.md) - Importing images, videos, audio, and fonts into Remotion
-- [rules/audio.md](rules/audio.md) - Using audio and sound in Remotion - importing, trimming, volume, speed, pitch
-- [rules/calculate-metadata.md](rules/calculate-metadata.md) - Dynamically set composition duration, dimensions, and props
-- [rules/can-decode.md](rules/can-decode.md) - Check if a video can be decoded by the browser using Mediabunny
-- [rules/charts.md](rules/charts.md) - Chart and data visualization patterns for Remotion (bar, pie, line, stock charts)
-- [rules/compositions.md](rules/compositions.md) - Defining compositions, stills, folders, default props and dynamic metadata
-- [rules/extract-frames.md](rules/extract-frames.md) - Extract frames from videos at specific timestamps using Mediabunny
-- [rules/fonts.md](rules/fonts.md) - Loading Google Fonts and local fonts in Remotion
-- [rules/get-audio-duration.md](rules/get-audio-duration.md) - Getting the duration of an audio file in seconds with Mediabunny
-- [rules/get-video-dimensions.md](rules/get-video-dimensions.md) - Getting the width and height of a video file with Mediabunny
-- [rules/get-video-duration.md](rules/get-video-duration.md) - Getting the duration of a video file in seconds with Mediabunny
-- [rules/gifs.md](rules/gifs.md) - Displaying GIFs synchronized with Remotion's timeline
-- [rules/images.md](rules/images.md) - Embedding images in Remotion using the Img component
-- [rules/light-leaks.md](rules/light-leaks.md) - Light leak overlay effects using @remotion/light-leaks
-- [rules/lottie.md](rules/lottie.md) - Embedding Lottie animations in Remotion
-- [rules/measuring-dom-nodes.md](rules/measuring-dom-nodes.md) - Measuring DOM element dimensions in Remotion
-- [rules/measuring-text.md](rules/measuring-text.md) - Measuring text dimensions, fitting text to containers, and checking overflow
-- [rules/sequencing.md](rules/sequencing.md) - Sequencing patterns for Remotion - delay, trim, limit duration of items
-- [rules/tailwind.md](rules/tailwind.md) - Using TailwindCSS in Remotion
-- [rules/text-animations.md](rules/text-animations.md) - Typography and text animation patterns for Remotion
-- [rules/timing.md](rules/timing.md) - Timing with interpolate and Bézier easing, springs
-- [rules/transitions.md](rules/transitions.md) - Scene transition patterns for Remotion
-- [rules/transparent-videos.md](rules/transparent-videos.md) - Rendering out a video with transparency
-- [rules/trimming.md](rules/trimming.md) - Trimming patterns for Remotion - cut the beginning or end of animations
-- [rules/videos.md](rules/videos.md) - Embedding videos in Remotion - trimming, volume, speed, looping, pitch
-- [rules/parameters.md](rules/parameters.md) - Make a video parametrizable by adding a Zod schema
-- [rules/maps.md](rules/maps.md) - Add a map using Mapbox and animate it
-- [rules/silence-detection.md](rules/silence-detection.md) - Adaptive silence detection using FFmpeg loudnorm and silencedetect
-- [rules/voiceover.md](rules/voiceover.md) - Adding AI-generated voiceover to Remotion compositions using ElevenLabs TTS
+### Core Animation & Timing
+- `rules/animations.md` — Kỹ năng animation cơ bản
+- `rules/timing.md` — Interpolate, Bézier easing, springs
+- `rules/sequencing.md` — Delay, trim, limit duration
+- `rules/transitions.md` — Scene transition patterns
+- `rules/text-animations.md` — Typography animation patterns
+- `rules/trimming.md` — Cắt đầu/cuối animation
+
+### Media
+- `rules/audio.md` — Import, trim, volume, speed, pitch
+- `rules/videos.md` — Embed video, trimming, looping
+- `rules/images.md` — Embed images bằng Img component
+- `rules/gifs.md` — GIFs đồng bộ với timeline
+- `rules/fonts.md` — Google Fonts và local fonts
+- `rules/assets.md` — Import images, videos, audio
+
+### Advanced Features
+- `rules/voiceover.md` — AI voiceover bằng ElevenLabs TTS
+- `rules/subtitles.md` — Subtitle system
+- `rules/display-captions.md` — Caption display patterns
+- `rules/audio-visualization.md` — Spectrum bars, waveforms
+- `rules/charts.md` — Bar, pie, line, stock charts
+- `rules/3d.md` — Three.js và React Three Fiber
+- `rules/lottie.md` — Lottie animations
+- `rules/maps.md` — Mapbox animated maps
+- `rules/light-leaks.md` — Light leak overlay effects
+
+### Utilities
+- `rules/compositions.md` — Defining compositions, stills, folders
+- `rules/calculate-metadata.md` — Dynamic duration, dimensions, props
+- `rules/parameters.md` — Parametrizable video với Zod schema
+- `rules/measuring-text.md` — Đo kích thước text, fit containers
+- `rules/measuring-dom-nodes.md` — Đo DOM element dimensions
+- `rules/extract-frames.md` — Trích xuất frames từ video
+- `rules/get-audio-duration.md` — Lấy duration audio
+- `rules/get-video-duration.md` — Lấy duration video
+- `rules/get-video-dimensions.md` — Lấy width/height video
+- `rules/can-decode.md` — Check browser decode support
+- `rules/transparent-videos.md` — Render video với transparency
+- `rules/silence-detection.md` — Phát hiện khoảng lặng bằng FFmpeg
+- `rules/ffmpeg.md` — FFmpeg operations
+- `rules/sfx.md` — Sound effects
+
+---
+
+## QA Checklist
+
+Trước khi kết thúc bất kỳ tác vụ Remotion nào, verify:
+
+```
+□ 1. Tất cả colors dùng DNA tokens (C.bg, C.yellow, etc.)
+□ 2. Text là ALL_CAPS với letterSpacing >= 2
+□ 3. Animation chỉ dùng interpolate + Easing từ Remotion
+□ 4. Camera keyframes dùng Easing.inOut(Easing.cubic)
+□ 5. FilmGrain + Vignette overlays có mặt
+□ 6. Composition đã registered trong Root.tsx
+□ 7. Render test 1 frame thành công (không lỗi visual)
+□ 8. Timing: fade-in 8-12 frames, fade-out 5-8 frames (convention)
+□ 9. Không sử dụng CSS keyframes hoặc animation library ngoài
+□ 10. Icons dùng filter: invert(1) + glow drop-shadow
+```
+
+---
+
+## Tiêu chí Chất lượng
+
+| TỐT ✅ | XẤU ❌ |
+|--------|--------|
+| `interpolate` với `extrapolateLeft/Right: 'clamp'` | Không clamp → giá trị tràn ra ngoài range |
+| Easing curves cho chuyển động tự nhiên | Linear interpolation cho mọi thứ |
+| Scene wrapper với fade-in/fade-out | Hard cut không transition |
+| Camera movement dẫn dắt mắt người xem | Static layout, không có camera motion |
+| DNA tokens nhất quán | Mỗi scene dùng màu khác nhau random |

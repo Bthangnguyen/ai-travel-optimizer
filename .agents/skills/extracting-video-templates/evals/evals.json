@@ -1,0 +1,20 @@
+{
+  "skill_name": "extracting-video-templates",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "extract template từ video này: https://youtu.be/xxjKhBD5N6I",
+      "expected_output": "Chụp 20 frames tại 5% intervals → Phân rã mỗi frame thành 5 tầng (Layout, Connection, Content, Motion, Camera) → So sánh với design-tokens.json → Phát hiện atoms mới (Grid, Bracket, PopIn...) → Sinh TSX component với props (x, y, delay, duration, color) → Test compose với ít nhất 2 atom hiện có → Cập nhật registry"
+    },
+    {
+      "id": 2,
+      "prompt": "xem nhanh video này có gì mới không: https://youtu.be/abc123",
+      "expected_output": "Chạy quick-scan: chụp 5 frames tại 10%, 30%, 50%, 70%, 90% → Với mỗi frame trả lời: Layout đã có chưa? Motion mới? Connection mới? → Tổng hợp bảng → Kết luận: có/không có atom mới → Nếu có, gợi ý chạy full-extraction"
+    },
+    {
+      "id": 3,
+      "prompt": "phân tích video, tôi thấy có kiểu layout ma trận 3x3 rất hay",
+      "expected_output": "Nhận diện Grid(3,3) là NEW atom ở Layer 1 (Layout) → Composability: ★★★★★ → Sinh GridLayout component với props: rows, cols, gap, x, y, delay → Test compose: Grid + BlurIn + Line + Camera Sweep → Cập nhật design-tokens.json thêm Grid vào existing"
+    }
+  ]
+}

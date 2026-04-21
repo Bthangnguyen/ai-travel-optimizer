@@ -1,0 +1,20 @@
+{
+  "skill_name": "remotion-best-practices",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "tạo một composition mới cho Part 3 video, có 4 scenes về chủ đề Leverage",
+      "expected_output": "Tạo src/Part3Leverage/index.tsx → Khai báo timing array D=[90,120,120,90] và T=[0,90,210,330] → Code 4 Scene components với fade-in/fade-out → Dùng DNA tokens (C.bg, C.yellow, C.red) → Thêm FilmGrain + Vignette → Register trong Root.tsx → Render test 2 frames thành công"
+    },
+    {
+      "id": 2,
+      "prompt": "video render ra bị đen ở frame 150, scene 2 không hiện",
+      "expected_output": "Chạy: npx remotion still [comp] --frame=150 --scale=0.25 → Kiểm tra Scene wrapper: frame range có bao gồm 150 không? → Kiểm tra interpolate có extrapolateLeft/Right: 'clamp' không? → Kiểm tra T[2] và D[2] timing → Fix và re-render verify"
+    },
+    {
+      "id": 3,
+      "prompt": "thêm voiceover audio vào video Part 2",
+      "expected_output": "Đọc rules/voiceover.md → Import Audio từ remotion → Sử dụng ElevenLabs TTS hoặc edge_audio_tool.py → Đặt Audio component với đúng startFrom/endAt timing → Sync với scene transitions → Test render có audio"
+    }
+  ]
+}
