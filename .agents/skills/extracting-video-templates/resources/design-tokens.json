@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "skill_name": "extracting-video-templates",
+    "version": "2.0.0",
+    "philosophy": "Composable Atom System — extract atoms, not scenes"
+  },
+
+  "atoms": {
+    "layout": {
+      "existing": [
+        { "name": "Center",    "file": "LineTemplate", "composability": "★★★★★" },
+        { "name": "Pair",      "file": "ComponentLibrary", "composability": "★★★" },
+        { "name": "Chain_H",   "file": "LineTemplate", "composability": "★★★★★" },
+        { "name": "Chain_V",   "file": "Part2Priorities", "composability": "★★★★" },
+        { "name": "Radial",    "file": "LineTemplate", "composability": "★★★★★" }
+      ],
+      "missing": [
+        { "name": "Grid",      "composability": "★★★★★", "priority": "high" },
+        { "name": "Stack",     "composability": "★★★★",  "priority": "high" },
+        { "name": "Orbit",     "composability": "★★★",   "priority": "medium" },
+        { "name": "Tree",      "composability": "★★★★",  "priority": "medium" },
+        { "name": "Diagonal",  "composability": "★★",    "priority": "low" }
+      ]
+    },
+
+    "connection": {
+      "existing": [
+        { "name": "Line",      "file": "LineTemplate" },
+        { "name": "Arrow",     "file": "LineTemplate" }
+      ],
+      "missing": [
+        { "name": "Bracket",   "composability": "★★★★",  "priority": "high" },
+        { "name": "Circle",    "composability": "★★★",   "priority": "medium" },
+        { "name": "Path",      "composability": "★★★★",  "priority": "medium" },
+        { "name": "Pulse",     "composability": "★★★",   "priority": "low" }
+      ]
+    },
+
+    "content": {
+      "existing": [
+        { "name": "Word",      "file": "LineTemplate" },
+        { "name": "BoxWord",   "file": "LineTemplate" },
+        { "name": "Icon",      "file": "LineTemplate", "note": "placeholder only, no specific icons" },
+        { "name": "Badge",     "file": "ComponentLibrary" }
+      ],
+      "missing": [
+        { "name": "Number",    "composability": "★★★★",  "priority": "high" },
+        { "name": "Bar",       "composability": "★★★",   "priority": "medium" },
+        { "name": "Quote",     "composability": "★★",    "priority": "low" }
+      ]
+    },
+
+    "motion": {
+      "existing": [
+        { "name": "BlurIn",    "file": "multiple" },
+        { "name": "ScaleSlam", "file": "multiple" }
+      ],
+      "missing": [
+        { "name": "SlideIn",   "composability": "★★★★★", "priority": "high" },
+        { "name": "PopIn",     "composability": "★★★★",  "priority": "high" },
+        { "name": "TypeWriter","composability": "★★★",   "priority": "medium" },
+        { "name": "Wipe",      "composability": "★★★★",  "priority": "medium" },
+        { "name": "Shake",     "composability": "★★★",   "priority": "medium" },
+        { "name": "PulseGlow", "composability": "★★",    "priority": "low" }
+      ]
+    },
+
+    "camera": {
+      "existing": [
+        { "name": "StaticZoom", "file": "Scene wrapper" },
+        { "name": "ZoomPush",   "file": "OVScene" },
+        { "name": "Sweep",      "file": "Camera" },
+        { "name": "Pullback",   "file": "Camera" }
+      ],
+      "missing": [
+        { "name": "Dolly",      "composability": "★★★★",  "priority": "medium" },
+        { "name": "Rack",       "composability": "★★★",   "priority": "low" },
+        { "name": "Handheld",   "composability": "★★",    "priority": "low" }
+      ]
+    }
+  },
+
+  "composition_formula": "SCENE = Layout(positions) + Content(nodes) + Connection(links) + Motion(animations) + Camera(viewport)",
+
+  "colors": {
+    "bg": "#0A0A0C",
+    "white": "#FFFFFF",
+    "yellow": "#F5E500",
+    "red": "#CC0000",
+    "green": "#22C55E"
+  }
+}

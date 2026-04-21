@@ -1,38 +1,36 @@
+# Dependencies
+node_modules/
 .venv/
 .deps/
 __pycache__/
-.pytest_cache/
-.mypy_cache/
-node_modules/
+
+# Build/Output
 dist/
+out/
+build/
 .expo/
 .expo-home/
-.env
-*.pyc
-*.pyc.*
-*.pyo
-*.pyd
-*.log
-osrm-data/*.osm.pbf
-osrm-data/*.osrm*
 mobile/web-dist*/
-GEMINI.md
-implementation_plan.md
-walkthrough.md
-Mission 1/docs
-DEV5.pdf
-RISK MANAGEMENT.pdf
 
-# Media
+# Media (Aggressive exclusion for refinement)
 *.mp4
 *.png
 *.jpg
 *.webp
 *.gif
+*.pbf
+*.osrm*
 
-# Agents & Specialized IDEs
-.agents/
-!.agents/skills/
+# Archives & Legacy
+_archives/
+_legacy_projects/
+
+# Environment & Secrets
+.env
+.env.*
+secrets.json
+
+# IDEs & Agents
 .gemini/
 .claude/
 .codebuddy/
@@ -57,5 +55,9 @@ RISK MANAGEMENT.pdf
 .windsurf/
 .zencoder/
 .commandcode/
-.codebuddy/
 .crush/
+
+# System
+.DS_Store
+Thumbs.db
+*.log

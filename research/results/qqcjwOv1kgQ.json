@@ -1,0 +1,1668 @@
+{
+  "videoId": "qqcjwOv1kgQ",
+  "videoTitle": "The Lazy Way to Make a Girl Obsessed With You",
+  "videoDurationSeconds": 743,
+  "totalScenes": 74,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": false,
+    "dominantCameraMove": "none",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "remember",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:03",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "observing",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "being described",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Broke",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "Skinny",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "Short",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "Not Good-Looking",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "Dropped Out Of High School",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:20",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "hugging",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "aggressive",
+          "action": "hugging two girls",
+          "interactsWith": "character_2, character_3"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "extremely toxic",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "narcissistic",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "manipulative",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "A failure when it came to long-term relationships",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_left_to_center",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:29",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "reading",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "reading a book",
+          "interactsWith": "book"
+        }
+      ],
+      "props": [
+        {
+          "name": "book",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "psychology",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "0:45",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "bottom"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing_up",
+          "position": "bottom_center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing upwards",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "two",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "you",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "0:50",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "stacked_list",
+        "focalZone": "right"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. Don't overuse it, and don't use it for evil",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "2. If you are a stalker or have a mental issue, Please don't watch this video",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "1:10",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "The Emotional Debt Loop",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "1:12",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Make her feel like she owes you an emotional response",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "but never let her pay it back",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "1:28",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "giving",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "giving an emotionally charged box",
+          "interactsWith": "character_2, box"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "receiving",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "receiving a box, unable to respond",
+          "interactsWith": "character_1, box"
+        }
+      ],
+      "props": [
+        {
+          "name": "box",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "emotionally charged",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": [
+          {
+            "color": "white",
+            "position": "right",
+            "relativeSize": "medium"
+          }
+        ]
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "1:38",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining the loop",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "giving",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "giving an emotionally charged box",
+          "interactsWith": "character_3, box"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "receiving",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "receiving a box, unable to respond",
+          "interactsWith": "character_2, box"
+        }
+      ],
+      "props": [
+        {
+          "name": "box",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "They think they missed the moment",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "They should've said something more",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "They could've connected deeper, but didn't",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": [
+          {
+            "color": "white",
+            "position": "center_left",
+            "relativeSize": "medium"
+          }
+        ]
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "1:49",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "walking away",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "crouching",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "looking down",
+          "interactsWith": "null"
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "explaining",
+          "position": "bottom_right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Failed You Emotionally",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "You gave her a feeling she couldn't resolve",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "1:55",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "scratching head",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "arms_crossed",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing with arms crossed",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "She owes you an emotional response -> but never let her pay it back",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "underline",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "2:03",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "sitting sadly",
+          "interactsWith": "chair"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "arguments",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "why",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "one",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "someone",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "feel",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "uncertain",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        },
+        {
+          "exactText": "never",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "none",
+          "animation": "word_by_word"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "2:23",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "explaining",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "obsessed",
+          "action": "scratching head, feeling weak",
+          "interactsWith": "null"
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "arms_crossed",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing calm and chill",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Obsess",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "-Calm -Chill",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "underline",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Feels Under-Connected",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Feels Weak",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "2:45",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "thinking, hand on chin",
+          "interactsWith": "null"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "leaning",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "leaning in, chasing",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "One emotional step ahead",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "She's chasing the version of herself that she didn't fully give to you",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "You Don't Let Her Give It",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 28,
+      "approximateTimestamp": "3:29",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "carrying",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "neutral",
+          "action": "holding a book",
+          "interactsWith": "book"
+        }
+      ],
+      "props": [
+        {
+          "name": "book",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE DARK GAME",
+          "color": "red",
+          "size": "large",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 31,
+      "approximateTimestamp": "3:42",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "stacked_list",
+        "focalZone": "left"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Step 1 : Give her a moment she doesn't deserve... and act like it meant nothing to you",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Step 2 : Let her open up... then punish her for it.",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Step 3 : Stack these loops and disappear",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 32,
+      "approximateTimestamp": "3:48",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "giving",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "dropping something emotionally charged",
+          "interactsWith": "character_2, box"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "box",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Step 1 : Give her a moment she doesn't deserve... and act like it meant nothing to you",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Emotionally Charged",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Slightly Personal",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Slightly Meaningful",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Slipped Out Of You Naturally",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "dotted_curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 34,
+      "approximateTimestamp": "4:12",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking, holding glass",
+          "interactsWith": "character_2, table, glass"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening, holding glass",
+          "interactsWith": "character_1, table, glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "table",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "glass",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I hate how people only reach out when they need something. It's made me cut off people I used to love.",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 43,
+      "approximateTimestamp": "6:01",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "arms_crossed",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing with arms crossed",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "other",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "trying to rebalance emotional scales",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Trying to rebalance the emotional scales",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "A small personal story",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "A confession",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "A joke that's actually layered with insecurity",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 47,
+      "approximateTimestamp": "7:08",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "talking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "other",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "regretting opening up",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Regrets Opening up",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Wants to do it again, better",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Feels slightly ashamed",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Earn Your emotional approval",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "emotional pursuit",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 49,
+      "approximateTimestamp": "7:41",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening, staying cold",
+          "interactsWith": "character_2, office_chair"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_floor",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "leaning in, trying harder",
+          "interactsWith": "character_1, stool"
+        }
+      ],
+      "props": [
+        {
+          "name": "office_chair",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "stool",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "Try harder to get the moment right this time",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "you won't let her",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "underline",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Her Obsession will grow",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 56,
+      "approximateTimestamp": "9:02",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "other",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "scratching head, thinking",
+          "interactsWith": "null"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "She's left with unfinished emotional business",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "underline",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "I should've",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "I should've",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "I should've",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "none",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 71,
+      "approximateTimestamp": "11:52",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "comforting, hand on head",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "submissive",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "being comforted, head down",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "He never needed me. But somehow... he lets me in.",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "underline",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "hugging",
+      "reading",
+      "pointing_up",
+      "giving",
+      "receiving",
+      "other",
+      "walking",
+      "crouching",
+      "sitting_chair",
+      "arms_crossed",
+      "leaning",
+      "thinking",
+      "carrying",
+      "sitting_stool",
+      "jumping",
+      "submissive"
+    ],
+    "uniquePropsUsed": [
+      "book",
+      "box",
+      "chair",
+      "table",
+      "glass",
+      "thought_bubble",
+      "office_chair",
+      "stool"
+    ],
+    "uniqueLayoutsUsed": [
+      "text_only",
+      "dual_character",
+      "multi_character",
+      "single_character_with_text",
+      "stacked_list",
+      "giant_character",
+      "flowchart"
+    ],
+    "uniqueTextStylesUsed": [
+      "none",
+      "badge_box",
+      "underline",
+      "all_caps"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut"
+    ],
+    "narrativeArc": "The video introduces a man who is successful with women despite negative traits. The narrator, a 'psychology' expert, reveals this is due to a manipulation technique called 'The Emotional Debt Loop'. The strategy involves three steps: giving an undeserved emotional moment and acting indifferent, letting her open up then punishing her by not acknowledging it, and finally disappearing to leave her with 'unfinished emotional business'. The video explains how to 'drip-feed' resolution to maintain obsession, warning against its misuse."
+  }
+}

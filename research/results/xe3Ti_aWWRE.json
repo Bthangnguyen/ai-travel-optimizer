@@ -1,0 +1,2189 @@
+{
+  "videoId": "xe3Ti_aWWRE",
+  "videoTitle": "Make Her Strive to Win Your Admiration",
+  "videoDurationSeconds": 605,
+  "totalScenes": 25,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": true,
+    "dominantCameraMove": "pan_left_right_zoom",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#000000",
+      "#0000FF",
+      "#800080"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "PROBABLY",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding guitar, book, money bags",
+          "interactsWith": "guitar, book, money_bag"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "clapping hands",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "guitar",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "money_bag",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:05",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding guitar, book, money bags",
+          "interactsWith": "guitar, book, money_bag"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "clapping hands",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "giant",
+          "emotion": "neutral",
+          "action": "observing and pointing",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "guitar",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "money_bag",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "text_box",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "UGLY",
+          "color": "red",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "slide_right"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:15",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, long nose",
+          "interactsWith": "long_nose"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "excited",
+          "action": "arms up, excited expression",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "long_nose",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:17",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, long nose",
+          "interactsWith": "long_nose"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "excited",
+          "action": "arms up, excited expression",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "giant",
+          "emotion": "neutral",
+          "action": "observing and pointing",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "long_nose",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "slide_right"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:21",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "far_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding guitar, book, money bags",
+          "interactsWith": "guitar, book, money_bag"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "clapping hands",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding car keys",
+          "interactsWith": "car, car_keys"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding money bags",
+          "interactsWith": "money_bag"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, long nose",
+          "interactsWith": "long_nose"
+        },
+        {
+          "id": 6,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "far_right",
+          "relativeSize": "medium",
+          "emotion": "excited",
+          "action": "arms up, excited expression",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "guitar",
+          "position": "far_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "far_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "money_bag",
+          "position": "far_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "text_box",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "car",
+          "position": "center_left",
+          "relativeSize": "large",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "car_keys",
+          "position": "center_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "money_bag",
+          "position": "center_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "long_nose",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "UGLY",
+          "color": "red",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "NONSENSE",
+          "color": "red",
+          "size": "large",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "UPON",
+          "color": "red",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NONSENSE",
+          "color": "red",
+          "size": "large",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "pan_right"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:28",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing on a circle, facing forward",
+          "interactsWith": "circle"
+        }
+      ],
+      "props": [
+        {
+          "name": "circle",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "NONSENSE",
+          "color": "red",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "UPON",
+          "color": "red",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "NONSENSE",
+          "color": "red",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TRYING TO WIN HER ADMIRATION",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "STRIVE TO WIN YOUR ADMIRATION",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom_split",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "zoom_out"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:41",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "lying",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sleeping in bed",
+          "interactsWith": "bed, thought_bubble"
+        }
+      ],
+      "props": [
+        {
+          "name": "bed",
+          "position": "center_left",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "thought_bubble",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "STRIVE TO WIN YOUR ADMIRATION",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT KIND OF RELATIONSHIP?",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "A MAN WHO KEEPS TALKING TO HER ABOUT HIS ACHIEVEMENTS?",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "pan_left"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "0:51",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center_right",
+          "relativeSize": "giant",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "movie_poster"
+        }
+      ],
+      "props": [
+        {
+          "name": "movie_poster",
+          "position": "far_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "movie_poster",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "movie_poster",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "movie_poster",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "movie_poster",
+          "position": "far_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WHERE THE MAN TORMENTS THE WOMAN AND PUTS HER IN A POSITION OF WEAKNESS",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "1:57",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "reading a book, thinking",
+          "interactsWith": "chair, book, thought_bubble"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "thought_bubble",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "BEHAVIOR 1",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BEHAVIOR 2",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_character",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_character",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "2:08",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "reading a book, thinking",
+          "interactsWith": "chair, book, thought_bubble"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "thought_bubble",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE WAY YOU LIVE AND THINK",
+          "color": "yellow",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_character",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_character",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "slide_up"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "2:14",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "reading a book, thinking",
+          "interactsWith": "chair, book, thought_bubble"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "building a foundation",
+          "interactsWith": "bricks"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "thought_bubble",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "bricks",
+          "position": "bottom_center",
+          "relativeSize": "large",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE WAY YOU LIVE AND THINK",
+          "color": "yellow",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "BEHAVIOR 1",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "BEHAVIOR 2",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOU SHOULD NOT TRY TO WIN HER ADMIRATION",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_character",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_character",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "fade_in"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "2:28",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "glass"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "glass"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "kneeling, trying to impress",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "center",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "2:33",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "excited",
+          "action": "clapping",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "glass"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "glass"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "kneeling, trying to impress",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "center",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "glass",
+          "position": "center_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 4
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "2:38",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding tennis racket",
+          "interactsWith": "tennis_racket"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding tennis racket",
+          "interactsWith": "tennis_racket"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding tennis racket",
+          "interactsWith": "tennis_racket"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding tennis racket",
+          "interactsWith": "tennis_racket"
+        }
+      ],
+      "props": [
+        {
+          "name": "tennis_court",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "tennis_net",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "tennis_racket",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "tennis_racket",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "tennis_racket",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "tennis_racket",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "2:54",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "glass"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass, talking",
+          "interactsWith": "glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "center",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WHERE DO YOU WORK?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "I WORK AS A LAWYER IN A BIG COMPANY\nI HAVE A HOUSE, I RECENTLY GOT A PROMOTION\nAND I AM THINKING ABOUT STARTING MY OWN COMPANY",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "GUESS! AND IF YOU GET IT RIGHT I'LL PAY FOR DINNER",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "I DON'T WORK I'M WAITING FOR YOU TO SPEND ON ME",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "3:25",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "split_screen",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass",
+          "interactsWith": "glass"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding a glass, talking",
+          "interactsWith": "glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "center_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "center_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "square_box",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "OPEN THE SPACE FOR HER TO WIN YOUR ADMIRATION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DOES NOT CARE AT ALL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "3:30",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "split_screen",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "holding trophy",
+          "interactsWith": "trophy"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "excited",
+          "action": "clapping",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "trophy",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "square_box",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "OPEN THE SPACE FOR HER TO WIN YOUR ADMIRATION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "3:40",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "heart",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "comment_bubble",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "trophy",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "DO NOT FLATTER THE GIRL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "3:47",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "right"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "TELL HER WHAT YOU LIKE IN A GIRL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "IN HER APPEARANCE",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HER PERSONALITY",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WHAT YOU LIKE AND WHAT YOU DO NOT LIKE",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "3:54",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "reading a book, thinking",
+          "interactsWith": "chair, book, thought_bubble"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "building a foundation",
+          "interactsWith": "bricks"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "thought_bubble",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "bricks",
+          "position": "bottom_center",
+          "relativeSize": "large",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "heart",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "comment_bubble",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "trophy",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE WAY YOU LIVE AND THINK",
+          "color": "yellow",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "BEHAVIOR 1",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "BEHAVIOR 2",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOU SHOULD NOT TRY TO WIN HER ADMIRATION",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "DO NOT FLATTER THE GIRL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TELL HER WHAT YOU LIKE IN A GIRL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_character",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_character",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "3:59",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing, looking at male",
+          "interactsWith": "laptop"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "relaxed, feet on desk",
+          "interactsWith": "laptop, chair, desk"
+        }
+      ],
+      "props": [
+        {
+          "name": "laptop",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "desk",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "DO NOT FLATTER THE GIRL",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "FOR HIM TO GIVE ME A LIKE FOR HIM TO WRITE ME A COMMENT\nFOR HIM TO FLATTER ME, I MUST HAVE THOSE QUALITIES HE MENTIONED\nWHAT DID HE SAY?\nHE SAID HE LIKES THIS TYPE OF LOOK\nAND HE LIKES THESE TYPES OF BEHAVIORS\nSO THAT IS WHY HE IS NOT FLATTERING ME\nBECAUSE I DO NOT HAVE WHAT HE DESCRIBED",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "5:37",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting at a table, holding a bottle",
+          "interactsWith": "table, bottle"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting at a table, holding a box",
+          "interactsWith": "table, box"
+        }
+      ],
+      "props": [
+        {
+          "name": "table",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "bottle",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "box",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TELL HER WHAT YOU LIKE IN A GIRL AND WHAT YOU DON'T LIKE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "LOVES DRAMA AND CHAOS",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HONESTLY I DON'T LIKE DRAMA.\nI LIKE WOMEN WHO ARE CALM\nAND EMOTIONALLY STABLE\nPEACE IS IMPORTANT TO ME",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WHAT TYPE OF GIRL DO YOU LIKE?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "I LIKE FEMININE WOMEN. SOFT ENERGY.\nINTELLIGENT. AND I DON'T LIKE GIRLS\nWHO NEED ATTENTION FROM EVERYONE",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "6:17",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting at a table, holding a bottle",
+          "interactsWith": "table, bottle"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "sitting at a table, thinking",
+          "interactsWith": "table, box"
+        }
+      ],
+      "props": [
+        {
+          "name": "table",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "bottle",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "box",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I LIKE FEMININE WOMEN. SOFT ENERGY.\nINTELLIGENT. AND I DON'T LIKE GIRLS\nWHO NEED ATTENTION FROM EVERYONE",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT TYPE OF GIRL DO YOU LIKE?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "AM I FEMININE ENOUGH?",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DOES HE THINK I NEED ATTENTION?",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DOES HE SEE ME AS CALM?",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "INTERNAL TENSION",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "8:36",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting on couch, talking",
+          "interactsWith": "couch, table, glass"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting on couch, listening",
+          "interactsWith": "couch, table, glass"
+        }
+      ],
+      "props": [
+        {
+          "name": "couch",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "table",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "glass",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU TALK ABOUT YOUR LIFE CASUALLY\nYOU FOCUS MORE ON OBSERVING HER\nTESTING HER\nASKING HER SUBTLE QUESTIONS THAT\nMAKE HER QUALIFY HERSELF TO YOU",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WHY SHE'S DIFFERENT\nWHY SHE'S NOT LIKE OTHER GIRLS\nWHY SHE DOESN'T DO DRAMA\nWHY SHE'S LOYAL",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SPACE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SILENCE IS POWERFUL\nSTANDARDS ARE POWERFUL\nCALM INDIFFERENCE IS POWERFUL",
+          "color": "yellow",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "arms_up",
+      "pointing",
+      "lying",
+      "crouching",
+      "sitting_chair"
+    ],
+    "uniquePropsUsed": [
+      "guitar",
+      "book",
+      "money_bag",
+      "syringe",
+      "text_box",
+      "long_nose",
+      "car",
+      "car_keys",
+      "circle",
+      "bed",
+      "thought_bubble",
+      "movie_poster",
+      "chair",
+      "bricks",
+      "glass",
+      "square_box",
+      "heart",
+      "comment_bubble",
+      "trophy",
+      "table",
+      "bottle",
+      "box",
+      "couch",
+      "laptop",
+      "desk",
+      "tennis_court",
+      "tennis_net",
+      "tennis_racket"
+    ],
+    "uniqueLayoutsUsed": [
+      "text_only",
+      "dual_character",
+      "multi_character",
+      "environment_scene",
+      "flowchart",
+      "single_character_with_text",
+      "split_screen"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "badge_box",
+      "strikethrough"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut",
+      "slide_right",
+      "slide_left",
+      "zoom_out",
+      "pan_left",
+      "slide_up",
+      "fade_in"
+    ],
+    "narrativeArc": "The video starts by highlighting common male behaviors to win female admiration, framing them as 'nonsense'. It then introduces a core principle: women are attracted to men who don't seek their admiration but rather have standards and make women strive for their attention. This is illustrated through various scenarios and examples, emphasizing the power of 'calm indifference' and 'creating internal tension' in women by revealing one's standards and not flattering them. The video concludes by stressing the importance of having genuine standards and being willing to walk away, as this is what truly makes a man attractive and desired."
+  }
+}

@@ -1,0 +1,2469 @@
+{
+  "videoId": "S4aBzjE_--A",
+  "videoTitle": "This Trap Is Ruining Your Chances With Women… and Most Men Don’t See It",
+  "videoDurationSeconds": 553,
+  "totalScenes": 25,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": false,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#FFFF00",
+      "#FF0000",
+      "#00FF00",
+      "#00FFFF"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing right, holding tablet",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "tablet",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "LOOK",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:02",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing left with pointer stick",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "EXTREMELY",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "DANGEROUS",
+          "color": "red",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:06",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "inside a battery, being hugged",
+          "interactsWith": "battery"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "hugging character 1",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "right",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "hugging character 1",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "battery",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:11",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "far_left",
+          "relativeSize": "small",
+          "emotion": "confused",
+          "action": "hand on head, looking at chained figures",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        }
+      ],
+      "props": [
+        {
+          "name": "chain",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "arrow_sign",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "CONFIDENCE",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:20",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "far_left",
+          "relativeSize": "small",
+          "emotion": "confused",
+          "action": "hand on head, looking at chained figures",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "chained to others, pulling",
+          "interactsWith": "chain"
+        }
+      ],
+      "props": [
+        {
+          "name": "chain",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "arrow_sign",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "CONFIDENCE",
+          "color": "yellow",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "FEELS RIGHT",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SOUNDS LOGICAL",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "COMPLETELY SABOTAGES YOU",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE CONFIDENCE TRAP",
+          "color": "red",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:32",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "pointing up, standing on crowd",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "part of a crowd",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "hand on chin, looking at speaker",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "YOU NEED CONFIDENCE TO SUCCEED WITH WOMEN",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "underline",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "WHAT KIND OF CONFIDENCE?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_left_to_center_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:51",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "lightbulb",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PERFORMANCE CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "REAL CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "YOU NEED CONFIDENCE TO SUCCEED WITH WOMEN",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "none",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT KIND OF CONFIDENCE?",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_right",
+          "style": "none",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "1:11",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, talking to himself",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, carrying a bag",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "bag",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PERFORMANCE CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I JUST NEED TO FEEL CONFIDENT FIRST THEN I'LL ACT",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "speech_bubble",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "top_right_to_bottom_center",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "1:20",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "holding a basketball, looking up",
+          "interactsWith": "basketball"
+        }
+      ],
+      "props": [
+        {
+          "name": "basketball",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "photo",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "photo",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "1:34",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, talking to himself",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, carrying a bag",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing left with pointer stick",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "bag",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "pointer_stick",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "lightbulb",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PERFORMANCE CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "REAL CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I JUST NEED TO FEEL CONFIDENT FIRST THEN I'LL ACT",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "speech_bubble",
+          "animation": "none"
+        },
+        {
+          "exactText": "EXPERIENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SUCCEEDED",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "REPEATEDLY",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "top_right_to_bottom_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:50",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, talking to himself",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, carrying a bag",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "standing",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hearts above head",
+          "interactsWith": null
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "shy",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "shy",
+          "action": "hands covering crotch",
+          "interactsWith": null
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "lying",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "lying down",
+          "interactsWith": null
+        },
+        {
+          "id": 6,
+          "gender": "male",
+          "pose": "sad",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "looking down",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "bag",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "heart",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "lock",
+          "position": "overlay_on_text",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PERFORMANCE CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I JUST NEED TO FEEL CONFIDENT FIRST THEN I'LL ACT",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "speech_bubble",
+          "animation": "none"
+        },
+        {
+          "exactText": "I MUST FEEL CONFIDENT BEFORE I TALK TO HER",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOU DON'T GAIN EXPERIENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "YOU NEVER BECOME CONFIDENT",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "top_right_to_bottom_center",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "red",
+            "direction": "circular",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "2:20",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "YOU DEMAND CERTAINTY BEFORE ACTION",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CERTAINTY",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "ACTION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "2:53",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, talking to himself",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, carrying a bag",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "standing",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hearts above head",
+          "interactsWith": null
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "shy",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "shy",
+          "action": "hands covering crotch",
+          "interactsWith": null
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "lying",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "lying down",
+          "interactsWith": null
+        },
+        {
+          "id": 6,
+          "gender": "male",
+          "pose": "sad",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "looking down",
+          "interactsWith": null
+        },
+        {
+          "id": 7,
+          "gender": "neutral",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confused",
+          "action": "thinking, hand on chin",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "bag",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "heart",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "lock",
+          "position": "overlay_on_text",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 7
+        },
+        {
+          "name": "chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 7
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "BEING STUCK",
+          "color": "red",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "2:58",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, talking to himself",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "walking, carrying a bag",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "bag",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "lightbulb",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PERFORMANCE CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "REAL CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "REHEARSAL CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "ACCEPTANCE CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "3:07",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "toasting with a drink",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "toasting with a drink",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "table",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "chair",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "glass",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "REHEARSAL CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "3:11",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "surprised",
+          "action": "looking at his reflection",
+          "interactsWith": "mirror"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "toasting with a drink",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "toasting with a drink",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "mirror",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "table",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "chair",
+          "position": "center_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "glass",
+          "position": "center_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "glass",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "polaroid",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "polaroid",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "polaroid",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TRAINING",
+          "color": "yellow",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "REHEARSAL CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "HOW YOU WANT TO BEHAVE",
+          "color": "white",
+          "size": "tiny",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HOW YOU WANT TO MOVE",
+          "color": "white",
+          "size": "tiny",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HOW YOU WANT TO SPEAK",
+          "color": "white",
+          "size": "tiny",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "3:31",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing up",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "polaroid",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "polaroid",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "polaroid",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOUR MIND DOES NOT DISTINGUISH BETWEEN REAL EXPERIENCE AND IMAGINED EXPERIENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "3:52",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "key",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "key",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "key",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "REHEARSAL CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOUR MENTAL STATE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "MAKE IT PHYSICAL",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "CHANGE THE PERSPECTIVE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "curved",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "5:05",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "stressed",
+          "action": "playing piano, stressed",
+          "interactsWith": "piano"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "thinking",
+          "action": "imagining things",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking to female",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "standing",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening to male",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "top_right",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "taking photo",
+          "interactsWith": "camera"
+        },
+        {
+          "id": 6,
+          "gender": "male",
+          "pose": "standing",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking to female",
+          "interactsWith": "character_7"
+        },
+        {
+          "id": 7,
+          "gender": "female",
+          "pose": "standing",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening to male",
+          "interactsWith": "character_6"
+        }
+      ],
+      "props": [
+        {
+          "name": "piano",
+          "position": "bottom_left",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "camera",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "microphone",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "chair",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "key",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "camera",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THEY OVERTHINK",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "ANALYZE EVERY MOVE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "DEEPLY AFRAID OF MAKING MISTAKES",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_left"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "5:48",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "timeline",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "ACCEPTANCE CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I'M SURE THIS WILL WORK",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "I'M COMFORTABLE EVEN IF IT DOESN'T",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "5:54",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "confused",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "anxious",
+          "action": "hand on head, showing fear",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "dancing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, smiling",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "FEAR APPEARS",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TENSION IN YOUR CHEST",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "FAST HEARTBEAT",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ANXIETY",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "6:33",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, smiling",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "dancing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, smiling",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing left with pointer stick",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "pointer_stick",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "FEAR SHOWS UP?",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TENSION IN YOUR BODY?",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "FAST HEARTBEAT?",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHE WILL REJECT ME",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "I'LL EMBARRASS MYSELF",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THIS WILL GO BADLY",
+          "color": "white",
+          "size": "tiny",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BELIEVE",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "COMES",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "7:16",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, smiling",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "dancing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arms up, smiling",
+          "interactsWith": null
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "shaking",
+          "position": "far_right",
+          "relativeSize": "medium",
+          "emotion": "anxious",
+          "action": "shaking with red glow",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "ACCEPTANCE CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I'M COMFORTABLE EVEN IF IT DOESN'T",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I'M SURE THIS WILL WORK",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SEPARATE FACTS FROM STORIES",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "COMFORT WITH UNCERTAINTY",
+          "color": "green",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "CERTAINTY OF SUCCESS",
+          "color": "red",
+          "size": "medium",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "slide_up"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "7:38",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "talking to female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "listening to male",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "ENJOYING THE MOMENT",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "WOW, I LIKE YOU, BUT I DON'T HAVE ENOUGH CONFIDENCE TO ASK FOR YOUR PHONE NUMBER",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "speech_bubble",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "8:35",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing right with pointer stick",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "key",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "key",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "key",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "lightbulb",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PERFORMANCE CONFIDENCE",
+          "color": "red",
+          "size": "medium",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "REAL CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "REHEARSAL CONFIDENCE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "ACCEPTANCE CONFIDENCE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOUR MENTAL STATE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MAKE IT PHYSICAL",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "CHANGE THE PERSPECTIVE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "horizontal",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "curved",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "hugging",
+      "walking",
+      "confused",
+      "shy",
+      "lying",
+      "sad",
+      "sitting_chair",
+      "dancing"
+    ],
+    "uniquePropsUsed": [
+      "syringe",
+      "tablet",
+      "pointer_stick",
+      "battery",
+      "chain",
+      "arrow_sign",
+      "lightbulb",
+      "switch",
+      "bag",
+      "basketball",
+      "photo",
+      "heart",
+      "lock",
+      "chair",
+      "table",
+      "glass",
+      "mirror",
+      "polaroid",
+      "key",
+      "piano",
+      "camera",
+      "microphone"
+    ],
+    "uniqueLayoutsUsed": [
+      "single_character_with_text",
+      "environment_scene",
+      "multi_character",
+      "flowchart",
+      "dual_character",
+      "timeline"
+    ],
+    "uniqueTextStylesUsed": [
+      "none",
+      "all_caps",
+      "underline",
+      "speech_bubble",
+      "badge_box"
+    ],
+    "uniqueTransitionsUsed": [
+      "none",
+      "hard_cut",
+      "slow_zoom_out"
+    ],
+    "narrativeArc": "The video explains 'The Confidence Trap' where men wait for confidence before acting, leading to inaction and lack of experience. It differentiates between 'Performance Confidence' (based on past success) and 'Real Confidence' (built through 'Rehearsal Confidence' and 'Acceptance Confidence'). It provides keys for rehearsal (mental state, physical action, changing perspective) and introduces acceptance confidence as being comfortable with uncertainty, separating facts from stories. The video concludes by emphasizing that true confidence comes from acting despite fear, not waiting for certainty."
+  }
+}

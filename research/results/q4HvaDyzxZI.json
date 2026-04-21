@@ -1,0 +1,5545 @@
+{
+  "videoId": "q4HvaDyzxZI",
+  "videoTitle": "The Hidden Female Test No Man Talks About — And How to Pass It",
+  "videoDurationSeconds": 832,
+  "totalScenes": 50,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": true,
+    "dominantCameraMove": "none",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#808080",
+      "#A0522D",
+      "#404040",
+      "#00FF00"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "hugging female character",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "being hugged by male character",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "note",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "paperclip",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "NEGATIVE SPACE TEST",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:04",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "right"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing at the note",
+          "interactsWith": "note"
+        }
+      ],
+      "props": [
+        {
+          "name": "note",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "paperclip",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "NEGATIVE SPACE TEST",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "slide_right"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:09",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "right"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing at the note",
+          "interactsWith": "note"
+        }
+      ],
+      "props": [
+        {
+          "name": "note",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "paperclip",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TEST",
+          "color": "yellow",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CAREFULLY",
+          "color": "yellow",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EXPLAIN",
+          "color": "yellow",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NEGATIVE SPACE TEST",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:13",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "spotlight",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "EMOTIONAL HOMEOSTASIS TESTING",
+          "color": "yellow",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "zoom_out"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:20",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "REAL EMOTIONAL STATE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EVERYTHING IS COMFORTABLE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "LIFE IS WARM, EASY AND STABLE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "EVERYONE LOOKS SOLID",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_down"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "bottom_to_top",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "fade_black"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:29",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "neutral",
+          "action": "silhouette with question mark head",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "question_mark",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU DISTURB THE COMFORT",
+          "color": "red",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "NEGATIVE FEELING",
+          "color": "red",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_center",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:39",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "giant_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center",
+          "relativeSize": "giant",
+          "emotion": "desperate",
+          "action": "body turns red and cracks",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "question_mark",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SOMETHING UNCOMFORTABLE",
+          "color": "white",
+          "size": "hero",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "0:46",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_boat",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting in a boat on calm water",
+          "interactsWith": "boat"
+        }
+      ],
+      "props": [
+        {
+          "name": "boat",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "water",
+          "position": "bottom",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "sky",
+          "position": "top",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WATER IS COMPLETELY CALM",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "badge_box",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "BOAT LOOKS STRONG AND STABLE",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "badge_box",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "0:52",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_boat",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting in a boat on stormy water",
+          "interactsWith": "boat"
+        }
+      ],
+      "props": [
+        {
+          "name": "boat",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "water",
+          "position": "bottom",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "sky",
+          "position": "top",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SMALL - SUBTLE - ALMOST INVISIBLE",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "badge_box",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "badge_box",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:04",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "note",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "paperclip",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "NEGATIVE SPACE TEST",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "1:14",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "timeline",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging female character",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged by male character",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "city_skyline",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "briefcase",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "phone",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "1:18",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing in cave entrance",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "running",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "running from mammoth",
+          "interactsWith": "mammoth"
+        }
+      ],
+      "props": [
+        {
+          "name": "cave",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "axe",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "mammoth",
+          "position": "right",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WHO DO I CHOOSE?",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "1:38",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "timeline",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging female character",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged by male character",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "1:44",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing at screening system",
+          "interactsWith": "shield"
+        }
+      ],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "LOOKS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MONEY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WORDS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_left_to_center",
+            "style": "dashed"
+          },
+          {
+            "color": "white",
+            "direction": "top_center_to_center",
+            "style": "dashed"
+          },
+          {
+            "color": "white",
+            "direction": "top_right_to_center",
+            "style": "dashed"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "1:54",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "speaking",
+          "position": "top_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "speaking",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "looking_in_mirror",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "confident",
+          "action": "looking at himself in a mirror",
+          "interactsWith": "mirror"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "top_center",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "carrying money",
+          "interactsWith": "money"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "emotion": "sad",
+          "action": "sitting at a desk, looking sad",
+          "interactsWith": "laptop"
+        }
+      ],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "mirror",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "money",
+          "position": "top_center",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "laptop",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "desk",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "chair",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "LOOKS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MONEY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WORDS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "HOW A MAN BEHAVES WHEN HE FEELS BAD",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "ANXIOUS",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "INSECURE",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "JEALOUS",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "bottom_to_top",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_left_to_center",
+            "style": "dashed"
+          },
+          {
+            "color": "white",
+            "direction": "top_center_to_center",
+            "style": "dashed"
+          },
+          {
+            "color": "white",
+            "direction": "top_right_to_center",
+            "style": "dashed"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "2:12",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "speaking",
+          "position": "top_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "speaking",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "looking_in_mirror",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "confident",
+          "action": "looking at himself in a mirror",
+          "interactsWith": "mirror"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "top_center",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "carrying money",
+          "interactsWith": "money"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "emotion": "sad",
+          "action": "sitting at a desk, looking sad",
+          "interactsWith": "laptop"
+        },
+        {
+          "id": 5,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting and thinking",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "mirror",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "money",
+          "position": "top_center",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "laptop",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "desk",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "chair",
+          "position": "bottom_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "LET ME TEST HIM",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "LOOKS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MONEY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WORDS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "HOW A MAN BEHAVES WHEN HE FEELS BAD",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "ANXIOUS",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "INSECURE",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "JEALOUS",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "bottom_to_top",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_top_left",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_top_center",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_top_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_left_to_center",
+            "style": "dashed"
+          },
+          {
+            "color": "white",
+            "direction": "top_center_to_center",
+            "style": "dashed"
+          },
+          {
+            "color": "white",
+            "direction": "top_right_to_center",
+            "style": "dashed"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "2:25",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PROCESSES",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EVALUATE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "POTENTIAL",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "2:41",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE INTRODUCES A NEGATIVE FEELING",
+          "color": "red",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "AND WATCHES WHAT HAPPENS",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_left"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL EMOTIONAL CHAOS",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL INSECURE",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL GUILT",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL CONFUSION",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_center",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "2:51",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WE'RE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THEM",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WHY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "AND",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PASSES",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ACTUALLY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LIKE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "2:59",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking about something he cares about",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening and questioning",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE MAKES YOU FEEL INSECURE",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "SOMETHING YOU CARE ABOUT",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "OH REALLY?",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "PEOPLE ACTUALLY MAKE MONEY DOING THAT?",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "ISN'T THAT A BIT RISKY?",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "INTERESTING. I DIDN'T THINK THAT WAS YOUR THING",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "3:18",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "shrinking, trying to explain himself",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EXPLAIN",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TO",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "REASONABLE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHRINK",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WAIT, DID I OVERSELL IT?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MAYBE I SHOULD CLARIFY",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "LET ME WALK IT BACK",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL INSECURE",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_center",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "3:33",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "sitting under a spotlight",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "sitting and pushing back",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "lamp",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "CONFIDENCE 100%",
+          "color": "yellow",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "PUSHES BACK",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "IDENTITY FRICTION",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT YOU DO WITH IT",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL INSECURE",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "3:52",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "explaining and justifying",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "shrugging",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "EXPLAINING",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "JUSTIFYING",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHICH ONE ACTUALLY BELIEVES IN HIMSELF?",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "4:12",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "unbothered",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "lamp",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YEAH, NOT FOR EVERYONE",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I KNOW WHAT I LIKE",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THAT'S KIND OF THE POINT",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL INSECURE",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 26,
+      "approximateTimestamp": "4:28",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding wine glass",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding wine glass, talking about business",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I AM BUILDING MY OWN BUSINESS",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "REALLY? ISN'T THAT RISKY?",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "MOST PEOPLE FAIL AT THAT",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "YEAH MOST PEOPLE DO",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 27,
+      "approximateTimestamp": "4:43",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding wine glass",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding wine glass, talking about business",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "acting as a judge",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "center_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "judge_bench",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "gavel",
+          "position": "overlay_on_object",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "JUDGE",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 28,
+      "approximateTimestamp": "4:55",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE MAKES YOU FEEL EMOTIONAL CHAOS",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 29,
+      "approximateTimestamp": "5:02",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "asking what's wrong",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "being distant and short",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "SHE MAKES YOU FEEL EMOTIONAL CHAOS",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT'S WRONG",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "NOTHING",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "DO YOU PUSH?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "DO YOU LEAVE IT?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "DO YOU APOLOGIZE FOR SOMETHING YOU DON'T EVEN UNDERSTAND?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "left_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "left_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "left_to_center",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 30,
+      "approximateTimestamp": "5:32",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "apologizing",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "being distant",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I'M SORRY IF I SAID SOMETHING",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "I DIDN'T MEAN TO UPSET YOU",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT DID I DO?",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "COMPLICATED",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SIMPLE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CONTAGIOUS",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL EMOTIONAL CHAOS",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": [
+          {
+            "color": "red",
+            "direction": "none",
+            "style": "outline_only"
+          }
+        ]
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 31,
+      "approximateTimestamp": "5:41",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "anxious",
+          "action": "feeling anxious",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "top_right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "being angry and anxious",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "kneeling",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "helping another male",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "lying",
+          "position": "bottom_left",
+          "relativeSize": "tiny",
+          "emotion": "neutral",
+          "action": "being helped",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "falling",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "desperate",
+          "action": "falling into gears",
+          "interactsWith": "gears"
+        }
+      ],
+      "props": [
+        {
+          "name": "gears",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "FEELING ANXIOUS",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "ANXIOUS",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "ANGRY",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TENSION",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE MOST IMPORTANT THINGS A WOMAN SCREENS FOR IN A MAN",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 32,
+      "approximateTimestamp": "6:06",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "apologizing",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "being distant",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "top_center",
+          "relativeSize": "small",
+          "emotion": "desperate",
+          "action": "holding sick child",
+          "interactsWith": "sick_child"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "emotion": "sad",
+          "action": "sad at desk",
+          "interactsWith": "laptop"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "helping",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "desperate",
+          "action": "helping another male in water",
+          "interactsWith": "character_6"
+        },
+        {
+          "id": 6,
+          "gender": "male",
+          "pose": "falling",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "emotion": "desperate",
+          "action": "struggling in water",
+          "interactsWith": "character_5"
+        }
+      ],
+      "props": [
+        {
+          "name": "sick_child",
+          "position": "top_center",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "laptop",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "desk",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "water",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I AM SORRY",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": [
+          {
+            "color": "red",
+            "direction": "none",
+            "style": "outline_only"
+          },
+          {
+            "color": "red",
+            "direction": "none",
+            "style": "outline_only"
+          },
+          {
+            "color": "red",
+            "direction": "none",
+            "style": "outline_only"
+          }
+        ]
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 33,
+      "approximateTimestamp": "6:29",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "staying calm and present",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "being distant",
+          "interactsWith": "character_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CALM",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PRESENT",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TALK TO ME WHAT'S GOING ON?",
+          "color": "yellow",
+          "size": "small",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "NOT COLLAPSING INTO APOLOGIES FOR THINGS YOU DIDN'T DO",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "NOT MATCHING HER ENERGY AND GOING COLD BACK",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "HOLDING",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "A",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CONVERSATION",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "GROUNDED",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "MAN",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "MOOD",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "STABLE",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "yellow",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 34,
+      "approximateTimestamp": "7:02",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "holding_phone",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "texting",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "holding_phone",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "texting",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "phone",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "phone",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU KNOW WHAT FORGET IT. IT'S FINE",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "IT DOESN'T SOUND FINE TALK TO ME",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE MOMENT YOU APOLOGIZE FOR SOMETHING YOU DIDN'T DO YOU CONFIRM THAT HER MOOD CONTROLS YOUR BEHAVIOR",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 35,
+      "approximateTimestamp": "7:28",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE MAKES YOU FEEL GUILT",
+          "color": "white",
+          "size": "large",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 36,
+      "approximateTimestamp": "7:35",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "climbing",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "on a ladder fixing AC",
+          "interactsWith": "ladder"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "holding crying baby",
+          "interactsWith": "baby"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "apologizing",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening, with dry tone",
+          "interactsWith": "character_3"
+        }
+      ],
+      "props": [
+        {
+          "name": "ladder",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "air_conditioner",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "baby",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU COULDN'T MEET HER",
+          "color": "yellow",
+          "size": "hero",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "REPLIED LATE BECAUSE YOU WERE BUSY",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOU MADE A DECISION WITHOUT CONSULTING HER",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WAS I WRONG?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHOULD I HAVE CANCELED WHAT I HAD?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "AM I BEING SELFISH?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MAYBE I SHOULD APOLOGIZE",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "IT'S FINE",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "vertical",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 37,
+      "approximateTimestamp": "8:10",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "explaining",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "holding crying baby",
+          "interactsWith": "baby"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "climbing",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "on a ladder fixing AC",
+          "interactsWith": "ladder"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "apologizing",
+          "interactsWith": "character_5"
+        },
+        {
+          "id": 5,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening, with dry tone",
+          "interactsWith": "character_4"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "pointer_stick",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "baby",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "ladder",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "air_conditioner",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "AUTOMATICALLY",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LOOKING",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TO",
+          "color": "white",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOU COULDN'T MEET HER",
+          "color": "yellow",
+          "size": "hero",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "REPLIED LATE BECAUSE YOU WERE BUSY",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOU MADE A DECISION WITHOUT CONSULTING HER",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WAS I WRONG?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHOULD I HAVE CANCELED WHAT I HAD?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "AM I BEING SELFISH?",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MAYBE I SHOULD APOLOGIZE",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "IT'S FINE",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_center",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 38,
+      "approximateTimestamp": "8:31",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "walking into a room",
+          "interactsWith": "door"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "angry at laptop",
+          "interactsWith": "laptop"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "holding crying baby",
+          "interactsWith": "baby"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "climbing",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "on a ladder fixing AC",
+          "interactsWith": "ladder"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "apologizing",
+          "interactsWith": "character_6"
+        },
+        {
+          "id": 6,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening, with dry tone",
+          "interactsWith": "character_5"
+        }
+      ],
+      "props": [
+        {
+          "name": "door",
+          "position": "left",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "desk",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "laptop",
+          "position": "center_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "baby",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "ladder",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "air_conditioner",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 4
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "DID I DO SOMETHING?",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE BIAS",
+          "color": "white",
+          "size": "hero",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THIS MAN CAN BE CONTROLLED WITH GUILT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "vertical",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 39,
+      "approximateTimestamp": "8:59",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "split_screen",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "talking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "STAY",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOURSELF",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ASK",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DID I ACTUALLY DO SOMETHING WRONG?",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "OWN IT",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YES",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "APOLOGIZE GENUINELY",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "MOVE ON",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "NO",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "I HEAR YOU. I'M NOT GOING TO APOLOGIZE FOR THAT BUT IF SOMETHING'S BOTHEING YOU LET'S TALK ABOUT IT",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "EMPATHETIC",
+          "color": "white",
+          "size": "large",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "DOORMAT",
+          "color": "white",
+          "size": "large",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 40,
+      "approximateTimestamp": "9:25",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "standing, angry",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "sitting at desk, confused",
+          "interactsWith": "laptop"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "sitting on couch, trying to cheer up female",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "sitting on couch, sad",
+          "interactsWith": "character_3"
+        }
+      ],
+      "props": [
+        {
+          "name": "desk",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "laptop",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "couch",
+          "position": "center_right",
+          "relativeSize": "large",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "OK",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EXAMPLE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "A LEGITIMATE REASON",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "OKAY, NO WORRIES",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "BOMBARD HER WITH APOLOGIES, TRY TO MAKE IT UP TO HER",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "GIVE HER SOME SPACE CHECK IN ONCE WITHOUT GUILT IN YOUR VOICE?",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 41,
+      "approximateTimestamp": "9:50",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "over-apologizing",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "angry",
+          "action": "receiving apology",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "sitting on couch, trying to cheer up female",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "sitting on couch, sad",
+          "interactsWith": "character_3"
+        }
+      ],
+      "props": [
+        {
+          "name": "couch",
+          "position": "center_right",
+          "relativeSize": "large",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I AM SORRY",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "GETS RESULTS",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 42,
+      "approximateTimestamp": "10:03",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE MAKES YOU FEEL CONFUSION",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "slide_up"
+        },
+        {
+          "exactText": "SCREENING SYSTEM",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 43,
+      "approximateTimestamp": "10:13",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "laughing and engaged",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "touching",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "touching male character",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "trying to engage female",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at phone, short answers",
+          "interactsWith": "phone"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "chair",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "phone",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 4
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "OKAY THIS IS REAL SHE'S INTO ME",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "badge_box",
+          "animation": "none"
+        },
+        {
+          "exactText": "WARM LAUGHING ENGAGED CLOSE TO YOU",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "IS SHE INTO ME OR NOT?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "AM I READING THIS WRONG?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT IS ACTUALLY GOING ON?",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "TEST",
+          "color": "yellow",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 44,
+      "approximateTimestamp": "10:48",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "confused by contradictory signals",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "laughing and engaged",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "touching",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "touching male character",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "top_right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "trying to engage female",
+          "interactsWith": "character_5"
+        },
+        {
+          "id": 5,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "top_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at phone, short answers",
+          "interactsWith": "phone"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "chair",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 5
+        },
+        {
+          "name": "phone",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE LIKES ME",
+          "color": "green",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE'S WARM",
+          "color": "green",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE DOESN'T",
+          "color": "red",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE'S COLD",
+          "color": "red",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "UNSOLVED AN PUZZLE",
+          "color": "yellow",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "circular",
+            "style": "curved"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 45,
+      "approximateTimestamp": "11:23",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "lying",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "listening to music",
+          "interactsWith": "headphones"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "reading a book",
+          "interactsWith": "book"
+        }
+      ],
+      "props": [
+        {
+          "name": "headphones",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "music_note",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "coffee_cup",
+          "position": "bottom_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "table",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "picture_frame",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SONG YOU CAN'T REMEMBER THE NAME OF",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "INCONSISTENT",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "circular",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 46,
+      "approximateTimestamp": "11:51",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "laughing and engaged",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "touching",
+          "position": "top_left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "touching male character",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "top_right",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "trying to engage female",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "top_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking at phone, short answers",
+          "interactsWith": "phone"
+        },
+        {
+          "id": 5,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "acting as a detective",
+          "interactsWith": "clipboard"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "chair",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "phone",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 4
+        },
+        {
+          "name": "clipboard",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SO HOW DO YOU PASS IT?",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOU STOP TRYING TO SOLVE HER",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "-DON'T CHASE CLARITY",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "-DON'T TRY HARDER",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "-DON'T SHRINK TRYING TO FIGURE OUT",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "STAY THE SAME",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE MOST READABLE PERSON = SAFE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "DEEPLY ATTRACTIVE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 47,
+      "approximateTimestamp": "12:25",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "performing",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "microphone",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "mask",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "city_skyline",
+          "position": "bottom_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "cloud",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "sun",
+          "position": "overlay_on_object",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_object",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WEATHER CHANGES",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "BUILDINGS DON'T",
+          "color": "white",
+          "size": "small",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 48,
+      "approximateTimestamp": "12:45",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "shield",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "SHE MAKES YOU FEEL EMOTIONAL CHAOS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL INSECURE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL GUILT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "SHE MAKES YOU FEEL CONFUSION",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "WHAT'S THE ONE THING ALL FOUR TESTS HAVE IN COMMON?",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NEVER ASKED YOU A SINGLE QUESTION",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NO INTERVIEW",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NO ARE YOU EMOTIONALLY STABLE?",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NO CAN I TRUST YOU UNDER PRESSURE?",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_center",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "left_to_center",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "right_to_center",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "bottom_to_center",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 49,
+      "approximateTimestamp": "13:12",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "standing confidently",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "touching",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "touching male character",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HE KNOWS WHO HE IS WHEN THINGS GET UNCOMFORTABLE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "top_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "left_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "right_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "bottom_to_center",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 50,
+      "approximateTimestamp": "13:35",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "DARK",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TAKE",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE DARK NEEDLE",
+          "color": "white",
+          "size": "tiny",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "fade_black"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "hugging",
+      "pointing",
+      "sitting_boat",
+      "standing",
+      "running",
+      "speaking",
+      "looking_in_mirror",
+      "carrying",
+      "sitting_chair",
+      "arms_up",
+      "arms_crossed",
+      "kneeling",
+      "lying",
+      "falling",
+      "holding_phone",
+      "climbing",
+      "touching",
+      "dancing"
+    ],
+    "uniquePropsUsed": [
+      "note",
+      "paperclip",
+      "syringe",
+      "pointer_stick",
+      "spotlight",
+      "boat",
+      "water",
+      "sky",
+      "city_skyline",
+      "briefcase",
+      "phone",
+      "cave",
+      "axe",
+      "mammoth",
+      "shield",
+      "mirror",
+      "money",
+      "laptop",
+      "desk",
+      "chair",
+      "lamp",
+      "glass",
+      "judge_bench",
+      "gavel",
+      "sick_child",
+      "gears",
+      "door",
+      "headphones",
+      "music_note",
+      "book",
+      "coffee_cup",
+      "table",
+      "picture_frame",
+      "mask",
+      "cloud",
+      "sun",
+      "couch",
+      "air_conditioner",
+      "baby",
+      "ladder",
+      "clipboard"
+    ],
+    "uniqueLayoutsUsed": [
+      "dual_character",
+      "text_only",
+      "single_character_with_text",
+      "environment_scene",
+      "flowchart",
+      "giant_character",
+      "timeline",
+      "multi_character",
+      "split_screen"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "badge_box"
+    ],
+    "uniqueTransitionsUsed": [
+      "none",
+      "hard_cut",
+      "slide_right",
+      "zoom_out",
+      "fade_black",
+      "slide_up"
+    ],
+    "narrativeArc": "The video introduces the 'Negative Space Test,' an unconscious screening system women use to evaluate men's emotional stability. It traces the evolutionary roots of this test to ancient times when a woman's survival depended on choosing a stable partner. The video then details four specific forms of this test: making a man feel insecure, emotional chaos, guilt, and confusion. For each test, it provides examples of how women subtly create these feelings and how men typically react. The core message is that a man passes these tests not by trying to 'fix' the woman's mood or reacting defensively, but by maintaining his own emotional stability, confidence, and authenticity. The video concludes by emphasizing that knowing oneself and remaining grounded in uncomfortable situations is the ultimate 'secret' to being deeply attractive and reliable."
+  }
+}

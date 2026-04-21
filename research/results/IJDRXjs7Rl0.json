@@ -1,0 +1,3264 @@
+{
+  "videoId": "IJDRXjs7Rl0",
+  "videoTitle": "Destroying Her Ego Without Saying a Word (Do This)",
+  "videoDurationSeconds": 150,
+  "totalScenes": 49,
+  "globalEffects": {
+    "filmGrain": false,
+    "glowBloom": false,
+    "vignette": false,
+    "dominantCameraMove": "none",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Destroying Her Ego",
+          "color": "white",
+          "size": "hero",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "Without Saying a Word",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "(Do This)",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:03",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HER EGO",
+          "color": "white",
+          "size": "hero",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:07",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HER EGO",
+          "color": "white",
+          "size": "hero",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "is a fragile thing",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:10",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HER EGO",
+          "color": "white",
+          "size": "hero",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "is a fragile thing",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "that can be easily shattered.",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:13",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HER EGO",
+          "color": "white",
+          "size": "hero",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "is a fragile thing",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "that can be easily shattered.",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "And you can do it",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:16",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HER EGO",
+          "color": "white",
+          "size": "hero",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "is a fragile thing",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "that can be easily shattered.",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "And you can do it",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "without saying a single word.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:19",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Here's how:",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:22",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "0:25",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's being dramatic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "0:28",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's being dramatic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or trying to provoke a reaction,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "0:31",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's being dramatic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or trying to provoke a reaction,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "don't engage.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "0:34",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's being dramatic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or trying to provoke a reaction,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "don't engage.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Just look at her",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "0:37",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's being dramatic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or trying to provoke a reaction,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "don't engage.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Just look at her",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "with a blank expression.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "0:40",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's being dramatic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or trying to provoke a reaction,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "don't engage.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Just look at her",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "with a blank expression.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will disarm her",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "0:43",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "1. The Silent Treatment",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's being dramatic",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or trying to provoke a reaction,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "don't engage.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Just look at her",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "with a blank expression.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will disarm her",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "and make her feel foolish.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "0:46",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "0:49",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to impress you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "0:52",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to impress you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or seeking your validation,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "0:55",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to impress you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or seeking your validation,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a slow,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "0:58",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to impress you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or seeking your validation,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a slow,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "indifferent nod.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "1:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to impress you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or seeking your validation,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a slow,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "indifferent nod.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "No smile, no words.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "1:04",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to impress you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or seeking your validation,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a slow,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "indifferent nod.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "No smile, no words.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her question",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "1:07",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "2. The Indifferent Nod",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to impress you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or seeking your validation,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a slow,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "indifferent nod.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "No smile, no words.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her question",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "her own value.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "1:10",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "3. The Unwavering Gaze",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "1:13",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "3. The Unwavering Gaze",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to intimidate you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 26,
+      "approximateTimestamp": "1:16",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "3. The Unwavering Gaze",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to intimidate you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or assert dominance,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 27,
+      "approximateTimestamp": "1:19",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "3. The Unwavering Gaze",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to intimidate you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or assert dominance,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "hold her gaze.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 28,
+      "approximateTimestamp": "1:22",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "3. The Unwavering Gaze",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to intimidate you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or assert dominance,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "hold her gaze.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Don't blink, don't flinch.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 29,
+      "approximateTimestamp": "1:25",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "3. The Unwavering Gaze",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to intimidate you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or assert dominance,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "hold her gaze.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Don't blink, don't flinch.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her feel",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 30,
+      "approximateTimestamp": "1:28",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "3. The Unwavering Gaze",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to intimidate you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or assert dominance,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "hold her gaze.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Don't blink, don't flinch.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her feel",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "exposed and vulnerable.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 31,
+      "approximateTimestamp": "1:31",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "4. The Casual Dismissal",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 32,
+      "approximateTimestamp": "1:34",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "4. The Casual Dismissal",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to get a rise out of you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 33,
+      "approximateTimestamp": "1:37",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "4. The Casual Dismissal",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to get a rise out of you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or make you feel insecure,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 34,
+      "approximateTimestamp": "1:40",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "4. The Casual Dismissal",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to get a rise out of you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or make you feel insecure,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "simply shrug your shoulders",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 35,
+      "approximateTimestamp": "1:43",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "shrugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "shrugging shoulders",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "4. The Casual Dismissal",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to get a rise out of you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or make you feel insecure,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "simply shrug your shoulders",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "and turn away.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 36,
+      "approximateTimestamp": "1:46",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "turning away",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "4. The Casual Dismissal",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to get a rise out of you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or make you feel insecure,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "simply shrug your shoulders",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "and turn away.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her feel",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 37,
+      "approximateTimestamp": "1:49",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "turning away",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "4. The Casual Dismissal",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to get a rise out of you",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or make you feel insecure,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "simply shrug your shoulders",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "and turn away.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her feel",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "irrelevant and powerless.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 38,
+      "approximateTimestamp": "1:52",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 39,
+      "approximateTimestamp": "1:55",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to make you jealous",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 40,
+      "approximateTimestamp": "1:58",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to make you jealous",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or get a reaction out of you,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 41,
+      "approximateTimestamp": "2:01",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking right",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to make you jealous",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or get a reaction out of you,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a small,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 42,
+      "approximateTimestamp": "2:04",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "smiling",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to make you jealous",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or get a reaction out of you,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a small,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "unbothered smile.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 43,
+      "approximateTimestamp": "2:07",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "smiling",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to make you jealous",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or get a reaction out of you,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a small,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "unbothered smile.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "No words, no drama.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 44,
+      "approximateTimestamp": "2:10",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "smiling",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to make you jealous",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or get a reaction out of you,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a small,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "unbothered smile.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "No words, no drama.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her feel",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 45,
+      "approximateTimestamp": "2:13",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "other",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "smiling",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "looking left",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "5. The Unbothered Smile",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "When she's trying to make you jealous",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "or get a reaction out of you,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "give her a small,",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "unbothered smile.",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "No words, no drama.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "This will make her feel",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "powerless and ignored.",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 46,
+      "approximateTimestamp": "2:16",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Remember,",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 47,
+      "approximateTimestamp": "2:19",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "actions speak louder than words.",
+          "color": "yellow",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 48,
+      "approximateTimestamp": "2:22",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Destroy her ego",
+          "color": "white",
+          "size": "hero",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "without saying a word.",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 49,
+      "approximateTimestamp": "2:25",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "Destroy her ego",
+          "color": "white",
+          "size": "hero",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "without saying a word.",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "mixed_case",
+          "animation": "none"
+        },
+        {
+          "exactText": "Subscribe for more.",
+          "color": "yellow",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "shrugging",
+      "other"
+    ],
+    "uniquePropsUsed": [],
+    "uniqueLayoutsUsed": [
+      "text_only",
+      "single_character_with_text",
+      "dual_character"
+    ],
+    "uniqueTextStylesUsed": [
+      "all_caps",
+      "mixed_case"
+    ],
+    "uniqueTransitionsUsed": [
+      "none",
+      "hard_cut"
+    ],
+    "narrativeArc": "The video introduces the goal of 'destroying her ego without saying a word'. It then presents five distinct non-verbal techniques (Silent Treatment, Indifferent Nod, Unwavering Gaze, Casual Dismissal, Unbothered Smile) as numbered points, each with a description of when to use it and its intended effect. The video concludes by reiterating the main message and a call to action for subscription."
+  }
+}

@@ -1,0 +1,1929 @@
+{
+  "videoId": "ZNes3GDfE5U",
+  "videoTitle": "This Is How Women Fall in Love (Explained)",
+  "videoDurationSeconds": 679,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": true,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "pure_black"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#9900CC",
+      "#00CC00",
+      "#0000CC"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "HOW A WOMAN FALLS IN LOVE",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "none",
+          "animation": "blur_reveal"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "none"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:04",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "explaining, pointing right",
+          "interactsWith": "text"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HOW A WOMAN FALLS IN LOVE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "none",
+          "animation": "blur_reveal"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:16",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "flask",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "key",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "molecule",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HOW A WOMAN FALLS IN LOVE",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "IN LOVE",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WHAT CREATES EMOTIONAL CHEMISTRY",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HOW DESIRE BUILDS (AND BREAKS)",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THE PROCESS",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "left_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "yellow",
+            "direction": "right_to_center",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:28",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center_right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:29",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "graph",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HER DESIRE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "slide_right"
+        },
+        {
+          "exactText": "STAGE OF LOVE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "solid"
+          },
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "solid"
+          },
+          {
+            "color": "white",
+            "direction": "diagonal",
+            "style": "stepped"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:37",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "dancing",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "graph",
+          "position": "top_center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TWO KEY FACTORS",
+          "color": "white",
+          "size": "medium",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "FALLS IN LOVE",
+          "color": "purple",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:45",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "bottom_left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "dancing",
+          "position": "bottom_right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "dancing",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "graph",
+          "position": "top_center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE FOUNDATION",
+          "color": "white",
+          "size": "medium",
+          "position": "bottom_center",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "TIME",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "FALLS IN LOVE",
+          "color": "purple",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "purple",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:57",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "LIKE BARBECUE BRISKET",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "1:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "brisket",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "1:10",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "leaning",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "touching male's arm",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "obsessed",
+          "action": "laughing, boiling with excitement",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "OBSESSED",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "up",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:15",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "leaning",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "STAY COOL",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TAKE YOUR TIME",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DON'T RUSH",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHE WANTS TO COME ✅ GREAT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHE DOESN'T ✅ STILL GREAT",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YOU HUNG OUT TODAY? GOOD",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DIDN'T SEE HER UNTIL NEXT WEEK? ALSO GOOD",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DON'T CARE TOO MUCH",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "GIVE HER TIME",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "solid"
+          },
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "solid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "1:53",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "confused",
+          "action": "standing, thinking",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "glasses",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "INVESTMENT = MEASURE DESIRE",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TIME",
+          "color": "white",
+          "size": "medium",
+          "position": "left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EFFORT",
+          "color": "white",
+          "size": "medium",
+          "position": "left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WANT IT",
+          "color": "white",
+          "size": "medium",
+          "position": "right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NEED IT",
+          "color": "white",
+          "size": "medium",
+          "position": "right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ATTACHED TO IT",
+          "color": "white",
+          "size": "medium",
+          "position": "right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_center",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "center_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "2:01",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "buying book",
+          "interactsWith": "prop_1"
+        },
+        {
+          "id": 2,
+          "gender": "neutral",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "selling book",
+          "interactsWith": "prop_1"
+        },
+        {
+          "id": 3,
+          "gender": "neutral",
+          "pose": "carrying",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "giving book",
+          "interactsWith": "prop_2"
+        },
+        {
+          "id": 4,
+          "gender": "neutral",
+          "pose": "carrying",
+          "position": "far_right",
+          "relativeSize": "medium",
+          "emotion": "surprised",
+          "action": "receiving book",
+          "interactsWith": "prop_2"
+        }
+      ],
+      "props": [
+        {
+          "name": "money",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "counter",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU'RE MORE LIKELY TO READ IT",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THAN FREE BOOK",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "2:24",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "kneeling",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "proposing",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "rejecting proposal",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "hugging",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "center_right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "being hugged, crying",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "running",
+          "position": "far_right",
+          "relativeSize": "medium",
+          "emotion": "aggressive",
+          "action": "running away",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "MOST MEN FAIL WITHOUT KNOWING IT",
+          "color": "white",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THEY SABOTAGE IT",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "FRIEND ZONE",
+          "color": "red",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "COMPLETELY FRUSTRATED",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BACK TO HER TOXIC EX-BF SHE CRIED ABOUT FOR NIGHTS",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "red",
+            "direction": "vertical",
+            "style": "solid"
+          },
+          {
+            "color": "red",
+            "direction": "horizontal",
+            "style": "solid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "3:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "INVESTMENT FORM",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "COMPLIANCE",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "MENTAL RUMINATION",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        },
+        {
+          "exactText": "TEMPORAL INVESTMENT",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "blur_reveal"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "vertical",
+            "style": "solid"
+          },
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "solid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "3:06",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "crouching",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "plugging cable",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "saying yes",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "cable",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "plug",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "COMPLIANCE IS EXTREMELY POWERFUL",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "YES",
+          "color": "yellow",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "EMOTIONAL CONNECTION",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "MOST WOMEN DON'T INVESTING AUTOMATICALLY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "solid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "3:14",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "kissing male",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being kissed",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "COOK FOR YOU",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PLAN THINGS",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "TEXT FIRST",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BRING GIFTS",
+          "color": "white",
+          "size": "small",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "AUTO-INVESTORS",
+          "color": "green",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "scale_punch"
+        },
+        {
+          "exactText": "LIFE BECOMES EASY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "horizontal",
+            "style": "solid"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "3:26",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "dual_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "waiting",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "taking lead, hand on shoulder",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "arrow_sign",
+          "position": "right",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "WAITING YOU TO TAKE THE LEAD",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "FEELS MORE FEMININE AND ATTRACTED",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SETTING THE RHYTHM",
+          "color": "yellow",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "3:43",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "neutral",
+          "pose": "climbing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "climbing stairs",
+          "interactsWith": "prop_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "stairs",
+          "position": "center_right",
+          "relativeSize": "large",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE THREE LEVELS OF COMPLIANCE",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "COMPLIANCE",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LV1",
+          "color": "white",
+          "size": "small",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LV2",
+          "color": "white",
+          "size": "small",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LV3",
+          "color": "white",
+          "size": "small",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "4:08",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "asking",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "listening",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "CAN I GET YOU A TISSUE?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHALL WE MEET AT 4?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "CAN I HAVE THIS DANCE?",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "5:21",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "drinking",
+          "interactsWith": "prop_1"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "drinking, talking",
+          "interactsWith": "prop_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "bartending",
+          "interactsWith": "prop_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "glass",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "glass",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "bar",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HAND ME THE NAPKIN, SWEETHEART",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "WE'RE MEETING AT 4 O'CLOCK",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LET'S DANCE",
+          "color": "white",
+          "size": "small",
+          "position": "top_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "6:15",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "standing",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "holding clapperboard",
+          "interactsWith": "prop_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "clapperboard",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "TAKEN COMPLIANCE",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "USUALLY RELIES ON ACTIONS",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "6:37",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "multi_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding hands",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "leading, holding hands",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "standing close",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "arm around female",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 5,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging",
+          "interactsWith": "character_6"
+        },
+        {
+          "id": 6,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging",
+          "interactsWith": "character_5"
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "overlay_on_character",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 5
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "COME",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PHYSICAL ESCALATION = TAKEN COMPLIANCE",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "7:50",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "thinking",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "thinking",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "overlay_on_character",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "hand",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "RUMINATION = WHEN SHE'S THINKING ABOUT YOU",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "EVEN WHEN YOU'RE NOT AROUND HER",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "10:48",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [],
+      "props": [
+        {
+          "name": "tree",
+          "position": "left",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "apple",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "earth",
+          "position": "right",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "LIKE GRAVITY",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "pointing",
+      "standing",
+      "dancing",
+      "leaning",
+      "arms_crossed",
+      "crouching",
+      "kneeling",
+      "proposing",
+      "hugging",
+      "running",
+      "climbing",
+      "asking",
+      "listening",
+      "sitting_chair",
+      "thinking",
+      "walking"
+    ],
+    "uniquePropsUsed": [
+      "syringe",
+      "flask",
+      "key",
+      "molecule",
+      "graph",
+      "brisket",
+      "glasses",
+      "money",
+      "book",
+      "counter",
+      "cable",
+      "plug",
+      "heart",
+      "arrow_sign",
+      "stairs",
+      "clapperboard",
+      "hand",
+      "table",
+      "chair",
+      "luggage",
+      "restaurant table",
+      "curtains",
+      "phone",
+      "question block",
+      "glass",
+      "bar",
+      "clock",
+      "tree",
+      "apple",
+      "earth"
+    ],
+    "uniqueLayoutsUsed": [
+      "text_only",
+      "single_character_with_text",
+      "flowchart",
+      "dual_character",
+      "environment_scene",
+      "dual_character_with_text",
+      "multi_character"
+    ],
+    "uniqueTextStylesUsed": [
+      "none",
+      "mixed_case",
+      "badge_box",
+      "all_caps"
+    ],
+    "uniqueTransitionsUsed": [
+      "none",
+      "hard_cut"
+    ],
+    "narrativeArc": "The video explains how women fall in love by breaking down the 'process' into 'two key factors': Time and Investment. It uses analogies (barbecue brisket, instant ramen) and visual metaphors (graphs, flowcharts, climbing stairs) to illustrate concepts. It then details three forms of investment: Compliance (requests, demands, taken), Mental Rumination (tasks, mystery, anger), and Temporal Investment (spending time). The video progresses from defining concepts to providing actionable advice, highlighting common mistakes men make, and emphasizing the importance of gradual escalation and understanding female psychology. It concludes with a summary of the investment-over-time model and an advertisement for a related course."
+  }
+}

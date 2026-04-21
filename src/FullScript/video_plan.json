@@ -1,0 +1,90 @@
+{
+  "fps": 30,
+  "totalFrames": 1330,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "You are watching this because you want to change.",
+      "startFrame": 0,
+      "endFrame": 90,
+      "duration": 90,
+      "style": {
+        "primaryColor": "white",
+        "fontSize": 120,
+        "preset": "SoftPop"
+      }
+    },
+    {
+      "id": "S2",
+      "text": "You might be holding a self-help book right now.",
+      "startFrame": 100,
+      "endFrame": 210,
+      "duration": 110,
+      "style": {
+        "primaryColor": "#e2e2e2",
+        "fontSize": 100,
+        "preset": "SoftPop"
+      }
+    },
+    {
+      "id": "S3",
+      "text": "And you think that if you just watch one more video... everything will finally click into place.",
+      "startFrame": 350,
+      "endFrame": 580,
+      "duration": 230,
+      "style": {
+        "primaryColor": "#ffd700",
+        "fontSize": 90,
+        "preset": "SmoothFade"
+      }
+    },
+    {
+      "id": "S4",
+      "text": "Wrong.",
+      "startFrame": 620,
+      "endFrame": 680,
+      "duration": 60,
+      "style": {
+        "primaryColor": "#ff1a1a",
+        "fontSize": 250,
+        "preset": "AggressiveSlam"
+      }
+    },
+    {
+      "id": "S5",
+      "text": "I spent 10,000 hours—more than 6 years of my life.",
+      "startFrame": 720,
+      "endFrame": 850,
+      "duration": 130,
+      "style": {
+        "primaryColor": "white",
+        "fontSize": 110,
+        "preset": "SoftPop"
+      }
+    },
+    {
+      "id": "S6",
+      "text": "I tried it all. Productivity. Mindset. Manifesting.",
+      "startFrame": 900,
+      "endFrame": 1100,
+      "duration": 200,
+      "style": {
+        "primaryColor": "#4ade80",
+        "fontSize": 140,
+        "preset": "SoftPop"
+      }
+    },
+    {
+      "id": "S7",
+      "text": "And the shocking truth I realized after all that time is this:",
+      "startFrame": 1150,
+      "endFrame": 1300,
+      "duration": 150,
+      "style": {
+        "primaryColor": "white",
+        "fontSize": 100,
+        "preset": "SmoothFade"
+      }
+    }
+  ]
+}

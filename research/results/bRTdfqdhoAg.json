@@ -1,0 +1,1747 @@
+{
+  "videoId": "bRTdfqdhoAg",
+  "videoTitle": "She Will Only Love You… If You Dare to 'Break' Her",
+  "videoDurationSeconds": 780,
+  "totalScenes": 25,
+  "globalEffects": {
+    "filmGrain": true,
+    "glowBloom": true,
+    "vignette": false,
+    "dominantCameraMove": "slow_zoom_in",
+    "backgroundStyle": "pattern"
+  },
+  "colorPalette": {
+    "background": "#000000",
+    "colorsUsed": [
+      "#FFFFFF",
+      "#F5E500",
+      "#CC0000",
+      "#9900CC",
+      "#00CC00",
+      "#003366"
+    ]
+  },
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "approximateTimestamp": "0:00",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing still, glowing",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 2,
+      "approximateTimestamp": "0:01",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "sitting_floor",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "reading a book",
+          "interactsWith": "book"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_floor",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "reading a book",
+          "interactsWith": "book"
+        }
+      ],
+      "props": [
+        {
+          "name": "book",
+          "position": "left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "book",
+          "position": "right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE FEMALE IS THE GENTLE SEX",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 3,
+      "approximateTimestamp": "0:04",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "standing with hand out, glowing purple",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "walking, glowing white",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "A VERY FRAGILE BEING",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 4,
+      "approximateTimestamp": "0:11",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "standing with hand out, glowing purple",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "walking, glowing white",
+          "interactsWith": null
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "HER EMOTIONS = SOMETHING SACRED",
+          "color": "red",
+          "size": "medium",
+          "position": "center",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "A VERY FRAGILE BEING",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          },
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 5,
+      "approximateTimestamp": "0:19",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "desperate",
+          "action": "clutching chest, sweating",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "GIRL'S TEARS = A SIN",
+          "color": "red",
+          "size": "medium",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "HER EMOTIONS = SOMETHING SACRED",
+          "color": "red",
+          "size": "medium",
+          "position": "center_right",
+          "style": "none",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 6,
+      "approximateTimestamp": "0:26",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "desperate",
+          "action": "clutching chest, sweating",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "sad",
+          "action": "looking at reflection",
+          "interactsWith": "mirror"
+        }
+      ],
+      "props": [
+        {
+          "name": "mirror",
+          "position": "right",
+          "relativeSize": "large",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 7,
+      "approximateTimestamp": "0:33",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "text_only",
+        "focalZone": "center"
+      },
+      "characters": [],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "SHE WILL ONLY LOVE YOU IF YOU DARE TO BREAK HER",
+          "color": "white",
+          "size": "large",
+          "position": "center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 8,
+      "approximateTimestamp": "0:39",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "kneeling",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "submissive",
+          "action": "being kicked",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "kicking",
+          "position": "left",
+          "relativeSize": "small",
+          "emotion": "aggressive",
+          "action": "kicking male",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "opening door for female",
+          "interactsWith": "door"
+        },
+        {
+          "id": 4,
+          "gender": "female",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "small",
+          "emotion": "neutral",
+          "action": "entering door",
+          "interactsWith": "door"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "small",
+          "emotion": "confident",
+          "action": "holding gun, protecting female",
+          "interactsWith": "gun"
+        },
+        {
+          "id": 6,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "small",
+          "emotion": "confident",
+          "action": "wearing crown, being protected",
+          "interactsWith": "crown"
+        }
+      ],
+      "props": [
+        {
+          "name": "door",
+          "position": "center",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        },
+        {
+          "name": "gun",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 5
+        },
+        {
+          "name": "crown",
+          "position": "right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 6
+        },
+        {
+          "name": "dove",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 6
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "slide_left"
+    },
+    {
+      "sceneIndex": 9,
+      "approximateTimestamp": "0:46",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands with male",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding hands with female",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PAIN",
+          "color": "white",
+          "size": "large",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 10,
+      "approximateTimestamp": "1:04",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "left"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "running",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "running with a spear",
+          "interactsWith": "spear"
+        }
+      ],
+      "props": [
+        {
+          "name": "spear",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 11,
+      "approximateTimestamp": "1:09",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "environment_scene",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "running",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "running with a spear towards mammoth",
+          "interactsWith": "spear"
+        }
+      ],
+      "props": [
+        {
+          "name": "spear",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "mammoth",
+          "position": "right",
+          "relativeSize": "giant",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE TRAIT OF STRENGTH BECAME ROOTED IN HUMAN GENES",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 12,
+      "approximateTimestamp": "1:24",
+      "durationEstimate": "long",
+      "layout": {
+        "type": "flowchart",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "hugging female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "being hugged by male",
+          "interactsWith": "character_1"
+        },
+        {
+          "id": 3,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "talking to friend",
+          "interactsWith": "character_4"
+        },
+        {
+          "id": 4,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "center",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "listening to friend",
+          "interactsWith": "character_3"
+        },
+        {
+          "id": 5,
+          "gender": "male",
+          "pose": "carrying",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "carrying child on shoulders",
+          "interactsWith": "character_7"
+        },
+        {
+          "id": 6,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "happy",
+          "action": "standing with family",
+          "interactsWith": "character_5"
+        },
+        {
+          "id": 7,
+          "gender": "neutral",
+          "pose": "sitting_on_shoulders",
+          "position": "top_right",
+          "relativeSize": "small",
+          "emotion": "happy",
+          "action": "being carried",
+          "interactsWith": "character_5"
+        }
+      ],
+      "props": [
+        {
+          "name": "sofa",
+          "position": "center",
+          "relativeSize": "medium",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "speech_bubble",
+          "position": "top_center",
+          "relativeSize": "small",
+          "interactingCharacterId": 3
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "GIRL FEELS PLEASURE WHEN SHE EXPERIENCES PAIN",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 13,
+      "approximateTimestamp": "1:43",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "hugging",
+          "position": "center_left",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "hugging female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "hugging",
+          "position": "center_right",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "being hugged by male",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "SHE WANTS TO FEEL PAIN",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHE WANTS TO TEST YOU",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHE DOESN'T WANT YOU TO SUBMIT EASILY",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 14,
+      "approximateTimestamp": "1:53",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "fighting",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "aggressive",
+          "action": "hitting male",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "crouching",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "submissive",
+          "action": "being hit",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "YOU'RE WEAK",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 15,
+      "approximateTimestamp": "1:57",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "aggressive",
+          "action": "scolding seated male",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "submissive",
+          "action": "being scolded",
+          "interactsWith": "chair"
+        }
+      ],
+      "props": [
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOU'RE STRONG",
+          "color": "white",
+          "size": "small",
+          "position": "overlay_on_character",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 16,
+      "approximateTimestamp": "2:11",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "medium",
+          "emotion": "confident",
+          "action": "holding plus sign",
+          "interactsWith": "plus_sign"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "neutral",
+          "action": "holding minus sign",
+          "interactsWith": "minus_sign"
+        }
+      ],
+      "props": [
+        {
+          "name": "seesaw",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "plus_sign",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "minus_sign",
+          "position": "top_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "POSITION OF POWER",
+          "color": "white",
+          "size": "medium",
+          "position": "top_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "POSITION OF WEAKNES",
+          "color": "white",
+          "size": "medium",
+          "position": "top_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 17,
+      "approximateTimestamp": "2:16",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "leaning",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "leaning towards male, saying 'I love you'",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "standing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "confused",
+          "action": "looking confused",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "heart",
+          "position": "top_left",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "question_mark",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "I LOVE YOU, HONEY",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THAT SOFTNESS",
+          "color": "purple",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THAT GENTLENESS",
+          "color": "purple",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THAT CARE",
+          "color": "purple",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "FEMININE ENERGY",
+          "color": "purple",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 18,
+      "approximateTimestamp": "2:35",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "holding remote control",
+          "interactsWith": "remote_control"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "sitting_chair",
+          "position": "right",
+          "relativeSize": "medium",
+          "emotion": "desperate",
+          "action": "distressed, head in hands",
+          "interactsWith": "chair"
+        }
+      ],
+      "props": [
+        {
+          "name": "remote_control",
+          "position": "center_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "chair",
+          "position": "bottom_right",
+          "relativeSize": "small",
+          "interactingCharacterId": 2
+        },
+        {
+          "name": "cloud",
+          "position": "top_right",
+          "relativeSize": "medium",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "PSYCHOLOGICAL PAIN",
+          "color": "yellow",
+          "size": "medium",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "THIS IS THE KIND OF PAIN THAT MAKES HER LOVE YOU – NOT HATE YOU",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "red",
+            "direction": "left_to_right",
+            "style": "curved"
+          },
+          {
+            "color": "red",
+            "direction": "right_to_left",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 19,
+      "approximateTimestamp": "3:14",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "female",
+          "pose": "standing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "standing still",
+          "interactsWith": null
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "confident",
+          "action": "gesturing with hands",
+          "interactsWith": null
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "POSSESS POWER",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "PAIN INSIDE",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "ASSERTIVE DOMINANCE",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "right_to_left",
+            "style": "straight"
+          },
+          {
+            "color": "yellow",
+            "direction": "top_to_bottom",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 20,
+      "approximateTimestamp": "3:26",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "pointing",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "pointing with a stick, head is a syringe",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "listening, gesturing with hands",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "syringe",
+          "position": "top_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "stick",
+          "position": "center_left",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "ASSERTIVE DOMINANCE",
+          "color": "yellow",
+          "size": "large",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "none"
+        },
+        {
+          "exactText": "POSSESS POWER",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "badge_box",
+          "animation": "none"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "left_to_right",
+            "style": "straight"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 21,
+      "approximateTimestamp": "3:36",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "frustrated",
+          "action": "talking to female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_crossed",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "assertive",
+          "action": "talking to male",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [],
+      "texts": [
+        {
+          "exactText": "LET'S MEET AT 7",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NO, LET'S MEET AT 6",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 22,
+      "approximateTimestamp": "4:44",
+      "durationEstimate": "short",
+      "layout": {
+        "type": "single_character_with_text",
+        "focalZone": "center"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "standing",
+          "position": "center",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "spinning gear in head",
+          "interactsWith": "gear"
+        }
+      ],
+      "props": [
+        {
+          "name": "gear",
+          "position": "top_center",
+          "relativeSize": "medium",
+          "interactingCharacterId": 1
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "YOUR EMOTIONS WILL BE PRESENT",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 23,
+      "approximateTimestamp": "6:35",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "walking",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "walking with female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "walking",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "neutral",
+          "action": "walking with male, suggesting another way",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "crosswalk",
+          "position": "bottom",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "NO LET'S GO ANOTHER WAY",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "NO, WE'RE GOING THIS WAY",
+          "color": "white",
+          "size": "small",
+          "position": "floating",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "SHE DISAGREES AND ARGUES",
+          "color": "white",
+          "size": "medium",
+          "position": "center_right",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "OKAY, GO AHEAD",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "white",
+            "direction": "top_to_bottom",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 24,
+      "approximateTimestamp": "7:18",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "confused",
+          "action": "looking confused at signpost",
+          "interactsWith": "signpost"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "pointing",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "assertive",
+          "action": "pointing at a direction",
+          "interactsWith": "signpost"
+        }
+      ],
+      "props": [
+        {
+          "name": "signpost",
+          "position": "center",
+          "relativeSize": "large",
+          "interactingCharacterId": null
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "JUST DO WHAT YOU WANT – AND LET HER BE THE ONE TO FOLLOW…",
+          "color": "white",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "mixed_case",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "LOCATION OF THE DATE",
+          "color": "white",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "DON'T LISTEN TO HER",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    },
+    {
+      "sceneIndex": 25,
+      "approximateTimestamp": "9:20",
+      "durationEstimate": "medium",
+      "layout": {
+        "type": "dual_character",
+        "focalZone": "balanced"
+      },
+      "characters": [
+        {
+          "id": 1,
+          "gender": "male",
+          "pose": "arms_up",
+          "position": "left",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "throwing money at female",
+          "interactsWith": "character_2"
+        },
+        {
+          "id": 2,
+          "gender": "female",
+          "pose": "arms_up",
+          "position": "right",
+          "relativeSize": "large",
+          "emotion": "happy",
+          "action": "receiving money",
+          "interactsWith": "character_1"
+        }
+      ],
+      "props": [
+        {
+          "name": "money_bag",
+          "position": "bottom_left",
+          "relativeSize": "small",
+          "interactingCharacterId": 1
+        },
+        {
+          "name": "money",
+          "position": "center",
+          "relativeSize": "tiny",
+          "interactingCharacterId": null
+        },
+        {
+          "name": "heart",
+          "position": "top_right",
+          "relativeSize": "tiny",
+          "interactingCharacterId": 2
+        }
+      ],
+      "texts": [
+        {
+          "exactText": "THE PASSIVE PROVIDER",
+          "color": "yellow",
+          "size": "large",
+          "position": "bottom_center",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BUY HER LOVE",
+          "color": "yellow",
+          "size": "medium",
+          "position": "top_center",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "BUYS HER GIFTS",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "GIVES HER MONEY, ETC…",
+          "color": "white",
+          "size": "medium",
+          "position": "center_left",
+          "style": "all_caps",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "VICTIM",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        },
+        {
+          "exactText": "GOLD-DIGGING",
+          "color": "white",
+          "size": "medium",
+          "position": "overlay_on_character",
+          "style": "badge_box",
+          "animation": "fade_in"
+        }
+      ],
+      "connectingElements": {
+        "arrows": [
+          {
+            "color": "yellow",
+            "direction": "left_to_right",
+            "style": "curved"
+          }
+        ],
+        "lines": [],
+        "circles": []
+      },
+      "transition": "hard_cut"
+    }
+  ],
+  "summary": {
+    "uniquePosesUsed": [
+      "standing",
+      "sitting_floor",
+      "walking",
+      "arms_up",
+      "crouching",
+      "kneeling",
+      "kicking",
+      "carrying",
+      "sitting_on_shoulders",
+      "hugging",
+      "fighting",
+      "pointing",
+      "leaning"
+    ],
+    "uniquePropsUsed": [
+      "book",
+      "heart",
+      "mirror",
+      "door",
+      "crown",
+      "dove",
+      "gun",
+      "mammoth",
+      "spear",
+      "sofa",
+      "speech_bubble",
+      "remote_control",
+      "chair",
+      "cloud",
+      "seesaw",
+      "plus_sign",
+      "minus_sign",
+      "gear",
+      "stick",
+      "crosswalk",
+      "signpost",
+      "money_bag",
+      "money",
+      "question_mark"
+    ],
+    "uniqueLayoutsUsed": [
+      "single_character_with_text",
+      "dual_character",
+      "text_only",
+      "flowchart",
+      "environment_scene"
+    ],
+    "uniqueTextStylesUsed": [
+      "badge_box",
+      "none",
+      "all_caps",
+      "mixed_case",
+      "underline_only"
+    ],
+    "uniqueTransitionsUsed": [
+      "hard_cut",
+      "slide_left"
+    ],
+    "narrativeArc": "The video starts by challenging traditional views of women as 'fragile' and needing kindness. It then introduces the concept of 'pain' (psychological strength/dominance) as what women are genetically attracted to in romantic relationships, contrasting it with kindness in family/friend relationships. It uses various scenarios and flowcharts to illustrate how a man should assert dominance by saying 'no' and not submitting to a woman's demands, thereby causing her 'pain' which paradoxically increases her attraction. The video concludes by categorizing spending into 'transactional', 'complementary', and 'essential', advising against transactional spending and emphasizing that a man should be a 'dominant provider' who covers essentials but says 'no' to unnecessary requests, acting like 'the prize' to maintain power and attraction."
+  }
+}

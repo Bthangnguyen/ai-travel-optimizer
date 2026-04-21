@@ -1,79 +1,45 @@
-# AI-Driven Dynamic Itinerary Optimizer
+# 📽️ Automated Video Generation Engine — Dark Needle
 
-Monorepo MVP for a local-tour itinerary planner focused on Hue. The repository follows the four-layer architecture from the planning documents:
+A powerful, data-driven motion graphics pipeline built on **Remotion**, designed for high-impact, cinematic storytelling.
 
-1. Mobile app triggers planning and reroute events.
-2. FastAPI parses free-form prompts into structured constraints.
-3. A filtering layer narrows POIs before optimization.
-4. A routing engine uses OSRM travel times and an OR-Tools-compatible solver interface with safe fallbacks.
+## 🚀 Key Features
 
-## Workspace Layout
+- **Composable Atom System**: Build complex scenes from simple primitives (Layouts, Connections, Content, Motion, Camera).
+- **Camera-First Design**: Aggressive, cinematic pan/zoom transitions that guide the viewer's eye.
+- **DNA-Driven Styling**: Strict adherence to branding tokens (Typography, Colors, Lettering) for a cohesive "Dark Needle" aesthetic.
+- **Data-Backed Storyboarding**: Orchestrate entire videos using JSON plans.
+- **AI Agent-Ready**: Custom skills and tools for automated template extraction and scene assembly.
 
-- `backend/`: FastAPI service, parser, routing core, tests.
-- `contracts/`: shared JSON contracts for `/plan` and `/reroute`.
-- `data/`: sample Hue POIs used for local development.
-- `mobile/`: Expo / React Native skeleton for timeline, map card, and reroute triggers.
-- `scripts/`: helper scripts for seeding PostGIS-compatible SQL.
-- `docker-compose.yml`: local infra for API, PostGIS, Redis, and OSRM.
+## 🛠️ Architecture
 
-## Local Run
+- `/src/atoms`: Visual primitives (the "Atoms").
+- `/src/templates`: Higher-level layout patterns.
+- `/src/motion`: Core animation hooks and DNA tokens.
+- `/architecture`: Technical documentation and DNA specifications.
+- `/plans`: Structured JSON storyboards for video production.
+- `/tools`: Pipeline scripts for orchestration, audio generation, and QA validation.
 
-### Backend
+## 🚦 Getting Started
 
-```powershell
-python -m pip install --target .deps -r backend\requirements.txt
-.\scripts\run-backend.ps1
-```
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:8000/docs](http://localhost:8000/docs).
+2. **Launch Studio**:
+   ```bash
+   npm start
+   ```
 
-### Tests
+3. **Render Video**:
+   ```bash
+   npx remotion render src/index.ts <CompositionName> <OutputFilename>.mp4
+   ```
 
-```powershell
-$env:PYTHONPATH="."
-python -m unittest discover -s backend/tests -t .
-```
+## 🧠 Smart Extraction Skill
 
-### Mobile
+This engine includes a custom **Extracting Video Templates** skill for agentic environments, allowing for the rapid reverse-engineering of motion graphics patterns into reusable atoms.
 
-```powershell
-cd mobile
-npm install
-cd ..
-.\scripts\run-mobile-web.ps1
-```
+---
 
-### Full Local Dev
-
-```powershell
-.\scripts\run-local.ps1
-```
-
-This starts the backend in a separate PowerShell process, then opens Expo web against `http://127.0.0.1:8000`.
-
-Set `EXPO_PUBLIC_API_URL` to your backend, for example:
-
-- Android emulator: `http://10.0.2.2:8000`
-- iOS simulator / web: `http://localhost:8000`
-
-### Docker Infra
-
-```powershell
-docker compose up --build
-```
-
-The API is wired to use local fallbacks when OSRM or Redis is unavailable, so development can start before the full infra is live.
-
-### One-command Smoke Test
-
-```powershell
-.\scripts\smoke-test-local.ps1
-```
-
-This exports the Expo web app, starts the backend with OR-Tools if available in `.deps`, serves the static web bundle, hits `/health` and `/plan`, then prints a small verification report.
-
-## Notes
-
-- The backend prefers OR-Tools when installed. If `ortools` is absent, it automatically falls back to deterministic greedy routing instead of failing the request.
-- Redis is optional for local development. In-memory trip state is used when the `redis` package or server is not available.
-- OSRM data files are not committed. Place a preprocessed Vietnam graph under `osrm-data/` or keep using the geometric matrix fallback during app development.
+*Refinement Version 1.0.0*
