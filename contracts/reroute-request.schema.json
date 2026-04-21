@@ -2,17 +2,26 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "RerouteRequest",
   "type": "object",
-  "required": ["trip_id", "trigger"],
+  "required": ["trip_id", "trigger", "device_token"],
   "properties": {
     "trip_id": { "type": "string" },
     "prompt": { "type": ["string", "null"] },
+    "device_token": { "type": "string", "minLength": 1 },
     "weather": {
       "type": ["string", "null"],
       "enum": ["clear", "rain", null]
     },
     "current_time": {
-      "type": ["string", "null"],
+      "type": "string",
       "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+    },
+    "current_location": {
+      "type": "object",
+      "required": ["lat", "lon"],
+      "properties": {
+        "lat": { "type": "number" },
+        "lon": { "type": "number" }
+      }
     },
     "visited_poi_ids": {
       "type": "array",
@@ -32,8 +41,10 @@
           "minimum": 0,
           "default": 0
         }
-      }
+      },
+      "additionalProperties": false
     }
-  }
+  },
+  "additionalProperties": false
 }
 
