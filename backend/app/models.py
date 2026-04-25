@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Literal
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from .utils import parse_hhmm
 
@@ -57,6 +57,8 @@ class ConstraintOverride(BaseModel):
 
 
 class PlanRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
     prompt: str = Field(min_length=1, max_length=4000)
     city: str = "hue"
     weather: Literal["clear", "rain"] = "clear"
@@ -145,10 +147,12 @@ class RerouteTrigger(BaseModel):
 
 
 class RerouteRequest(BaseModel):
-    trip_id: str
+    model_config = ConfigDict(extra="forbid")
+
+    trip_id: str = Field(min_length=1)
     trigger: RerouteTrigger
     device_token: str = Field(min_length=1)
-    prompt: str | None = None
+    prompt: str | None = Field(default=None, max_length=4000)
     weather: Literal["clear", "rain"] | None = None
     current_time: str | None = Field(default=None, pattern=r"^([01]\d|2[0-3]):[0-5]\d$")
     current_location: Coordinates | None = None

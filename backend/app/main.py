@@ -16,7 +16,6 @@ from .config import settings
 from .models import Origin, PlanRequest, PlanResponse, RerouteRequest
 from .firebase_client import FCMClient
 from .planner import TripPlanner
-from .parser import PromptConstraintParser
 from .routes.traffic import assess_leg_traffic, router as traffic_router
 from .state_store import (
     DatabaseUnavailableException,
@@ -28,7 +27,6 @@ from .utils import minutes_to_hhmm, parse_hhmm
 
 
 planner = TripPlanner(settings)
-intent_parser = PromptConstraintParser(max_retries=settings.llm_max_retries)
 state_store = TripStateStore(settings)
 fcm_client = FCMClient(settings)
 
@@ -98,12 +96,7 @@ async def plan_route(
 ) -> PlanResponse:
     assert_device_token_matches_auth(auth, payload.device_token)
     try:
-        parsed_intent = await intent_parser.parse_structured_async(payload.prompt)
-        trip = await asyncio.to_thread(
-            planner.plan_with_structured_input,
-            payload,
-            parsed_intent,
-        )
+        trip = await asyncio.to_thread(planner.plan, payload)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     except Exception as exc:  # noqa: BLE001 - endpoint guardrail.
@@ -226,11 +219,9 @@ async def reroute_trip(
         extra_notes.append(f"Delay injected: {delay_minutes} minutes.")
 
     try:
-        parsed_intent = await intent_parser.parse_structured_async(request_payload.prompt)
         trip = await asyncio.to_thread(
-            planner.plan_with_structured_input,
+            planner.plan,
             request_payload,
-            parsed_intent,
             payload.trip_id,
             extra_notes,
         )

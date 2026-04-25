@@ -32,6 +32,9 @@ def _parse_bool_env(name: str, default: bool) -> bool:
     return raw_value.strip().lower() in {"1", "true", "yes", "on"}
 
 
+_load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+
+
 @dataclass(slots=True)
 class Settings:
     app_env: str = os.getenv("APP_ENV", "dev")
@@ -125,7 +128,6 @@ class Settings:
         return None
 
 
-_load_dotenv(Path(__file__).resolve().parents[2] / ".env")
 settings = Settings()
 
 
