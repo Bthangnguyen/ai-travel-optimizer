@@ -4,64 +4,7 @@
     "slug": "ai-itinerary-optimizer",
     "version": "0.1.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "light",
-    "plugins": [
-      "@react-native-firebase/app",
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "useFrameworks": "static"
-          }
-        }
-      ],
-      [
-        "expo-location",
-        {
-          "locationAlwaysAndWhenInUsePermission": "Ứng dụng cần theo dõi vị trí của bạn để tự động cập nhật lộ trình khi bạn rời khỏi điểm tham quan.",
-          "locationAlwaysPermission": "Ứng dụng cần quyền 'Luôn cho phép' để theo dõi vị trí khi màn hình tắt và tự động re-route.",
-          "locationWhenInUsePermission": "Ứng dụng cần vị trí của bạn để hiển thị lộ trình.",
-          "isIosBackgroundLocationEnabled": true,
-          "isAndroidBackgroundLocationEnabled": true
-        }
-      ]
-    ],
-    "ios": {
-      "bundleIdentifier": "com.aio.itinerary",
-      "googleServicesFile": "./GoogleService-Info.plist",
-      "infoPlist": {
-        "UIBackgroundModes": [
-          "location",
-          "fetch",
-          "remote-notification"
-        ],
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "Ứng dụng cần theo dõi vị trí của bạn để tự động cập nhật lộ trình khi bạn rời khỏi điểm tham quan.",
-        "NSLocationAlwaysUsageDescription": "Ứng dụng cần quyền 'Luôn cho phép' để theo dõi vị trí khi màn hình tắt và tự động re-route.",
-        "NSLocationWhenInUseUsageDescription": "Ứng dụng cần vị trí của bạn để hiển thị lộ trình.",
-        "ITSAppUsesNonExemptEncryption": false
-      }
-    },
-    "android": {
-      "package": "com.aio.itinerary",
-      "googleServicesFile": "./google-services.json",
-      "permissions": [
-        "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_BACKGROUND_LOCATION",
-        "FOREGROUND_SERVICE",
-        "FOREGROUND_SERVICE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_BACKGROUND_LOCATION",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_LOCATION"
-      ]
-    },
-    "extra": {
-      "eas": {
-        "projectId": "57392f3b-64a0-48d3-8cf1-49658037a673"
-      }
-    },
-    "owner": "slimeqzz"
+    "userInterfaceStyle": "light"
   }
 }
+

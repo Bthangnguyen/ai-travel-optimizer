@@ -8,8 +8,6 @@ dist/
 .expo/
 .expo-home/
 .env
-mobile/GoogleService-Info.plist
-mobile/google-services.json
 *.pyc
 *.pyc.*
 *.pyo

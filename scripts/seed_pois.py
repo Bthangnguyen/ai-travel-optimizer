@@ -4,13 +4,6 @@ import argparse
 import json
 from pathlib import Path
 
-try:
-    import psycopg
-
-    PSYCOPG_AVAILABLE = True
-except ImportError:  # pragma: no cover
-    PSYCOPG_AVAILABLE = False
-
 
 def build_insert_sql(source_path: Path) -> str:
     items = json.loads(source_path.read_text(encoding="utf-8"))
@@ -75,28 +68,13 @@ def main() -> None:
         default=None,
         help="Optional output SQL path. Prints to stdout when omitted.",
     )
-    parser.add_argument(
-        "--execute-dsn",
-        type=str,
-        default="",
-        help="Execute generated SQL directly on PostGIS DSN.",
-    )
     args = parser.parse_args()
 
     sql = build_insert_sql(args.source)
-    if args.output is not None:
-        args.output.write_text(sql, encoding="utf-8")
-    elif not args.execute_dsn:
+    if args.output is None:
         print(sql)
-
-    if args.execute_dsn:
-        if not PSYCOPG_AVAILABLE:
-            raise RuntimeError("psycopg is required for --execute-dsn.")
-        with psycopg.connect(args.execute_dsn) as conn:
-            with conn.cursor() as cur:
-                cur.execute(sql)
-            conn.commit()
-        print("Seed completed successfully.")
+    else:
+        args.output.write_text(sql, encoding="utf-8")
 
 
 if __name__ == "__main__":

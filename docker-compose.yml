@@ -5,13 +5,10 @@ services:
       dockerfile: backend/Dockerfile
     container_name: itinerary-api
     environment:
-      APP_ENV: integration
+      APP_ENV: docker
       DATA_PATH: /srv/app/data/sample_pois.json
-      POI_SOURCE: postgis
-      POSTGIS_DSN: postgresql://itinerary:itinerary@postgis:5432/itinerary
       OSRM_BASE_URL: http://osrm:5000
       REDIS_URL: redis://redis:6379/0
-      STATE_STORE_MODE: redis_required
       REROUTE_COOLDOWN_SECONDS: 180
     ports:
       - "8000:8000"

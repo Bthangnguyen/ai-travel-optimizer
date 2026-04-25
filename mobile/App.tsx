@@ -1,11 +1,8 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { StatusBar } from "expo-status-bar";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
-  Alert,
-  NativeModules,
-  Platform,
   Pressable,
   SafeAreaView,
   ScrollView,
@@ -14,98 +11,13 @@ import {
   TextInput,
   View
 } from "react-native";
-import MapView, { Marker, Polyline } from "react-native-maps";
 
-import {
-  API_URL,
-  checkHealth,
-  clearCachedAuthToken,
-  createPlan,
-  reroutePlan,
-  setDeviceTokenProvider,
-} from "./src/api";
-import {
-  isGeofencingActive,
-  startGeofenceMonitoring,
-  stopGeofenceMonitoring,
-} from "./src/geofence";
+import { API_URL, checkHealth, createPlan, reroutePlan } from "./src/api";
 import { PlanResponse } from "./src/types";
 
 const STORAGE_KEY = "current_trip";
-const DEVICE_TOKEN_KEY = "device_token";
 const DEFAULT_PROMPT =
   "Plan a Hue day trip from 08:00 with culture and food, budget 1200000, 5 stops";
-const ENABLE_GEOFENCE = process.env.EXPO_PUBLIC_ENABLE_GEOFENCE === "true";
-const ENABLE_FCM = process.env.EXPO_PUBLIC_ENABLE_FCM === "true";
-
-type FcmMessage = {
-  data?: Record<string, string | undefined>;
-};
-
-type MessagingAuthorizationStatus = {
-  AUTHORIZED: number;
-  PROVISIONAL: number;
-};
-
-type MessagingInstance = {
-  requestPermission: () => Promise<number>;
-  getToken: () => Promise<string>;
-  onMessage: (listener: (message: FcmMessage) => void | Promise<void>) => () => void;
-  getInitialNotification?: () => Promise<FcmMessage | null>;
-  onNotificationOpenedApp?: (listener: (message: FcmMessage) => void | Promise<void>) => () => void;
-};
-
-type MessagingModule = {
-  (): MessagingInstance;
-  AuthorizationStatus: MessagingAuthorizationStatus;
-};
-
-function loadMessagingModule(): MessagingModule | null {
-  if (!NativeModules.RNFBAppModule) {
-    return null;
-  }
-  try {
-    const firebaseMessaging = require("@react-native-firebase/messaging") as {
-      default: MessagingModule;
-    };
-    return firebaseMessaging.default;
-  } catch (error) {
-    console.warn("Firebase messaging module unavailable:", error);
-    return null;
-  }
-}
-
-function parseRouteCoordinates(trip: PlanResponse | null) {
-  if (!trip?.itinerary) return [];
-  return trip.itinerary.map((stop) => ({
-    latitude: stop.lat,
-    longitude: stop.lon
-  }));
-}
-
-function createUuidV4(): string {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (char) => {
-    const random = Math.floor(Math.random() * 16);
-    const value = char === "x" ? random : ((random & 0x3) | 0x8);
-    return value.toString(16);
-  });
-}
-
-function createFallbackDeviceToken(): string {
-  return `local-${Platform.OS}-${createUuidV4()}`;
-}
-
-function parseStoredTrip(raw: string | null): PlanResponse | null {
-  if (!raw) {
-    return null;
-  }
-  try {
-    return JSON.parse(raw) as PlanResponse;
-  } catch (error) {
-    console.warn("Unable to parse stored trip payload:", error);
-    return null;
-  }
-}
 
 export default function App() {
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
@@ -114,150 +26,17 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [backendStatus, setBackendStatus] = useState<"checking" | "ok" | "error">("checking");
   const [backendMessage, setBackendMessage] = useState("Checking backend connectivity...");
-  const [deviceToken, setDeviceToken] = useState<string | null>(null);
-  const [geofenceStatus, setGeofenceStatus] = useState<"active" | "inactive" | "error" | "disabled">(
-    ENABLE_GEOFENCE ? "inactive" : "disabled"
-  );
-  const [rerouteNotice, setRerouteNotice] = useState<string | null>(null);
-  const tripRef = useRef<PlanResponse | null>(null);
 
   useEffect(() => {
     AsyncStorage.getItem(STORAGE_KEY).then((raw) => {
-      const parsedTrip = parseStoredTrip(raw);
-      if (parsedTrip) {
-        tripRef.current = parsedTrip;
-        setTrip(parsedTrip);
-      } else if (raw) {
-        void AsyncStorage.removeItem(STORAGE_KEY);
-      }
-    });
-    AsyncStorage.getItem(DEVICE_TOKEN_KEY).then((token) => {
-      if (token) {
-        setDeviceToken(token);
+      if (raw) {
+        setTrip(JSON.parse(raw) as PlanResponse);
       }
     });
   }, []);
 
   useEffect(() => {
     void runHealthCheck();
-  }, []);
-
-  async function getOrCreateDeviceToken(): Promise<string> {
-    if (deviceToken) {
-      return deviceToken;
-    }
-    const stored = await AsyncStorage.getItem(DEVICE_TOKEN_KEY);
-    if (stored) {
-      setDeviceToken(stored);
-      return stored;
-    }
-    const fallbackToken = createFallbackDeviceToken();
-    await AsyncStorage.setItem(DEVICE_TOKEN_KEY, fallbackToken);
-    setDeviceToken(fallbackToken);
-    return fallbackToken;
-  }
-
-  useEffect(() => {
-    // Register the device-token provider so src/api.ts can request a bearer
-    // JWT from the backend when AUTH_MODE=bearer_jwt. Cached tokens are
-    // invalidated whenever the device token itself changes.
-    setDeviceTokenProvider(() => getOrCreateDeviceToken());
-    clearCachedAuthToken();
-  }, [deviceToken]);
-
-  useEffect(() => {
-    const messagingModule = loadMessagingModule();
-    const disposers: Array<() => void> = [];
-
-    async function applyTripFromMessage(remoteMessage: FcmMessage): Promise<void> {
-      if (!remoteMessage.data?.reroute) {
-        return;
-      }
-      try {
-        const newTripData = JSON.parse(remoteMessage.data.reroute) as PlanResponse;
-        const activeTrip =
-          tripRef.current ??
-          parseStoredTrip(await AsyncStorage.getItem(STORAGE_KEY));
-        if (activeTrip && activeTrip.trip_id !== newTripData.trip_id) {
-          console.warn(
-            `Skip reroute payload for trip ${newTripData.trip_id} (active trip: ${activeTrip.trip_id})`,
-          );
-          return;
-        }
-        await persistTrip(newTripData);
-        const delayMins = remoteMessage.data.delay_minutes ?? "0";
-        const notice = `Reroute applied (+${delayMins}m delay)`;
-        setRerouteNotice(notice);
-        Alert.alert("Trip Updated", notice);
-      } catch (error) {
-        console.error("Failed to process reroute payload from FCM:", error);
-      }
-    }
-
-    async function bootstrapMessaging(): Promise<void> {
-      if (!ENABLE_FCM) {
-        await getOrCreateDeviceToken();
-        return;
-      }
-
-      if (!messagingModule) {
-        // Expo Go/native fallback: keep manual reroute path functional.
-        await getOrCreateDeviceToken();
-        return;
-      }
-
-      const messaging = messagingModule();
-      const authStatus = await messaging.requestPermission();
-      const enabled =
-        authStatus === messagingModule.AuthorizationStatus.AUTHORIZED ||
-        authStatus === messagingModule.AuthorizationStatus.PROVISIONAL;
-      if (enabled) {
-        console.log("FCM Authorization status:", authStatus);
-        const token = await messaging.getToken();
-        setDeviceToken(token);
-        await AsyncStorage.setItem(DEVICE_TOKEN_KEY, token);
-      } else {
-        await getOrCreateDeviceToken();
-      }
-
-      disposers.push(messaging.onMessage(async (remoteMessage) => {
-        console.log("FCM message received in foreground:", remoteMessage);
-        await applyTripFromMessage(remoteMessage);
-      }));
-
-      if (typeof messaging.onNotificationOpenedApp === "function") {
-        disposers.push(
-          messaging.onNotificationOpenedApp((remoteMessage) => {
-            void applyTripFromMessage(remoteMessage);
-          }),
-        );
-      }
-
-      if (typeof messaging.getInitialNotification === "function") {
-        const initialMessage = await messaging.getInitialNotification();
-        if (initialMessage) {
-          await applyTripFromMessage(initialMessage);
-        }
-      }
-    }
-
-    void bootstrapMessaging().catch((error) => {
-      console.error("FCM bootstrap failed:", error);
-    });
-    return () => {
-      disposers.forEach((dispose) => dispose());
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!ENABLE_GEOFENCE) {
-      setGeofenceStatus("disabled");
-      return;
-    }
-    void refreshGeofenceStatus();
-    return () => {
-      void stopGeofenceMonitoring();
-    };
   }, []);
 
   async function runHealthCheck() {
@@ -277,43 +56,8 @@ export default function App() {
   }
 
   async function persistTrip(nextTrip: PlanResponse) {
-    tripRef.current = nextTrip;
     setTrip(nextTrip);
     await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(nextTrip));
-    if (!ENABLE_GEOFENCE) {
-      setGeofenceStatus("disabled");
-      return;
-    }
-    if (nextTrip.itinerary.length > 0) {
-      try {
-        await startGeofenceMonitoring(nextTrip.itinerary);
-        setGeofenceStatus("active");
-      } catch (nextError) {
-        setGeofenceStatus("error");
-        console.error("Failed to start geofence monitoring:", nextError);
-      }
-    }
-  }
-
-  async function refreshGeofenceStatus() {
-    if (!ENABLE_GEOFENCE) {
-      setGeofenceStatus("disabled");
-      return;
-    }
-    try {
-      const active = await isGeofencingActive();
-      setGeofenceStatus(active ? "active" : "inactive");
-    } catch (nextError) {
-      setGeofenceStatus("error");
-      console.error("Geofence status check failed:", nextError);
-    }
-  }
-
-  function hhmmNow(): string {
-    const now = new Date();
-    const h = String(now.getHours()).padStart(2, "0");
-    const m = String(now.getMinutes()).padStart(2, "0");
-    return `${h}:${m}`;
   }
 
   async function handleCreatePlan() {
@@ -321,11 +65,8 @@ export default function App() {
     setError(null);
     try {
       await runHealthCheck();
-      const token = await getOrCreateDeviceToken();
-      const nextTrip = await createPlan({ prompt, deviceToken: token });
+      const nextTrip = await createPlan({ prompt });
       await persistTrip(nextTrip);
-      setRerouteNotice(null);
-      await refreshGeofenceStatus();
     } catch (nextError) {
       const detail = nextError instanceof Error ? nextError.message : "Unable to create plan.";
       setError(`API ${API_URL}: ${detail}`);
@@ -342,18 +83,13 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      const token = await getOrCreateDeviceToken();
       await runHealthCheck();
       const nextTrip = await reroutePlan({
         tripId: trip.trip_id,
-        deviceToken: token,
         kind,
-        minutesLate: kind === "delayed" ? 30 : 0,
-        currentTime: hhmmNow(),
+        minutesLate: kind === "delayed" ? 30 : 0
       });
       await persistTrip(nextTrip);
-      setRerouteNotice(`Manual reroute applied (${kind}).`);
-      await refreshGeofenceStatus();
     } catch (nextError) {
       const detail = nextError instanceof Error ? nextError.message : "Unable to reroute.";
       setError(`API ${API_URL}: ${detail}`);
@@ -369,25 +105,12 @@ export default function App() {
         <Text style={styles.eyebrow}>AI itinerary control room</Text>
         <Text style={styles.title}>Hue dynamic planner</Text>
         <Text style={styles.subtitle}>
-          Prompt {"->"} structured constraints {"->"} optimized timeline {"->"} reroute triggers.
+          Prompt -> structured constraints -> optimized timeline -> reroute triggers.
         </Text>
 
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Trip brief</Text>
           <Text style={styles.noteText}>API endpoint: {API_URL}</Text>
-          <Text style={styles.noteText}>
-            Geofence: {geofenceStatus === "active"
-              ? "Active"
-              : geofenceStatus === "inactive"
-                ? "Inactive"
-                : geofenceStatus === "disabled"
-                  ? "Disabled for stable release"
-                  : "Error"}
-          </Text>
-          {!ENABLE_FCM ? (
-            <Text style={styles.noteText}>Auto reroute via push is temporarily disabled for stable release.</Text>
-          ) : null}
-          {rerouteNotice ? <Text style={styles.noticeText}>{rerouteNotice}</Text> : null}
           <View style={styles.healthRow}>
             <Text
               style={[
@@ -444,86 +167,43 @@ export default function App() {
 
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Map snapshot</Text>
-          <View style={styles.mapContainer}>
-            <MapView
-              style={styles.map}
-              initialRegion={{
-                latitude: 16.4637,
-                longitude: 107.5905,
-                latitudeDelta: 0.05,
-                longitudeDelta: 0.05,
-              }}
-            >
-              {trip?.itinerary ? trip.itinerary.map((stop) => (
-                <Marker
-                  key={stop.poi_id}
-                  coordinate={{ latitude: stop.lat, longitude: stop.lon }}
-                  title={stop.name}
-                  description={`Arrival: ${stop.arrival_time}`}
-                />
-              )) : null}
-              {trip?.itinerary && trip.itinerary.length > 1 ? (
-                <Polyline
-                  coordinates={parseRouteCoordinates(trip)}
-                  strokeColor="#8c2f39"
-                  strokeWidth={3}
-                  lineDashPattern={[5, 5]}
-                />
-              ) : null}
-            </MapView>
-          </View>
+          {trip?.itinerary[0] ? (
+            <View style={styles.mapCard}>
+              <Text style={styles.mapHeadline}>{trip.itinerary[0].name}</Text>
+              <Text style={styles.mapCopy}>
+                First stop at {trip.itinerary[0].arrival_time} ({trip.itinerary[0].lat.toFixed(4)},
+                {" "}
+                {trip.itinerary[0].lon.toFixed(4)})
+              </Text>
+              <Text style={styles.mapCopy}>
+                Replace this card with a geofenced map component when the team adds the chosen map SDK.
+              </Text>
+            </View>
+          ) : (
+            <Text style={styles.emptyText}>No route yet.</Text>
+          )}
         </View>
 
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Timeline</Text>
           {trip?.itinerary.length ? (
-            trip.itinerary.map((stop, index) => {
-              const now = new Date();
-              const currentMinutes = now.getHours() * 60 + now.getMinutes();
-
-              const parseTime = (timeStr: string) => {
-                if (!timeStr) return 0;
-                const parts = timeStr.split(':');
-                if (parts.length !== 2) return 0;
-                return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
-              };
-
-              const arrivalMins = parseTime(stop.arrival_time);
-              const departureMins = parseTime(stop.departure_time);
-              const isActive = currentMinutes >= arrivalMins && currentMinutes < departureMins;
-              const isLast = index === trip.itinerary.length - 1;
-
-              return (
-                <View key={stop.poi_id} style={styles.timelineItemContainer}>
-                  <View style={styles.timelineLeft}>
-                    <View style={[styles.timelineBadge, isActive && styles.timelineBadgeActive]}>
-                      <Text style={[styles.timelineBadgeText, isActive && styles.timelineBadgeTextActive]}>
-                        {stop.arrival_time}
-                      </Text>
-                    </View>
-                    {!isLast && <View style={styles.verticalLine} />}
-                  </View>
-                  <View style={[styles.timelineContent, isActive && styles.timelineContentActive]}>
-                    <Text style={[styles.timelineTitle, isActive && styles.timelineTitleActive]}>
-                      {stop.name}
-                    </Text>
-                    
-                    <View style={styles.chipRow}>
-                      <View style={[styles.chip, styles.chipTravel]}>
-                        <Text style={styles.chipTravelText}>Travel {stop.travel_minutes}m</Text>
-                      </View>
-                      <View style={[styles.chip, styles.chipVisit]}>
-                        <Text style={styles.chipVisitText}>Visit {stop.visit_minutes}m</Text>
-                      </View>
-                    </View>
-
-                    <Text style={styles.timelineMeta}>
-                      Depart {stop.departure_time} · {stop.tags.join(", ")} · {stop.outdoor ? "Outdoor" : "Indoor"} · {stop.ticket_price} VND
-                    </Text>
-                  </View>
+            trip.itinerary.map((stop) => (
+              <View key={stop.poi_id} style={styles.timelineItem}>
+                <View style={styles.timelineBadge}>
+                  <Text style={styles.timelineBadgeText}>{stop.arrival_time}</Text>
                 </View>
-              );
-            })
+                <View style={styles.timelineContent}>
+                  <Text style={styles.timelineTitle}>{stop.name}</Text>
+                  <Text style={styles.timelineMeta}>
+                    Depart {stop.departure_time} · Travel {stop.travel_minutes} min · Visit{" "}
+                    {stop.visit_minutes} min
+                  </Text>
+                  <Text style={styles.timelineMeta}>
+                    {stop.tags.join(", ")} · {stop.outdoor ? "Outdoor" : "Indoor"} · {stop.ticket_price} VND
+                  </Text>
+                </View>
+              </View>
+            ))
           ) : (
             <Text style={styles.emptyText}>Generate a plan to see the itinerary timeline.</Text>
           )}
@@ -648,106 +328,57 @@ const styles = StyleSheet.create({
     color: "#b00020",
     fontWeight: "600"
   },
-  mapContainer: {
-    height: 300,
+  mapCard: {
     borderRadius: 16,
-    overflow: "hidden",
-    backgroundColor: "#efe3cb"
+    padding: 16,
+    backgroundColor: "#efe3cb",
+    gap: 8
   },
-  map: {
-    width: "100%",
-    height: "100%"
+  mapHeadline: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#47311b"
+  },
+  mapCopy: {
+    color: "#47311b",
+    lineHeight: 20
   },
   emptyText: {
     color: "#6b6b6b"
   },
-  timelineItemContainer: {
+  timelineItem: {
     flexDirection: "row",
     gap: 12,
-  },
-  timelineLeft: {
-    alignItems: "center",
-    width: 68,
+    paddingVertical: 8
   },
   timelineBadge: {
-    width: 68,
+    minWidth: 68,
     height: 32,
     borderRadius: 16,
     backgroundColor: "#ead5b5",
     alignItems: "center",
-    justifyContent: "center",
-  },
-  timelineBadgeActive: {
-    backgroundColor: "#8c2f39",
+    justifyContent: "center"
   },
   timelineBadgeText: {
     color: "#5a3c1b",
     fontWeight: "700"
   },
-  timelineBadgeTextActive: {
-    color: "#fff",
-  },
-  verticalLine: {
-    flex: 1,
-    width: 2,
-    backgroundColor: "#d8c9aa",
-    opacity: 0.8,
-  },
   timelineContent: {
     flex: 1,
-    gap: 4,
-    paddingBottom: 24,
-  },
-  timelineContentActive: {
-    // any extra styles for active container
+    gap: 4
   },
   timelineTitle: {
     fontSize: 16,
     color: "#1d1d1d",
     fontWeight: "700"
   },
-  timelineTitleActive: {
-    color: "#8c2f39",
-  },
-  chipRow: {
-    flexDirection: "row",
-    gap: 8,
-    marginTop: 4,
-    marginBottom: 6,
-  },
-  chip: {
-    paddingHorizontal: 8,
-    paddingVertical: 6,
-    borderRadius: 8,
-  },
-  chipTravel: {
-    backgroundColor: "#e3f0ff", // pastel blue
-  },
-  chipVisit: {
-    backgroundColor: "#e8f5e9", // pastel green
-  },
-  chipTravelText: {
-    fontSize: 12,
-    fontWeight: "600",
-    color: "#2a5b8f",
-  },
-  chipVisitText: {
-    fontSize: 12,
-    fontWeight: "600",
-    color: "#2e6a32",
-  },
   timelineMeta: {
     color: "#555",
-    lineHeight: 20,
-    fontSize: 13,
+    lineHeight: 20
   },
   noteText: {
     color: "#494949",
     lineHeight: 20
-  },
-  noticeText: {
-    color: "#1f5c4d",
-    fontWeight: "700",
   },
   healthStatus: {
     fontWeight: "700"

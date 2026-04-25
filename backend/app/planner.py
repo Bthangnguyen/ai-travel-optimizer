@@ -118,11 +118,7 @@ class TripPlanner:
         payload: PlanRequest,
         constraints: ConstraintBundle,
     ) -> tuple[list[POI], list[DiscardedPOI]]:
-        pois = self._repository.list_pois(
-            payload.city,
-            origin_lat=payload.origin.lat,
-            origin_lon=payload.origin.lon,
-        )
+        pois = self._repository.list_pois(payload.city)
         filtered: list[DiscardedPOI] = []
         scored: list[tuple[int, POI]] = []
         requested_tags = set(constraints.soft_tags)
