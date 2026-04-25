@@ -39,13 +39,27 @@ Mobile App  →  FastAPI (main.py)  →  TripPlanner (planner.py)  →  RoutingS
 - `contracts/`: JSON Schema cho giao tiếp API. Mọi thay đổi API PHẢI cập nhật file này trước.
 - `data/sample_pois.json`: Format chuẩn của dữ liệu POI. Dữ liệu mới (Task 3) PHẢI theo đúng format này.
 
+### ⚠️ CHECKLIST BẮT BUỘC khi thay đổi Data Model
+Mỗi khi thêm/xóa/đổi tên field trong bất kỳ model nào, AI PHẢI cập nhật ĐẦY ĐỦ tất cả 4 nơi sau:
+1. `backend/app/models.py` — Pydantic model (Python)
+2. `mobile/src/types.ts` — TypeScript type tương ứng
+3. `contracts/` — JSON Schema nếu field thuộc API request/response
+4. `data/sample_pois.json` — Dữ liệu mẫu nếu field thuộc POI model
+
+Ví dụ: Thêm field `rating` vào POI → phải cập nhật `models.py` (POI class) VÀ `types.ts` (ItineraryStop type) VÀ `data/sample_pois.json`.
+
 ## 6. ĐIỀU CẤM TUYỆT ĐỐI
 - KHÔNG import `main.py` từ bất cứ module nào khác trong backend.
 - KHÔNG bỏ qua fallback logic khi thêm tính năng mới liên quan đến dịch vụ ngoài.
-- KHÔNG thay đổi tên trường (field name) trong `models.py` hoặc `types.ts` mà không cập nhật đồng bộ file còn lại.
+- KHÔNG thay đổi tên trường (field name) trong `models.py` hoặc `types.ts` mà không cập nhật đồng bộ file còn lại (xem Checklist mục 5).
+- KHÔNG chỉ cập nhật backend model mà bỏ quên `mobile/src/types.ts` — đây là lỗi phổ biến nhất gây TypeScript error trên mobile.
 - KHÔNG commit `.env` file hay bất kỳ credentials nào lên Git.
 - KHÔNG dùng `print()` để debug trong production code; dùng `logging` module.
 
 ## 7. QUY TRÌNH LÀM VIỆC VỚI AI
 - Trước khi generate code mới, hãy đọc file liên quan trong `docs/ai_context/`.
-- Sau khi generate code, hãy tự kiểm tra: Code mới có phá vỡ kiến trúc 4 lớp không? Có fallback chưa? Type có khớp với `models.py` / `types.ts` không?
+- Sau khi generate code, hãy tự kiểm tra theo checklist:
+  1. Code có phá vỡ kiến trúc 4 lớp không?
+  2. Có fallback nếu dùng dịch vụ ngoài không?
+  3. Nếu thêm field mới: đã cập nhật đủ `models.py` + `types.ts` + `contracts/` + `data/sample_pois.json` chưa?
+  4. Commit message có mô tả rõ những file nào bị ảnh hưởng không?
