@@ -1,0 +1,51 @@
+# AI Rules – AI-Driven Dynamic Itinerary Optimizer
+# File này được AI đọc tự động. Tuân thủ NGHIÊM NGẶT mọi quy tắc dưới đây.
+
+## 1. TỔNG QUAN DỰ ÁN
+- Đây là monorepo xây dựng ứng dụng tối ưu hóa lịch trình du lịch thông minh cho thành phố Huế, Việt Nam.
+- Stack: Backend (Python, FastAPI), Mobile (React Native, Expo, TypeScript).
+- Hệ thống sử dụng OSRM để tính ma trận di chuyển và OR-Tools để tối ưu hóa lộ trình.
+- Tài liệu kiến trúc chi tiết nằm trong thư mục `docs/ai_context/`.
+
+## 2. KIẾN TRÚC BẮT BUỘC (KHÔNG ĐƯỢC PHÁ VỠ)
+Hệ thống backend tuân theo kiến trúc 4 lớp nghiêm ngặt:
+```
+Mobile App  →  FastAPI (main.py)  →  TripPlanner (planner.py)  →  RoutingSolver (routing_solver.py)
+```
+- `main.py`: CHỈ định nghĩa HTTP endpoints, không chứa business logic.
+- `planner.py`: CHỈ điều phối (orchestrate) các lớp bên dưới.
+- `routing_solver.py`: CHỈ chứa thuật toán tối ưu. KHÔNG import từ `main.py` hay `planner.py`.
+- `parser.py`: CHỈ parse prompt → ConstraintBundle. Không gọi sang module khác.
+- `repository.py`: CHỈ đọc dữ liệu POI. Không chứa business logic.
+
+## 3. QUY TẮC BACKEND (PYTHON)
+- NGÔN NGỮ: Python 3.11+, tuân thủ type hints đầy đủ.
+- DATA MODELS: Mọi request/response PHẢI dùng Pydantic models định nghĩa trong `backend/app/models.py`. KHÔNG tạo dict tự do.
+- FALLBACK BẮT BUỘC: Bất kỳ tính năng nào phụ thuộc vào dịch vụ ngoài (OSRM, Redis, OR-Tools) ĐỀU PHẢI có fallback hoạt động offline. Cấu trúc fallback 3 lớp cho solver: OR-Tools → Greedy → Sequential.
+- DEPENDENCIES: Chỉ dùng các thư viện trong `backend/requirements.txt` (fastapi, uvicorn, ortools, redis). KHÔNG thêm thư viện mới khi chưa thảo luận với team.
+- ERROR HANDLING: Dùng `raise HTTPException(status_code=..., detail=...)` ở tầng endpoint trong `main.py`. Các lớp bên dưới raise `ValueError`.
+- NAMING: Đặt tên biến/hàm bằng tiếng Anh, `snake_case`. Comment bằng tiếng Việt nếu cần giải thích nghiệp vụ phức tạp.
+
+## 4. QUY TẮC MOBILE (TYPESCRIPT / REACT NATIVE)
+- FRAMEWORK: React Native với Expo SDK. KHÔNG dùng Expo Router trừ khi được chỉ định.
+- STATE MANAGEMENT: KHÔNG dùng Redux hay Zustand. Quản lý state với `useState`, `useEffect`, và `AsyncStorage` cho persistence.
+- API CALLS: Toàn bộ giao tiếp với backend phải đi qua `mobile/src/api.ts`. KHÔNG gọi `fetch` trực tiếp từ component.
+- TYPES: Toàn bộ TypeScript types của API response phải khai báo trong `mobile/src/types.ts`.
+- NAMING: Đặt tên component bằng `PascalCase`, hàm/biến bằng `camelCase`.
+
+## 5. NGUỒN CHÂN LÝ DỮ LIỆU (SOURCE OF TRUTH)
+- `backend/app/models.py`: Định nghĩa dứt khoát mọi data model cho backend (Python).
+- `mobile/src/types.ts`: Định nghĩa dứt khoát mọi type cho mobile (TypeScript).
+- `contracts/`: JSON Schema cho giao tiếp API. Mọi thay đổi API PHẢI cập nhật file này trước.
+- `data/sample_pois.json`: Format chuẩn của dữ liệu POI. Dữ liệu mới (Task 3) PHẢI theo đúng format này.
+
+## 6. ĐIỀU CẤM TUYỆT ĐỐI
+- KHÔNG import `main.py` từ bất cứ module nào khác trong backend.
+- KHÔNG bỏ qua fallback logic khi thêm tính năng mới liên quan đến dịch vụ ngoài.
+- KHÔNG thay đổi tên trường (field name) trong `models.py` hoặc `types.ts` mà không cập nhật đồng bộ file còn lại.
+- KHÔNG commit `.env` file hay bất kỳ credentials nào lên Git.
+- KHÔNG dùng `print()` để debug trong production code; dùng `logging` module.
+
+## 7. QUY TRÌNH LÀM VIỆC VỚI AI
+- Trước khi generate code mới, hãy đọc file liên quan trong `docs/ai_context/`.
+- Sau khi generate code, hãy tự kiểm tra: Code mới có phá vỡ kiến trúc 4 lớp không? Có fallback chưa? Type có khớp với `models.py` / `types.ts` không?
